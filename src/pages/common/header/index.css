@@ -17,13 +17,6 @@
 
 */
 /* MY COMPONENTS */
-.header-layout {
-    /* style={{ backgroundImage: url('WVKj7E.jpg'), background: '#ac8daf', }} */
-    background-color: #ac8daf;
-    background-image: url('../../../images/WVKj7E.jpg');
-    opacity: 0.5;
-}
-
 .header-background-color {
     background-color: #ac8daf !important;
     text-align-last: end;

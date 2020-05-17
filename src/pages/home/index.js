@@ -2,20 +2,26 @@ import React from 'react';
 import './index.css';
 
 import "antd/dist/antd.css";
-import { Button, DatePicker, version, Layout } from "antd";
+import { Layout, Breadcrumb } from "antd";
 import Header from '../common/header';
+import Footer from '../common/footer';
 
 const Home = () => {
+    const { Content } = Layout;
     return (
         <Layout>
             <Header />
-            <div className="App">
-                <h1>antd version: {version}</h1>
-                <DatePicker />
-                <Button type="primary" style={{ marginLeft: 8 }}>
-                    Primary Button
-            </Button>
-            </div>
+            <Content className="site-layout home-layout" style={{ padding: '0 50px' }}>
+                <Breadcrumb style={{ margin: '16px 0' }}>
+                    <Breadcrumb.Item>Home</Breadcrumb.Item>
+                    <Breadcrumb.Item>List</Breadcrumb.Item>
+                    <Breadcrumb.Item>App</Breadcrumb.Item>
+                </Breadcrumb>
+                <div className="site-layout-background" style={{ padding: 24, minHeight: 380 }}>
+                    Content
+                </div>
+            </Content>
+            <Footer />
         </Layout>
     )
 }
