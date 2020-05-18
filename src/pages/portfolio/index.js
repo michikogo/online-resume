@@ -1,8 +1,9 @@
 import React from 'react';
 import './index.css';
 import { Layout } from 'antd';
-import Header from '../common/header';
-import Footer from '../common/footer';
+
+import Header from '../../common/header';
+import Footer from '../../common/footer';
 
 const Portfolio = () => {
     const { Content } = Layout;

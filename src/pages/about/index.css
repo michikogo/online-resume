@@ -23,7 +23,16 @@
     */
 }
 
+.home-course {
+    font-family: 'Nanum Gothic Coding', monospace;
+    text-shadow: 2px 2px #484c7f;
+    font-size: 40px;
+    color: #f1d4d4;
+    margin-bottom: 0px;
+}
+
 .home-row {
     place-content: center;
+    text-align-last: center;
     height: 705px
 }
