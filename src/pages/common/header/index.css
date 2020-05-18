@@ -1,18 +1,11 @@
-
-/* .ant-menu.ant-menu-dark .ant-menu-item-selected,
-.ant-menu-submenu-popup.ant-menu-dark .ant-menu-item-selected {
-    background-color: #484c7f;
+.ant-menu-dark .ant-menu-item>a {
+    color: #484c7f !important;
+    font-weight: bold;
 }
 
-*/
-/* .site-layout .site-layout-background {
-    background: #f1d4d4;
-}
-
-*/
 /* MY COMPONENTS */
 .header-background-color {
-    background-color: #ac8daf !important;
+    background-color: #ddb6c6 !important;
     text-align-last: end;
 }
 
