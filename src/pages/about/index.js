@@ -15,8 +15,22 @@ const About = () => {
     return (
         <Layout>
             <Header />
-            <Content className="home-layout">
-                <Row className="home-row">
+            <Content>
+                {/* Hello Page */}
+                <Row className="home-hello">
+                    <Col lg={24}>
+                        <FadeIn delay="400" transitionDuration="1000">
+                            <p className="home-hello-name">Michiko Young Go</p>
+                        </FadeIn>
+                    </Col>
+                    <Col lg={24}>
+                        <FadeIn delay="600" transitionDuration="1000">
+                            <p className="home-hello-course">B.S. Computer Science</p>
+                        </FadeIn>
+                    </Col>
+                </Row>
+                {/* Profile - Name, Age, Course, Location */}
+                <Row className="home-profile">
                     <Col lg={24}>
                         <FadeIn delay="400" transitionDuration="1000">
                             <p className="home-name">Michiko Young Go</p>
@@ -28,7 +42,10 @@ const About = () => {
                         </FadeIn>
                     </Col>
                 </Row>
-            </Content>
+
+                {/* Experiences  and Involvement */}
+                {/* Skills */}
+            </Content >
             <Footer />
         </Layout >
     )

@@ -1,38 +1,38 @@
-.home-layout {
-    background-color: #ddb6c6;
-    /* background-image: url('../../images/WVKj7E.jpg'); */
-    /* opacity: 0.5; */
+.home-hello {
+    background-color: #ebd5d5;
+    /* background-image: url('../../images/about-hello.png'); */
+    place-content: center;
+    text-align-last: center;
+    height: 800px;
     padding: 0px 50px;
 }
 
-.home-name:hover {
-    opacity: 0.5;
-}
-
-.home-name {
-    font-family: 'Gochi Hand', cursive;
-    text-shadow: 4px 4px #484c7f;
+.home-hello-name {
+    font-family: 'Just Another Hand', cursive;
+    /* text-shadow: 4px 4px #484c7f; */
     font-size: 120px;
-    color: #ac8daf;
+    color: #685454;
     margin-bottom: 0px;
 
     /* 
-    font-family: 'Gochi Hand', cursive;
-    font-family: 'Nanum Gothic Coding', monospace;
-    font-family: 'Patrick Hand SC', cursive; 
+    font-family: 'Just Another Hand', cursive;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Pompiere', cursive;
     */
 }
 
-.home-course {
-    font-family: 'Nanum Gothic Coding', monospace;
-    text-shadow: 2px 2px #484c7f;
+.home-hello-course {
+    font-family: 'Pompiere', cursive;
+    /* text-shadow: 2px 2px #484c7f; */
     font-size: 40px;
-    color: #f1d4d4;
+    color: #685454;
     margin-bottom: 0px;
 }
 
-.home-row {
+.home-profile {
+    background-color: #f2f2f2;
     place-content: center;
     text-align-last: center;
-    height: 705px
+    height: 705px;
+    padding: 0px 50px;
 }
