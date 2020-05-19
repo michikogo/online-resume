@@ -15,17 +15,17 @@ const Header = () => {
                 <Menu theme='dark' selectedKeys={[]} mode="horizontal" className="header-background-color">
                     <Menu.Item key="1">
                         <Link to="/" replace>
-                            Home
+                            HOME
                         </Link>
                     </Menu.Item>
                     <Menu.Item key="2">
                         <Link to="/portfolio" replace>
-                            Portfolio
+                            PORTFOLIO
                         </Link>
                     </Menu.Item>
                     <Menu.Item key="3">
                         <Link to="/contact" replace>
-                            Contact Me
+                            CONTACT ME
                         </Link>
                     </Menu.Item>
                 </Menu>

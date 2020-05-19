@@ -1,11 +1,13 @@
 .ant-menu-dark .ant-menu-item>a {
-    color: #484c7f !important;
-    font-weight: bold;
+    color: #685454 !important;
+    font-family: 'Playfair Display', serif;
+    font-weight: bolder;
+    font-variant-caps: normal;
 }
 
 /* MY COMPONENTS */
 .header-background-color {
-    background-color: #ddb6c6 !important;
+    background-color: #ebd5d5 !important;
     text-align-last: end;
 }
 
