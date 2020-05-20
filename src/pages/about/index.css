@@ -30,7 +30,7 @@
 }
 
 .home-hello-image {
-    width: 100%;
+    width: 50%;
 }
 
 .home-hello-down-row {
@@ -46,7 +46,7 @@
 .home-skills-image {
     position: absolute;
     right: 0;
-    width: 30%;
+    width: 25%;
 }
 
 .home-skills {

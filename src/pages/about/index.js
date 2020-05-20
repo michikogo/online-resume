@@ -60,32 +60,36 @@ const About = () => {
                     </Col>
                     <Row>
                         <Col lg={12}>
-                            {
-                                skills !== ' '
-                                    ? skills.map((data, i) => {
-                                        return (
-                                            <Row key={i} className="home-skills-content">
-                                                <p className="home-skills-number">{data.number}</p>
-                                                <p className="home-skills-skill">{data.skill}</p>
-                                            </Row>
-                                        )
-                                    })
-                                    : "No Data"
-                            }
+                            <Fade left big>
+                                {
+                                    skills !== ' '
+                                        ? skills.map((data, i) => {
+                                            return (
+                                                <Row key={i} className="home-skills-content">
+                                                    <p className="home-skills-number">{data.number}</p>
+                                                    <p className="home-skills-skill">{data.skill}</p>
+                                                </Row>
+                                            )
+                                        })
+                                        : "No Data"
+                                }
+                            </Fade>
                         </Col>
                         <Col lg={12}>
-                            {
-                                skills2 !== ' '
-                                    ? skills2.map((data, i) => {
-                                        return (
-                                            <Row key={i} className="home-skills-content">
-                                                <p className="home-skills-number">{data.number}</p>
-                                                <p className="home-skills-skill">{data.skill}</p>
-                                            </Row>
-                                        )
-                                    })
-                                    : "No Data"
-                            }
+                            <Fade right big>
+                                {
+                                    skills2 !== ' '
+                                        ? skills2.map((data, i) => {
+                                            return (
+                                                <Row key={i} className="home-skills-content">
+                                                    <p className="home-skills-number">{data.number}</p>
+                                                    <p className="home-skills-skill">{data.skill}</p>
+                                                </Row>
+                                            )
+                                        })
+                                        : "No Data"
+                                }
+                            </Fade>
                         </Col>
                     </Row>
                 </Row>
