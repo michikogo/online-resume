@@ -11,6 +11,24 @@
     text-align-last: end;
 }
 
+.header-name {
+    margin: 0px;
+}
+
 .header-height {
     height: 65px;
+}
+
+@media(max-width: 425px) {
+    .ant-layout-header {
+        padding: 0px !important;
+    }
+
+    .ant-menu-dark .ant-menu-item>a {
+        font-size: medium;
+    }
+
+    .header-name {
+        font-size: small;
+    }
 }
