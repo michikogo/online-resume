@@ -3,7 +3,7 @@
     /* background-image: url('../../images/about-hello.png'); */
     place-content: center;
     text-align-last: center;
-    height: 800px;
+    height: 720px;
     padding: 0px 50px;
 }
 
@@ -29,10 +29,56 @@
     margin-bottom: 0px;
 }
 
-.home-profile {
-    background-color: #f2f2f2;
+.home-hello-image {
+    width: 100%;
+}
+
+.home-hello-down-row {
+    background: #ebd5d5;
     place-content: center;
-    text-align-last: center;
+    padding-bottom: 50px;
+}
+
+.home-hello-down {
+    font-size: xx-large;
+}
+
+.home-skills-image {
+    position: absolute;
+    right: 0;
+    width: 30%;
+}
+
+.home-skills {
+    background-color: #f2f2f2;
+    /* place-content: center;text-align-last: center; */
     height: 705px;
-    padding: 0px 50px;
+    padding: 80px 150px;
+    min-height: 800px;
+}
+
+.home-skills-content {
+    padding-bottom: 30px;
+    align-items: center;
+}
+
+.home-skills-name {
+    font-family: 'Pompiere', cursive;
+    font-size: 70px;
+    color: #685454;
+}
+
+.home-skills-number {
+    font-family: 'Just Another Hand', cursive;
+    font-size: 65px;
+    margin-bottom: 0px;
+    color: grey;
+}
+
+.home-skills-skill {
+    font-family: 'Playfair Display', serif;
+    padding-left: 10px;
+    font-size: larger;
+    width: 60%;
+    margin-bottom: 0px;
 }
