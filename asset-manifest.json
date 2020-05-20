@@ -1,26 +1,29 @@
 {
   "files": {
-    "main.css": "/online-resume/static/css/main.24427a4f.chunk.css",
-    "main.js": "/online-resume/static/js/main.4332cfb3.chunk.js",
-    "main.js.map": "/online-resume/static/js/main.4332cfb3.chunk.js.map",
+    "main.css": "/online-resume/static/css/main.8301b526.chunk.css",
+    "main.js": "/online-resume/static/js/main.97700302.chunk.js",
+    "main.js.map": "/online-resume/static/js/main.97700302.chunk.js.map",
     "runtime-main.js": "/online-resume/static/js/runtime-main.687fd3f9.js",
     "runtime-main.js.map": "/online-resume/static/js/runtime-main.687fd3f9.js.map",
     "static/css/2.3c4e6f21.chunk.css": "/online-resume/static/css/2.3c4e6f21.chunk.css",
-    "static/js/2.6d57c45e.chunk.js": "/online-resume/static/js/2.6d57c45e.chunk.js",
-    "static/js/2.6d57c45e.chunk.js.map": "/online-resume/static/js/2.6d57c45e.chunk.js.map",
+    "static/js/2.414aa60b.chunk.js": "/online-resume/static/js/2.414aa60b.chunk.js",
+    "static/js/2.414aa60b.chunk.js.map": "/online-resume/static/js/2.414aa60b.chunk.js.map",
     "index.html": "/online-resume/index.html",
-    "precache-manifest.910f3e5a50ebb7ce3e815307b525c0af.js": "/online-resume/precache-manifest.910f3e5a50ebb7ce3e815307b525c0af.js",
+    "precache-manifest.67ecbd34bcf8f1f21b56be6c509369ac.js": "/online-resume/precache-manifest.67ecbd34bcf8f1f21b56be6c509369ac.js",
     "service-worker.js": "/online-resume/service-worker.js",
     "static/css/2.3c4e6f21.chunk.css.map": "/online-resume/static/css/2.3c4e6f21.chunk.css.map",
-    "static/css/main.24427a4f.chunk.css.map": "/online-resume/static/css/main.24427a4f.chunk.css.map",
-    "static/js/2.6d57c45e.chunk.js.LICENSE.txt": "/online-resume/static/js/2.6d57c45e.chunk.js.LICENSE.txt",
-    "static/media/index.css": "/online-resume/static/media/WVKj7E.488aae5b.jpg"
+    "static/css/main.8301b526.chunk.css.map": "/online-resume/static/css/main.8301b526.chunk.css.map",
+    "static/js/2.414aa60b.chunk.js.LICENSE.txt": "/online-resume/static/js/2.414aa60b.chunk.js.LICENSE.txt",
+    "static/media/WVKj7E.jpg": "/online-resume/static/media/WVKj7E.488aae5b.jpg",
+    "static/media/dp.jpg": "/online-resume/static/media/dp.b6e786f5.jpg",
+    "static/media/scrible.png": "/online-resume/static/media/scrible.274add91.png",
+    "static/media/scrible2.png": "/online-resume/static/media/scrible2.f8491005.png"
   },
   "entrypoints": [
     "static/js/runtime-main.687fd3f9.js",
     "static/css/2.3c4e6f21.chunk.css",
-    "static/js/2.6d57c45e.chunk.js",
-    "static/css/main.24427a4f.chunk.css",
-    "static/js/main.4332cfb3.chunk.js"
+    "static/js/2.414aa60b.chunk.js",
+    "static/css/main.8301b526.chunk.css",
+    "static/js/main.97700302.chunk.js"
   ]
 }
