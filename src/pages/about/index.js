@@ -118,8 +118,8 @@ const About = () => {
                             <img src={scrible} alt="scrible" className="home-education-image" />
                         </Row>
                         {
-                            experiences !== ''
-                                ? experiences.map((data, i) => {
+                            education !== ''
+                                ? education.map((data, i) => {
                                     return (
                                         <Fade left big>
                                             <Row key={i} className="home-content">
