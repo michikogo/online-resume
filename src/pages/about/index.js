@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './index.css';
-import { scrible, scrible2 } from '../../images';
+import { scrible, scrible2, dp } from '../../images';
 
 import Fade from 'react-reveal/Fade';
 import Jump from 'react-reveal/Jump'
@@ -16,15 +16,12 @@ const About = () => {
     const { Content } = Layout;
 
     const [skills, setSkills] = useState([
-        { number: "01. ", skill: "Programming Languages (C, C++, Java, MySQL)" },
-        { number: "02. ", skill: "Programming Languages (C, C++, Java, MySQL)" },
-        { number: "03. ", skill: "Programming Languages (C, C++, Java, MySQL)" },
-    ])
-
-    const [skills2, setSkills2] = useState([
-        { number: "04. ", skill: "Programming Languages (C, C++, Java, MySQL)" },
-        { number: "05. ", skill: "Programming Languages (C, C++, Java, MySQL)" },
-        { number: "06. ", skill: "Programming Languages (C, C++, Java, MySQL)" },
+        { number: "01. ", skill: "Consectetur adipiscing elit." },
+        { number: "02. ", skill: "Consectetur adipiscing elit." },
+        { number: "03. ", skill: "Consectetur adipiscing elit." },
+        { number: "04. ", skill: "Consectetur adipiscing elit." },
+        { number: "05. ", skill: "Consectetur adipiscing elit." },
+        { number: "06. ", skill: "Consectetur adipiscing elit." },
     ])
 
     const [education, setEducation] = useState([
@@ -42,6 +39,10 @@ const About = () => {
         { title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", desc: "Proin accumsan justo augue, id sodales dolor tincidunt sit amet. Quisque pharetra massa nisl, ac tempor purus ultrices quis. Suspendisse consectetur turpis felis, vel blandit sem porta non. Aenean at leo eget mauris semper ornare non at ante. " },
         { title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", desc: "Proin accumsan justo augue, id sodales dolor tincidunt sit amet. Quisque pharetra massa nisl, ac tempor purus ultrices quis." }
     ])
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    })
 
     return (
         <Layout>
@@ -78,7 +79,7 @@ const About = () => {
                         <Col lg={12}>
                             {
                                 skills !== ' '
-                                    ? skills.map((data, i) => {
+                                    ? skills.slice(0, 3).map((data, i) => {
                                         return (
                                             <Fade left big>
                                                 <Row key={i} className="home-content">
@@ -93,8 +94,8 @@ const About = () => {
                         </Col>
                         <Col lg={12}>
                             {
-                                skills2 !== ' '
-                                    ? skills2.map((data, i) => {
+                                skills !== ' '
+                                    ? skills.slice(3, 6).map((data, i) => {
                                         return (
                                             <Fade right big>
                                                 <Row key={i} className="home-content">
@@ -123,7 +124,7 @@ const About = () => {
                                         <Fade left big>
                                             <Row key={i} className="home-content">
                                                 <p className="home-number">{data.number}</p>
-                                                <p className="home-desc">{data.education} <br /> {data.desc}</p>
+                                                <p className="home-desc">{data.education} <br />{data.desc}</p>
                                             </Row>
                                         </Fade>
                                     )
@@ -154,8 +155,8 @@ const About = () => {
                 </Row>
                 {/* Profile - Name, Age, Course, Location */}
                 <Row className="home-white">
-                    <Col lg={10}>
-                        <p>image</p>
+                    <Col lg={10} className="home-profile-dp">
+                        <img src={dp} alt="dp" className="home-profile-dp-width" />
                     </Col>
                     <Col lg={14}>
                         <Row>

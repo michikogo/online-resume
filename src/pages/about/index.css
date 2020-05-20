@@ -105,6 +105,15 @@
     padding-left: 150px;
 }
 
+.home-profile-dp {
+    place-self: center;
+    text-align: center;
+}
+
+.home-profile-dp-width {
+    width: 70%;
+}
+
 .home-profile-image {
     width: 80%;
 }
