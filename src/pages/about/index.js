@@ -2,14 +2,15 @@ import React, { useState } from 'react';
 import './index.css';
 import { scrible, scrible2 } from '../../images';
 
-// import Fade from 'react-reveal/Fade';
-// import Jump from 'react-reveal/Jump';
+import Fade from 'react-reveal/Fade';
+import Jump from 'react-reveal/Jump'
+// import FadeIn from 'react-fade-in';
+// import "antd/dist/antd.css";
 import { Layout, Row, Col } from "antd";
 import { DownOutlined } from '@ant-design/icons';
 
 import Header from '../../common/header';
 import Footer from '../../common/footer';
-import ScrollAnimation from 'react-animate-on-scroll';
 
 const About = () => {
     const { Content } = Layout;
@@ -36,6 +37,12 @@ const About = () => {
         { number: "02. ", education: "Lorem ipsum dolor sit amet", desc: "Consectetur adipiscing elit." },
     ])
 
+    const [personal, setPersonal] = useState([
+        { title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", desc: "Proin accumsan justo augue, id sodales dolor tincidunt sit amet. Quisque pharetra massa nisl, ac tempor purus ultrices quis. Suspendisse consectetur turpis felis, vel blandit sem porta non." },
+        { title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", desc: "Proin accumsan justo augue, id sodales dolor tincidunt sit amet. Quisque pharetra massa nisl, ac tempor purus ultrices quis. Suspendisse consectetur turpis felis, vel blandit sem porta non. Aenean at leo eget mauris semper ornare non at ante. " },
+        { title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", desc: "Proin accumsan justo augue, id sodales dolor tincidunt sit amet. Quisque pharetra massa nisl, ac tempor purus ultrices quis." }
+    ])
+
     return (
         <Layout>
             <Header />
@@ -43,65 +50,62 @@ const About = () => {
                 {/* Hello Page */}
                 <Row className="home-hello">
                     <Col lg={24}>
-                        {/* <Fade bottom big oposite delay={800} duration={1000}> */}
-                        <ScrollAnimation animateIn='zoomIn'
-                            animateOut='zoomIn'>
+                        <Fade bottom big oposite delay={800} duration={1000}>
                             <p className="home-hello-name">Michiko Young Go</p>
-                        </ScrollAnimation>
-                        {/* </Fade> */}
+                        </Fade>
                     </Col>
                     <Col lg={24}>
-                        {/* <Fade bottom big oposite delay={1000} duration={1000}> */}
-                        <p className="home-hello-course">B.S. Computer Science</p>
-                        {/* </Fade> */}
+                        <Fade bottom big oposite delay={1000} duration={1000}>
+                            <p className="home-hello-course">B.S. Computer Science</p>
+                        </Fade>
                     </Col>
                     <Col lg={24}>
                         <img src={scrible} alt="scrible" className="home-hello-image" />
                     </Col>
                 </Row>
                 <Row className="home-hello-down-row">
-                    {/* <Jump forever={true}> */}
-                    <DownOutlined className="home-hello-down" />
-                    {/* </Jump> */}
+                    <Jump forever={true}>
+                        <DownOutlined className="home-hello-down" />
+                    </Jump>
                 </Row>
                 {/* Skills */}
                 <img src={scrible2} alt="scrible2" className="home-skills-image" />
-                <Row className="home-brown">
+                <Row className="home-white">
                     <Col lg={24}>
                         <p className="home-title"> Skills </p>
                     </Col>
                     <Row>
                         <Col lg={12}>
-                            {/* <Fade left big> */}
                             {
                                 skills !== ' '
                                     ? skills.map((data, i) => {
                                         return (
-                                            <Row key={i} className="home-content">
-                                                <p className="home-number">{data.number}</p>
-                                                <p className="home-desc">{data.skill}</p>
-                                            </Row>
+                                            <Fade left big>
+                                                <Row key={i} className="home-content">
+                                                    <p className="home-number">{data.number}</p>
+                                                    <p className="home-desc">{data.skill}</p>
+                                                </Row>
+                                            </Fade>
                                         )
                                     })
                                     : "No Data"
                             }
-                            {/* </Fade> */}
                         </Col>
                         <Col lg={12}>
-                            {/* <Fade right big> */}
                             {
                                 skills2 !== ' '
                                     ? skills2.map((data, i) => {
                                         return (
-                                            <Row key={i} className="home-content">
-                                                <p className="home-number">{data.number}</p>
-                                                <p className="home-desc">{data.skill}</p>
-                                            </Row>
+                                            <Fade right big>
+                                                <Row key={i} className="home-content">
+                                                    <p className="home-number">{data.number}</p>
+                                                    <p className="home-desc">{data.skill}</p>
+                                                </Row>
+                                            </Fade>
                                         )
                                     })
                                     : "No Data"
                             }
-                            {/* </Fade> */}
                         </Col>
                     </Row>
                 </Row>
@@ -116,12 +120,12 @@ const About = () => {
                             experiences !== ''
                                 ? experiences.map((data, i) => {
                                     return (
-                                        // <Fade right big>
-                                        <Row key={i} className="home-content">
-                                            <p className="home-number">{data.number}</p>
-                                            <p className="home-desc">{data.education} <br /> {data.desc}</p>
-                                        </Row>
-                                        // </Fade>
+                                        <Fade left big>
+                                            <Row key={i} className="home-content">
+                                                <p className="home-number">{data.number}</p>
+                                                <p className="home-desc">{data.education} <br /> {data.desc}</p>
+                                            </Row>
+                                        </Fade>
                                     )
                                 })
                                 : "No Data"
@@ -132,12 +136,12 @@ const About = () => {
                             experiences !== ''
                                 ? experiences.map((data, i) => {
                                     return (
-                                        // <Fade left big>
-                                        <Row key={i} className="home-content">
-                                            <p className="home-number">{data.number}</p>
-                                            <p className="home-desc">{data.education} <br /> {data.desc}</p>
-                                        </Row>
-                                        // </Fade>
+                                        <Fade right big>
+                                            <Row key={i} className="home-content">
+                                                <p className="home-number">{data.number}</p>
+                                                <p className="home-desc">{data.education} <br /> {data.desc}</p>
+                                            </Row>
+                                        </Fade>
                                     )
                                 })
                                 : "No Data"
@@ -149,6 +153,37 @@ const About = () => {
                     </Col>
                 </Row>
                 {/* Profile - Name, Age, Course, Location */}
+                <Row className="home-white">
+                    <Col lg={10}>
+                        <p>image</p>
+                    </Col>
+                    <Col lg={14}>
+                        <Row>
+                            <p className="home-title">About Me</p>
+                        </Row>
+                        <Row>
+                            <img src={scrible} alt="scrible" className="home-profile-image" />
+                        </Row>
+                        <Row>
+                            {
+                                personal.map((data, i) => {
+                                    return (
+                                        <Fade right big>
+                                            <Row key={i} className="home-content">
+                                                <Row>
+                                                    <p className="home-number home-profile-title">{data.title}</p>
+                                                </Row>
+                                                <Row>
+                                                    <p className="home-desc home-profile-desc">{data.desc}</p>
+                                                </Row>
+                                            </Row>
+                                        </Fade>
+                                    )
+                                })
+                            }
+                        </Row>
+                    </Col>
+                </Row>
             </Content >
             <Footer />
         </Layout >

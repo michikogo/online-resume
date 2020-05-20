@@ -2,7 +2,7 @@
     font-family: 'Pompiere', cursive;
     font-size: 120px;
     color: #685454;
-    margin-bottom: 0px;
+    margin-bottom: -30px;
 }
 
 .home-pink {
@@ -12,7 +12,7 @@
     min-height: 800px;
 }
 
-.home-brown {
+.home-white {
     background-color: #f2f2f2;
     /* place-content: center;text-align-last: center; */
     height: 705px;
@@ -103,4 +103,17 @@
 .home-experiences-padding {
     padding-top: 150px;
     padding-left: 150px;
+}
+
+.home-profile-image {
+    width: 80%;
+}
+
+.home-profile-title {
+    font-size: xx-large;
+}
+
+.home-profile-desc {
+    width: 100%;
+    font-size: medium;
 }
