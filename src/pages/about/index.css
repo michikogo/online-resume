@@ -1,3 +1,46 @@
+.home-title {
+    font-family: 'Pompiere', cursive;
+    font-size: 120px;
+    color: #685454;
+    margin-bottom: 0px;
+}
+
+.home-pink {
+    background-color: #ebd5d5;
+    height: 705px;
+    padding: 80px 150px;
+    min-height: 800px;
+}
+
+.home-brown {
+    background-color: #f2f2f2;
+    /* place-content: center;text-align-last: center; */
+    height: 705px;
+    padding: 80px 150px;
+    min-height: 800px;
+}
+
+
+.home-content {
+    padding-bottom: 30px;
+    align-items: center;
+}
+
+.home-number {
+    font-family: 'Just Another Hand', cursive;
+    font-size: 65px;
+    margin-bottom: 0px;
+    color: grey;
+}
+
+.home-desc {
+    font-family: 'Playfair Display', serif;
+    padding-left: 10px;
+    font-size: larger;
+    width: 60%;
+    margin-bottom: 0px;
+}
+
 .home-hello {
     background-color: #ebd5d5;
     /* background-image: url('../../images/about-hello.png'); */
@@ -49,36 +92,15 @@
     width: 25%;
 }
 
-.home-skills {
-    background-color: #f2f2f2;
-    /* place-content: center;text-align-last: center; */
-    height: 705px;
-    padding: 80px 150px;
-    min-height: 800px;
+.home-education-image {
+    width: 80%;
 }
 
-.home-skills-content {
-    padding-bottom: 30px;
-    align-items: center;
+.home-experiences-image {
+    width: 100%;
 }
 
-.home-skills-name {
-    font-family: 'Pompiere', cursive;
-    font-size: 70px;
-    color: #685454;
-}
-
-.home-skills-number {
-    font-family: 'Just Another Hand', cursive;
-    font-size: 65px;
-    margin-bottom: 0px;
-    color: grey;
-}
-
-.home-skills-skill {
-    font-family: 'Playfair Display', serif;
-    padding-left: 10px;
-    font-size: larger;
-    width: 60%;
-    margin-bottom: 0px;
+.home-experiences-padding {
+    padding-top: 150px;
+    padding-left: 150px;
 }
