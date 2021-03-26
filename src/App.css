@@ -1,0 +1,12 @@
+.progress-header {
+  position: fixed;
+  bottom: 0;
+  z-index: 1;
+  width: 100%;
+  background-color: #f1f1f1;
+}
+.progress-bar {
+  height: 8px;
+  background: linear-gradient(to right, #a8dcd1, #c7eb53);
+  width: 0%;
+}
