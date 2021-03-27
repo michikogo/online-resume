@@ -1,13 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Boogaloo&family=Open+Sans:wght@300&display=swap&family=Knewave&family=Zilla+Slab+Highlight&display=swap");
 
+.project-background {
+  min-height: 100vh;
+  text-align: center;
+}
 .project-row {
   padding: 5vh 15vh;
   min-height: 78vh;
   align-items: center;
+
+  padding-bottom: 10vh;
 }
 .project-title {
   text-align: center;
-  padding-bottom: 5vh;
+  padding: 5vh 0vh;
   font-size: 10vh;
   font-family: "Knewave", cursive;
 }

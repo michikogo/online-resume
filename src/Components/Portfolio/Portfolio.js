@@ -37,7 +37,7 @@ const Education = () => {
     setData(project);
   };
   return (
-    <Container fluid>
+    <Container fluid className="project-background">
       <Row className="project-row">
         <Col>
           <Row>
@@ -92,11 +92,12 @@ const Education = () => {
         onClose={() => setIsVisible(false)}
         closeOnEsc
       >
-        <Container fluid>
+        {/* <Container fluid>
           <Row className="modal-row">
             <Col>
               Make this a video
               <Image
+                fluid
                 src={require(`../../Assets/Image/${data.image}`).default}
                 className="project-image"
               />
@@ -107,7 +108,7 @@ const Education = () => {
               <div>{data.language}</div>
             </Col>
           </Row>
-        </Container>
+        </Container> */}
       </Rodal>
     </Container>
   );
