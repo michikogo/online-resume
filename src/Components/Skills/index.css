@@ -1,0 +1,9 @@
+.skills-background {
+  min-height: 100vh;
+  text-align: center;
+}
+.skills-row {
+  padding: 0px 15vh;
+  min-height: 78vh;
+  align-items: center;
+}

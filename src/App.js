@@ -5,6 +5,8 @@ import { hello } from "./Assets";
 // https://coolors.co/f68375-13b4cd-a8dcd1-dce2c8-6d545d
 import Welcome from "./Components/Welcome/Welcome";
 import Portfolio from "./Components/Portfolio/Portfolio";
+import { RoadMap } from "./Components/RoadMap/RoadMap";
+import Skills from "./Components/Skills/Skills";
 
 function App() {
   useEffect(() => {
@@ -30,6 +32,8 @@ function App() {
       <div>
         <Welcome />
         <Portfolio />
+        <RoadMap />
+        <Skills />
         <div class="progress-header">
           <div class="progress-bar" id="myBar"></div>
         </div>
