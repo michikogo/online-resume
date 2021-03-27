@@ -3,7 +3,7 @@ import { useState } from "react";
 import { Container, Row, Col, Image } from "react-bootstrap";
 import { job } from "../../Assets/index";
 
-export const RoadMap = () => {
+const RoadMap = () => {
   const [details, setDetails] = useState([
     {
       id: 1,
@@ -75,3 +75,4 @@ export const RoadMap = () => {
     </Container>
   );
 };
+export default RoadMap;
