@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Boogaloo&family=Open+Sans:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Boogaloo&family=Open+Sans:wght@300&display=swap&family=Knewave&family=Zilla+Slab+Highlight&display=swap");
 
 .welcome-background {
   background-color: #f68375;
@@ -17,7 +17,9 @@
   text-align: left;
 }
 .welcome-im {
-  font-family: "Open Sans", sans-serif;
+  /* font-family: "Open Sans", sans-serif; */
+  font-family: "Zilla Slab Highlight", cursive;
+  /* font-family: "Knewave", cursive; */
   margin-bottom: 0px;
   font-size: 50px;
   position: relative;
@@ -30,7 +32,7 @@
   color: white;
 }
 .welcome-email {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Zilla Slab Highlight", cursive;
   margin-bottom: 0px;
   position: relative;
   bottom: 5vh;
@@ -89,7 +91,7 @@
     padding: 0px 5vh;
   }
 }
-@media (min-width: 488px) and (max-width: 826px) {
+@media (min-width: 488px) and (max-width: 1044px) {
   .welcome-email {
     bottom: 2vh;
   }

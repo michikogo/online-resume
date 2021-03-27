@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Boogaloo&family=Open+Sans:wght@300&display=swap");
+
 .project-row {
   padding: 5vh 15vh;
   min-height: 78vh;
@@ -6,12 +8,54 @@
 .project-title {
   text-align: center;
   padding-bottom: 5vh;
+  font-family: "Knewave", cursive;
 }
+/* HOVER EFFECT */
 .project-image-col {
   text-align: center;
   padding-bottom: 5vh;
 }
 .project-image {
   width: 60vh;
+  cursor: pointer;
   object-fit: cover;
+  transition: 0.5s ease;
+}
+.project-description {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 43%;
+  left: 52%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+/* IMPORTANT FOR HOVER EFFECT*/
+.project-image-col:hover .project-image {
+  opacity: 0.3;
+}
+.project-image-col:hover .project-description {
+  opacity: 1;
+}
+.project-description-details {
+  padding-bottom: 5px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  font-size: large;
+}
+.project-description-button {
+  margin-top: 15px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+}
+
+/* MODAL */
+.rodal-dialog {
+  width: 150vh !important;
+  height: 90vh !important;
+}
+.modal-row {
+  align-content: center;
+  height: 85vh;
 }

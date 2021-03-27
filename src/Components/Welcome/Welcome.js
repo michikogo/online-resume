@@ -16,7 +16,7 @@ const Welcome = () => {
         <Col className="welcome-intro-col">
           <Row>
             <Col>
-              <p className="welcome-im">I'm</p>
+              <p className="welcome-im">Hello! I'm</p>
               <p className="welcome-name">Michiko Young Go</p>
               <p className="welcome-email">michikogo98@gmail.com</p>
               <p className="welcome-paragraph">
