@@ -1,7 +1,6 @@
 import "./index.css";
 import { useState } from "react";
 import { Col, Container, Image, Row, Button } from "react-bootstrap";
-import { bakeryMNL, HUMALIT, mermaidSpa } from "../../Assets";
 
 import "rodal/lib/rodal.css";
 import Rodal from "rodal";
@@ -13,32 +12,37 @@ const Education = () => {
       image: "bakeryMNL.PNG",
       name: "BakeryMNL",
       type: "eCommerce Website",
-      langauge: "ReactJs/ JSON",
+      language: "ReactJs/ JSON",
     },
     {
       id: 2,
       image: "HUMALIT.PNG",
       name: "BakeryMNL",
       type: "Catalogue Website",
-      langauge: "Vue.js",
+      language: "Vue.js",
     },
     {
       id: 3,
       image: "mermaidSpa.PNG",
       name: "The Mermaid and Spa",
       type: "Business Website",
-      langauge: "ReactJs/ Firebase",
+      language: "ReactJs/ Firebase",
     },
   ]);
   const [isVisible, setIsVisible] = useState(false);
+  const [data, setData] = useState(null);
 
+  const handleModal = (project) => {
+    setIsVisible(true);
+    setData(project);
+  };
   return (
     <Container fluid>
       <Row className="project-row">
         <Col>
           <Row>
             <Col className="project-title">
-              <h1>Projects</h1>
+              <p>Projects</p>
             </Col>
           </Row>
           <Row>
@@ -53,7 +57,6 @@ const Education = () => {
                   fluid
                   src={require(`../../Assets/Image/${project.image}`).default}
                   className="project-image"
-                  onClick={() => setIsVisible(true)}
                 />
                 {/* SEEN WHEN HOVERED */}
 
@@ -61,15 +64,17 @@ const Education = () => {
                   <Col sm={12} className="project-description-details">
                     {project.name}
                   </Col>
-
                   <Col sm={12} className="project-description-details">
-                    {project.langauge}
+                    {project.language}
                   </Col>
                   <Col sm={12} className="project-description-details">
                     {project.type}
                   </Col>
                   <Col sm={12}>
-                    <Button className="project-description-button">
+                    <Button
+                      className="project-description-button"
+                      onClick={() => handleModal(project)}
+                    >
                       Learn More
                     </Button>
                   </Col>
@@ -81,7 +86,7 @@ const Education = () => {
       </Row>
 
       {/* MODAL */}
-      {/* <Rodal
+      <Rodal
         animation="flip"
         visible={isVisible}
         onClose={() => setIsVisible(false)}
@@ -91,12 +96,19 @@ const Education = () => {
           <Row className="modal-row">
             <Col>
               Make this a video
-              <Image src={data} className="project-image" />
+              <Image
+                src={require(`../../Assets/Image/${data.image}`).default}
+                className="project-image"
+              />
             </Col>
-            <Col></Col>
+            <Col>
+              <div>{data.name}</div>
+              <div>{data.type}</div>
+              <div>{data.language}</div>
+            </Col>
           </Row>
         </Container>
-      </Rodal> */}
+      </Rodal>
     </Container>
   );
 };

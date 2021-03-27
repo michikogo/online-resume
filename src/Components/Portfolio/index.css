@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Boogaloo&family=Open+Sans:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Boogaloo&family=Open+Sans:wght@300&display=swap&family=Knewave&family=Zilla+Slab+Highlight&display=swap");
 
 .project-row {
   padding: 5vh 15vh;
@@ -8,6 +8,7 @@
 .project-title {
   text-align: center;
   padding-bottom: 5vh;
+  font-size: 10vh;
   font-family: "Knewave", cursive;
 }
 /* HOVER EFFECT */
