@@ -1,0 +1,15 @@
+.contact-background {
+  background-color: #f68375;
+  min-height: 100vh;
+  text-align: center;
+}
+.contact-row {
+  padding: 0px 15vh;
+  min-height: 78vh;
+  align-items: center;
+}
+.contact-title {
+  padding: 5vh 0vh;
+  font-size: 10vh;
+  font-family: "Knewave", cursive;
+}

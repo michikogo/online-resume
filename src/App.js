@@ -1,12 +1,11 @@
-import logo from "./logo.svg";
 import "./App.css";
 import { useEffect } from "react";
-import { hello } from "./Assets";
 // https://coolors.co/f68375-13b4cd-a8dcd1-dce2c8-6d545d
 import Welcome from "./Components/Welcome/Welcome";
 import Portfolio from "./Components/Portfolio/Portfolio";
-import { RoadMap } from "./Components/RoadMap/RoadMap";
+import RoadMap from "./Components/RoadMap/RoadMap";
 import Skills from "./Components/Skills/Skills";
+import Contact from "./Components/Contact/Contact";
 
 function App() {
   useEffect(() => {
@@ -28,12 +27,12 @@ function App() {
 
   return (
     <>
-      {/* <div style={{ minHeight: "400vh" }}> */}
       <div>
         <Welcome />
-        <Portfolio />
-        <RoadMap />
         <Skills />
+        <RoadMap />
+        <Portfolio />
+        <Contact />
         <div class="progress-header">
           <div class="progress-bar" id="myBar"></div>
         </div>
