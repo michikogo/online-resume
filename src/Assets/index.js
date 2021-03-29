@@ -8,6 +8,8 @@ import mermaidSpa from "./Image/mermaidSpa.PNG";
 import graduate from "./Image/graduate.png";
 import working from "./Image/working.png";
 import job from "./Image/job.png";
+
+import bootstrap from "./Image/bootstrap.png";
 export {
   // Welcome
   hello,
@@ -20,4 +22,6 @@ export {
   graduate,
   working,
   job,
+  // Skills
+  bootstrap,
 };
