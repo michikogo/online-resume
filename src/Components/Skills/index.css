@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Boogaloo&family=Knewave&family=Open+Sans:wght@300&family=Zilla+Slab+Highlight&display=swap");
+
 .skills-background {
   min-height: 100vh;
   text-align: center;
@@ -11,4 +13,19 @@
   padding: 5vh 0vh;
   font-size: 10vh;
   font-family: "Knewave", cursive;
+}
+.skills-box {
+  background-color: #908080;
+  margin-bottom: 30px;
+  margin-left: 15px;
+  padding: 20px;
+  min-width: 20vh;
+  min-height: 20vh;
+  border-radius: 10px;
+}
+.skills-text {
+  min-height: 14vh;
+  align-content: center;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
 }
