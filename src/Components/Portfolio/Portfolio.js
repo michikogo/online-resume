@@ -71,12 +71,9 @@ const Education = () => {
                     {project.type}
                   </Col>
                   <Col sm={12}>
-                    <Button
-                      className="project-description-button"
-                      onClick={() => handleModal(project)}
-                    >
-                      Learn More
-                    </Button>
+                    <button className="custom-btn btn-8">
+                      <span>Check me out</span>
+                    </button>
                   </Col>
                 </Row>
               </Col>
