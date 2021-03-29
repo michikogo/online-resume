@@ -33,8 +33,8 @@ function App() {
         <RoadMap />
         <Portfolio />
         <Contact />
-        <div class="progress-header">
-          <div class="progress-bar" id="myBar"></div>
+        <div className="progress-header">
+          <div className="progress-bar" id="myBar"></div>
         </div>
       </div>
     </>
