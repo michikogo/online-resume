@@ -3,19 +3,21 @@ import { Col, Row } from "react-bootstrap";
 
 const HoneyComb = ({ row, handleEnter, section }) => {
   return (
-    <Row className="justify-content-sm-center skills-hexagon-row">
+    <Row className="justify-content-sm-center skills-honeyComb-row">
       {row.map((item) => (
         <Col
           key={item.id}
-          sm={3}
-          className="skills-hexagon-col"
+          xs={3}
+          className="skills-honeyComb-col"
           onMouseEnter={() => handleEnter(true, item.id, section)}
           onMouseLeave={() => handleEnter(false, item.id, section)}
         >
           <Hexagon
-            className="skills-image"
+            className="skills-honeyComb-image"
             style={{ stroke: "#13B4CD" }}
-            backgroundImage={require(`../../Assets/Logo/${item.image}`).default}
+            backgroundImage={
+              require(`../../../Assets/Logo/${item.image}`).default
+            }
             // href="http://espen.codes/"
           />
         </Col>

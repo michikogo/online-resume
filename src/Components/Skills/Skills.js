@@ -1,7 +1,8 @@
 import "./index.css";
 import { useState } from "react";
 import { Container, Row, Col, Card } from "react-bootstrap";
-import Hexagon from "./Hexagon";
+import HoneyComb from "./Components/HoneyComb";
+import SkillDetails from "./Components/SkillDetails";
 
 const Skills = () => {
   const [programming, setProgramming] = useState([
@@ -60,6 +61,7 @@ const Skills = () => {
       { id: 15, name: "PowerBI", image: "powerBi.png" },
     ],
   ]);
+
   // console.log("applications: " + applications.length);
   const [mouseEnterSection1, setMouseEnterSection1] = useState(false);
   const [mouseEnterSection2, setMouseEnterSection2] = useState(false);
@@ -102,7 +104,7 @@ const Skills = () => {
           <Row>
             <Col sm={6} className="skills-hexagon1">
               {programming.map((indexRow, index) => (
-                <Hexagon
+                <HoneyComb
                   key={index}
                   handleEnter={handleEnter}
                   row={indexRow}
@@ -111,26 +113,20 @@ const Skills = () => {
               ))}
             </Col>
             <Col sm={6}>
-              {console.log(`mouse enter seciton 1: ${mouseEnterSection1}`)}
-              {mouseEnterSection1 && (
-                <Card>Description is here {sectionData.name}</Card>
-              )}
-              {/* <Image src={bootstrap} className="skills-image" /> */}
+              {mouseEnterSection1 && <SkillDetails sectionData={sectionData} />}
             </Col>
           </Row>
-          <Row style={{ padding: "30px 0px" }}>
+          <Row className="skills-section2">
             <Col>
               <Row>
                 <Col sm={6}>
-                  {console.log(`mouse enter seciton 2: ${mouseEnterSection2}`)}
                   {mouseEnterSection2 && (
-                    <Card>Description is here {sectionData.name}</Card>
+                    <SkillDetails sectionData={sectionData} />
                   )}
-                  {/* <Image src={bootstrap} className="skills-image" /> */}
                 </Col>
                 <Col sm={6}>
                   {applications.map((indexRow, index) => (
-                    <Hexagon
+                    <HoneyComb
                       key={index}
                       handleEnter={handleEnter}
                       row={indexRow}
