@@ -1,6 +1,6 @@
 import "./index.css";
 import { useState } from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Card } from "react-bootstrap";
 import Hexagon from "./Hexagon";
 
 const Skills = () => {
@@ -31,7 +31,7 @@ const Skills = () => {
       { id: 15, name: "mongoDB", image: "mongodb.png" },
     ],
   ]);
-  console.log("programming: " + programming.length);
+  // console.log("programming: " + programming.length);
 
   const [applications, useApplication] = useState([
     [
@@ -60,7 +60,38 @@ const Skills = () => {
       { id: 15, name: "PowerBI", image: "powerBi.png" },
     ],
   ]);
-  console.log("applications: " + applications.length);
+  // console.log("applications: " + applications.length);
+  const [mouseEnterSection1, setMouseEnterSection1] = useState(false);
+  const [mouseEnterSection2, setMouseEnterSection2] = useState(false);
+  const [sectionData, setSectionData] = useState(null);
+
+  const handleEnter = (boolean, id, section) => {
+    // console.log(`Mouse Enter: ${boolean} | ${id} | ${section}`);
+    if (section == 1) {
+      // console.log("entered section 1");
+      setMouseEnterSection1(boolean);
+      programming.map((rowArray) => {
+        rowArray
+          .filter((specificCol) => specificCol.id == id)
+          .map((item) => {
+            // console.log(item);
+            setSectionData(item);
+          });
+      });
+      //
+    } else {
+      console.log("entered section 1");
+      setMouseEnterSection2(boolean);
+      applications.map((rowArray) => {
+        rowArray
+          .filter((specificCol) => specificCol.id == id)
+          .map((item) => {
+            setSectionData(item);
+          });
+      });
+    }
+  };
+
   return (
     <Container fluid className="skills-background">
       <Row className="skills-title">
@@ -69,13 +100,21 @@ const Skills = () => {
       <Row className="skills-row">
         <Col>
           <Row>
-            <Col sm={6}>
-              {programming.map((indexRow) => (
-                <Hexagon row={indexRow} />
+            <Col sm={6} className="skills-hexagon1">
+              {programming.map((indexRow, index) => (
+                <Hexagon
+                  key={index}
+                  handleEnter={handleEnter}
+                  row={indexRow}
+                  section="1"
+                />
               ))}
             </Col>
             <Col sm={6}>
-              Description is here
+              {console.log(`mouse enter seciton 1: ${mouseEnterSection1}`)}
+              {mouseEnterSection1 && (
+                <Card>Description is here {sectionData.name}</Card>
+              )}
               {/* <Image src={bootstrap} className="skills-image" /> */}
             </Col>
           </Row>
@@ -83,12 +122,20 @@ const Skills = () => {
             <Col>
               <Row>
                 <Col sm={6}>
-                  Description is here
+                  {console.log(`mouse enter seciton 2: ${mouseEnterSection2}`)}
+                  {mouseEnterSection2 && (
+                    <Card>Description is here {sectionData.name}</Card>
+                  )}
                   {/* <Image src={bootstrap} className="skills-image" /> */}
                 </Col>
                 <Col sm={6}>
-                  {applications.map((indexRow) => (
-                    <Hexagon row={indexRow} />
+                  {applications.map((indexRow, index) => (
+                    <Hexagon
+                      key={index}
+                      handleEnter={handleEnter}
+                      row={indexRow}
+                      section="2"
+                    />
                   ))}
                 </Col>
               </Row>

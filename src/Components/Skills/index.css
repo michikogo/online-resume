@@ -30,6 +30,7 @@
   /* font-family: "Open Sans", sans-serif; */
   /* font-weight: 600; */
 }
+
 .skills-image {
   -webkit-filter: grayscale(100%);
   opacity: 0.3;
@@ -39,6 +40,7 @@
 .skills-image:hover {
   -webkit-filter: none;
   opacity: 1;
+  display: block;
 }
 .skills-hexagon-col {
   padding: 0px 1vh !important;
