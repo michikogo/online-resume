@@ -1,20 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Boogaloo&family=Knewave&family=Open+Sans:wght@300&family=Zilla+Slab+Highlight&display=swap");
-/* font-family: 'Bebas Neue', cursive;
-font-family: 'Boogaloo', cursive;
-font-family: 'Knewave', cursive;
-font-family: 'Open Sans', sans-serif;
-font-family: 'Zilla Slab Highlight', cursive; */
 
 .roadmap-background {
   background-color: #f68375;
   min-height: 100vh;
   text-align: center;
+  padding: 15vh 0vh;
 }
 .roadmap-row {
-  padding: 2vh 15vh;
+  padding: 0vh 15vh;
   min-height: 78vh;
   align-items: center;
-  padding-bottom: 10vh;
 }
 .roadMap-title {
   padding: 5vh 0vh;
