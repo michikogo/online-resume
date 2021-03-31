@@ -3,8 +3,9 @@ import React from "react";
 const ImageRight = () => {
   return (
     <svg
-      width="360"
-      height="360"
+      className="skills-image-right"
+      // width="360"
+      // height="360"
       viewBox="0 0 1087 1326"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

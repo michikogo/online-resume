@@ -5,7 +5,8 @@
   text-align: center;
 }
 .skills-row {
-  padding: 8vh 15vh;
+  padding: 0vh 15vh;
+  padding-bottom: 5vh;
   min-height: 78vh;
   align-items: center;
   display: flex;
@@ -15,10 +16,45 @@
   font-size: 10vh;
   font-family: "Knewave", cursive;
 }
-.skills-section2 {
-  padding: 10vh 0vh;
+.skills-image-left {
+  width: 100%;
+  height: 100%;
 }
-
+.skills-image-right {
+  width: 100%;
+  height: 100%;
+}
+.skills-section {
+  padding: 15px 0px;
+}
+@media (max-width: 600px) {
+  .skills-row {
+    padding: 0px 5vh;
+  }
+}
+@media (max-width: 576px) {
+  .skills-image-left {
+    content-visibility: hidden;
+    position: absolute;
+    left: 0;
+  }
+}
+@media (min-width: 632px) {
+  .skills-image-left {
+    width: 80%;
+    height: 80%;
+  }
+  .skills-image-right {
+    width: 80%;
+    height: 80%;
+  }
+}
+/* @media (min-width: 567px) and (max-width: 875px) {
+  .skills-image-right {
+    width: 150px;
+    height: 150px;
+  }
+} */
 /* HoneyComb.js */
 .skills-honeyComb-image {
   -webkit-filter: grayscale(100%);
@@ -45,7 +81,6 @@
   place-content: center;
   font-family: "Open Sans", sans-serif;
 }
-
 /* ImageRight */
 #background {
   animation: animate-background 3s ease-in-out infinite;

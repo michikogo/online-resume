@@ -101,10 +101,10 @@ const Skills = () => {
       <Row className="skills-title">
         <Col>Skills</Col>
       </Row>
-      <Row className="skills-row">
+      <Row className="skills-row ">
         <Col>
-          <Row>
-            <Col sm={6} className="skills-hexagon1">
+          <Row className="skills-section justify-content-md-center">
+            <Col sm={6} lg={4} className="skills-hexagon1">
               {programming.map((indexRow, index) => (
                 <HoneyComb
                   key={index}
@@ -114,33 +114,29 @@ const Skills = () => {
                 />
               ))}
             </Col>
-            <Col sm={6}>
+            <Col sm={6} lg={{ offset: 4, span: 4 }}>
               <ImageRight />
               {/* {mouseEnterSection1 && (
                 <SkillDetails sectionData={sectionData} />
               )} */}
             </Col>
           </Row>
-          <Row className="skills-section2">
-            <Col>
-              <Row>
-                <Col sm={6}>
-                  <ImageLeft />
-                  {/* {mouseEnterSection2 && (
+          <Row className="skills-section justify-content-md-center">
+            <Col sm={6} lg={4}>
+              <ImageLeft />
+              {/* {mouseEnterSection2 && (
                     <SkillDetails sectionData={sectionData} />
                   )} */}
-                </Col>
-                <Col sm={6}>
-                  {applications.map((indexRow, index) => (
-                    <HoneyComb
-                      key={index}
-                      handleEnter={handleEnter}
-                      row={indexRow}
-                      section="2"
-                    />
-                  ))}
-                </Col>
-              </Row>
+            </Col>
+            <Col sm={6} lg={4}>
+              {applications.map((indexRow, index) => (
+                <HoneyComb
+                  key={index}
+                  handleEnter={handleEnter}
+                  row={indexRow}
+                  section="2"
+                />
+              ))}
             </Col>
           </Row>
         </Col>

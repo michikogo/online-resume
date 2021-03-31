@@ -3,8 +3,9 @@ import React from "react";
 const ImageLeft = () => {
   return (
     <svg
-      width="280"
-      height="280"
+      className="skills-image-left"
+      // width="280"
+      // height="280"
       viewBox="0 0 495 636"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
