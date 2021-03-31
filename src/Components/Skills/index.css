@@ -40,3 +40,41 @@
 }
 
 /* SkillDetails.js */
+.skill-details-card {
+  height: 43.5vh;
+  place-content: center;
+  font-family: "Open Sans", sans-serif;
+}
+
+/* ImageRight */
+#background {
+  animation: animate-background 3s ease-in-out infinite;
+}
+
+@keyframes animate-background {
+  0% {
+    transform: translateY(0%);
+  }
+  50% {
+    transform: translateY(-5%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+/* ImageLeft */
+#actionArrow {
+  animation: animate-action 3s infinite linear;
+}
+@keyframes animate-action {
+  0% {
+    transform: translate(0%);
+  }
+  50% {
+    transform: translate(2%, -2%);
+  }
+  100% {
+    transform: translate(0%);
+  }
+}

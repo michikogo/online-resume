@@ -1,8 +1,10 @@
 import "./index.css";
 import { useState } from "react";
-import { Container, Row, Col, Card } from "react-bootstrap";
+import { Container, Row, Col, Image } from "react-bootstrap";
 import HoneyComb from "./Components/HoneyComb";
 import SkillDetails from "./Components/SkillDetails";
+import ImageRight from "./Components/ImageRight";
+import ImageLeft from "./Components/ImageLeft";
 
 const Skills = () => {
   const [programming, setProgramming] = useState([
@@ -82,7 +84,7 @@ const Skills = () => {
       });
       //
     } else {
-      console.log("entered section 1");
+      // console.log("entered section 1");
       setMouseEnterSection2(boolean);
       applications.map((rowArray) => {
         rowArray
@@ -113,14 +115,17 @@ const Skills = () => {
               ))}
             </Col>
             <Col sm={6}>
-              {/* {mouseEnterSection1 && <SkillDetails sectionData={sectionData} />} */}
-              Hi
+              <ImageRight />
+              {/* {mouseEnterSection1 && (
+                <SkillDetails sectionData={sectionData} />
+              )} */}
             </Col>
           </Row>
           <Row className="skills-section2">
             <Col>
               <Row>
                 <Col sm={6}>
+                  <ImageLeft />
                   {/* {mouseEnterSection2 && (
                     <SkillDetails sectionData={sectionData} />
                   )} */}
