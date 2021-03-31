@@ -1,3 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Boogaloo&family=Knewave&family=Open+Sans:wght@300&family=Zilla+Slab+Highlight&display=swap");
+/* font-family: 'Bebas Neue', cursive;
+font-family: 'Boogaloo', cursive;
+font-family: 'Knewave', cursive;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Zilla Slab Highlight', cursive; */
+/* https://coolors.co/f68375-13b4cd-a8dcd1-dce2c8-6d545d */
+
 .progress-header {
   position: fixed;
   bottom: 0;

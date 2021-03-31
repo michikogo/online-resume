@@ -30,9 +30,9 @@ function App() {
       <div>
         <Welcome />
         <Skills />
-        <RoadMap />
-        <Portfolio />
-        <Contact />
+        {/* <RoadMap /> */}
+        {/* <Portfolio /> */}
+        {/* <Contact /> */}
         <div className="progress-header">
           <div className="progress-bar" id="myBar"></div>
         </div>
