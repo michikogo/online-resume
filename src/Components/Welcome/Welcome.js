@@ -1,5 +1,5 @@
 import "./index.css";
-import { hello, arrowDown } from "../../Assets/index";
+import { hello } from "../../Assets/index";
 import { Col, Container, Image, Row } from "react-bootstrap";
 
 const Welcome = () => {

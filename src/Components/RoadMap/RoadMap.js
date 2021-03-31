@@ -7,12 +7,13 @@ import {
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
+
 import GraduationSVG from "./Components/GraduationSVG";
 import WorkSVG from "./Components/WorkSVG";
 import FindingSVG from "./Components/FindingSVG";
 
 const RoadMap = () => {
-  const [details, setDetails] = useState([
+  const [details] = useState([
     {
       id: 1,
       image: <WorkSVG />,
@@ -47,6 +48,7 @@ const RoadMap = () => {
       description: [null],
     },
   ]);
+
   return (
     <Container fluid className="roadmap-background">
       <Row>
