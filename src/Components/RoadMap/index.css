@@ -6,6 +6,9 @@
   text-align: center;
   padding: 15vh 0vh;
 }
+/* .row {
+  margin-right: 0px !important;
+} */
 .roadmap-row {
   padding: 0vh 15vh;
   min-height: 78vh;
@@ -16,25 +19,77 @@
   font-size: 10vh;
   font-family: "Knewave", cursive;
 }
-.roadmap-line {
+/* .roadmap-line {
   border-left: 3px solid#dce2c8;
   margin-left: 20vh;
-}
+} */
 .roadmap-detail {
   margin: 8vh 0vh;
   align-items: center;
   margin-left: -10vh !important;
 }
-.roadmap-detail-icon {
+/* .roadmap-detail-icon {
   width: 50px;
-}
-.roadmap-detail-description {
+} */
+.roadmap-detail-p {
   text-align: left;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 600;
+  margin: 0px !important;
 }
 .roadmap-detail-position {
   font-family: "Boogaloo", cursive;
   font-size: xx-large;
-  color: white;
+  color: #f68375;
+}
+.roadmap-detail-company {
+  font-family: "Bebas Neue", cursive;
+  font-size: large;
+}
+.roadmap-detail-date-location-p {
+  text-align: right;
+  margin: 0px !important;
+  margin-bottom: -10px !important;
+}
+.roadmap-detail-date-location {
+  font-family: "Bebas Neue", cursive;
+  font-size: medium;
+}
+.roadmap-detail-description {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600 !important;
+  font-size: small !important;
+  margin: 0px !important;
+}
+.roadmap-detail-image {
+  text-align: right;
+  padding: 0px !important;
+}
+.roadmap-detail-future {
+  text-align: left;
+  margin: 0px !important;
+  font-family: "Boogaloo", cursive;
+  font-size: xx-large !important;
+  color: #f68375;
+}
+@media (max-width: 600px) {
+  .roadmap-row {
+    padding: 0px 5vh;
+  }
+}
+/* TIMELINE PACKAGE */
+.vertical-timeline::before {
+  background: #a2ebf6 !important;
+}
+.vertical-timeline-element-icon {
+  -webkit-box-shadow: 0 0 0 4px #a2ebf6, inset 0 2px 0 rgb(0 0 0 / 8%),
+    0 3px 0 4px rgb(0 0 0 / 5%) !important;
+}
+.vertical-timeline-element-content {
+  position: relative;
+  margin-left: 60px;
+  background: #a2ebf6 !important;
+  border-radius: 10px !important;
+  padding: 1em;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  font-family: "Open Sans", sans-serif;
 }
