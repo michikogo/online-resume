@@ -113,16 +113,17 @@ const Skills = () => {
               ))}
             </Col>
             <Col sm={6}>
-              {mouseEnterSection1 && <SkillDetails sectionData={sectionData} />}
+              {/* {mouseEnterSection1 && <SkillDetails sectionData={sectionData} />} */}
+              Hi
             </Col>
           </Row>
           <Row className="skills-section2">
             <Col>
               <Row>
                 <Col sm={6}>
-                  {mouseEnterSection2 && (
+                  {/* {mouseEnterSection2 && (
                     <SkillDetails sectionData={sectionData} />
-                  )}
+                  )} */}
                 </Col>
                 <Col sm={6}>
                   {applications.map((indexRow, index) => (
