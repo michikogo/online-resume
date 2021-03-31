@@ -83,7 +83,7 @@ const RoadMap = () => {
               <p className="roadmap-detail-p">
                 {detail.description[0] != null &&
                   detail.description.map((desc) => (
-                    <Row>
+                    <Row key={desc}>
                       <Col xs={2} sm={1} className="roadmap-detail-image">
                         <Image
                           fluid
