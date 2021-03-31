@@ -3,10 +3,10 @@
 .skills-background {
   min-height: 100vh;
   text-align: center;
+  padding: 15vh 0vh;
 }
 .skills-row {
   padding: 0vh 15vh;
-  padding-bottom: 5vh;
   min-height: 78vh;
   align-items: center;
   display: flex;
