@@ -6,8 +6,9 @@ const Welcome = () => {
   return (
     <Container fluid className="welcome-background">
       <Row className="welcome-row">
-        <Col xs={4} className="welcome-image-col">
+        <Col sm={4} className="welcome-image-col">
           <Image
+            className="welcome-image"
             fluid
             src={hello}
             alt="Secret Message: Welcome to my Resume 😊"
@@ -28,24 +29,6 @@ const Welcome = () => {
           </Row>
         </Col>
       </Row>
-      {/* <Row className="stage">
-        <Col className="box bounce-7">
-          <Row>
-            <Col>
-              <p className="welcome-paragraph">Scroll Down</p>
-            </Col>
-          </Row>
-          <Row>
-            <Col>
-              <Image
-                src={arrowDown}
-                alt="Checkout my portfolio"
-                className="welcome-arrow"
-              />
-            </Col>
-          </Row>
-        </Col>
-      </Row> */}
     </Container>
   );
 };

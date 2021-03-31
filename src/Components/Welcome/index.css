@@ -4,9 +4,10 @@
   background-color: #f68375;
   min-height: 100vh;
   text-align: center;
+  padding: 15vh 0vh;
 }
 .welcome-row {
-  padding: 0px 15vh;
+  padding: 0vh 15vh;
   min-height: 78vh;
   align-items: center;
 }
@@ -17,17 +18,15 @@
   text-align: left;
 }
 .welcome-im {
-  /* font-family: "Open Sans", sans-serif; */
   font-family: "Zilla Slab Highlight", cursive;
-  /* font-family: "Knewave", cursive; */
   margin-bottom: 0px;
-  font-size: 50px;
+  font-size: 45px;
   position: relative;
   top: 5vh;
 }
 .welcome-name {
   font-family: "Boogaloo", cursive;
-  font-size: 15vh;
+  font-size: 100px;
   margin-bottom: 0px;
   color: white;
 }
@@ -43,7 +42,7 @@
   margin-bottom: 0px;
   font-size: larger;
 }
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .welcome-row {
     padding: 0px 5vh;
   }
@@ -51,5 +50,41 @@
 @media (min-width: 488px) and (max-width: 1044px) {
   .welcome-email {
     bottom: 2vh;
+  }
+}
+@media (min-width: 1044px) {
+  .welcome-im {
+    top: 4vh;
+  }
+  .welcome-email {
+    bottom: 3vh;
+  }
+}
+@media (max-width: 576px) {
+  .welcome-image-col {
+    text-align: center;
+  }
+  .welcome-image {
+    width: 200px;
+    height: 200px;
+  }
+  .welcome-im {
+    text-align: center;
+    font-size: 25px;
+    top: 2vh;
+  }
+  .welcome-name {
+    text-align: center;
+    font-size: 50px;
+  }
+  .welcome-email {
+    text-align: center;
+    font-size: 15px;
+    top: -1vh;
+  }
+  .welcome-paragraph {
+    text-align: center;
+    font-size: 15px;
+    padding-top: 15px;
   }
 }
