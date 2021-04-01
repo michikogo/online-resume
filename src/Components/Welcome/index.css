@@ -2,13 +2,13 @@
 
 .welcome-background {
   background-color: #f68375;
-  min-height: 97.7vh;
+  min-height: 100vh;
   text-align: center;
   padding: 15vh 0vh;
 }
 .welcome-row {
   padding: 0vh 15vh;
-  min-height: 67vh;
+  min-height: 78vh;
   align-items: center;
 }
 .welcome-image-col {
