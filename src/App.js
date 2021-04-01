@@ -29,9 +29,9 @@ function App() {
     <>
       <div>
         <Welcome />
-        <Skills />
+        <Portfolio />
         <RoadMap />
-        {/* <Portfolio /> */}
+        <Skills />
         {/* <Contact /> */}
         <div className="progress-header">
           <div className="progress-bar" id="myBar"></div>
