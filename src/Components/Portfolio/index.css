@@ -1,21 +1,25 @@
-@import url("https://fonts.googleapis.com/css2?family=Boogaloo&family=Open+Sans:wght@300&display=swap&family=Knewave&family=Zilla+Slab+Highlight&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Boogaloo&family=Knewave&family=Open+Sans:wght@300&family=Zilla+Slab+Highlight&display=swap");
 
 .project-background {
   min-height: 100vh;
   text-align: center;
+  padding: 15vh 0vh;
 }
 .project-row {
-  padding: 5vh 15vh;
+  padding: 0vh 15vh;
   min-height: 78vh;
   align-items: center;
-
-  padding-bottom: 10vh;
 }
 .project-title {
   text-align: center;
   padding: 5vh 0vh;
   font-size: 10vh;
   font-family: "Knewave", cursive;
+}
+@media (max-width: 600px) {
+  .project-row {
+    padding: 0px 5vh;
+  }
 }
 /* HOVER EFFECT */
 .project-image-col {
@@ -56,17 +60,63 @@
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
 }
-
 /* MODAL */
+.rodal-mask {
+  background: rgba(0, 0, 0, 0.6) !important;
+  pointer-events: none;
+}
 .rodal-dialog {
-  width: 150vh !important;
-  height: 90vh !important;
+  background: #dce2c8 !important;
+  /* border-radius: 3px;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 20%); */
+  width: 70% !important;
+  height: 80% !important;
 }
-.modal-row {
+/* Custom Modal css */
+.project-modal-row {
   align-content: center;
-  height: 85vh;
+  height: 77.5vh;
+  padding: 5vh 10vh;
 }
-
+.project-modal-name {
+  font-family: "Bebas Neue", cursive;
+  font-size: xx-large;
+}
+.project-modal-image-col {
+  align-self: center;
+}
+.project-modal-header {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+}
+.project-modal-description-image-col {
+  padding-right: 0px !important;
+}
+.project-modal-bullet {
+  font-family: "Open Sans", sans-serif;
+  text-align: left;
+}
+@media (max-width: 356px) {
+  .project-modal-image-col {
+    content-visibility: hidden;
+  }
+}
+@media (max-width: 767px) {
+  .project-image {
+    width: 50%;
+  }
+}
+@media (max-width: 768px) {
+  .project-modal-row {
+    padding: 5vh 5vh;
+  }
+  .project-image {
+    padding-bottom: 10px;
+  }
+  .project-modal-description-image {
+    content-visibility: hidden;
+  }
+}
 /* animated button from codemyui.com */
 .custom-btn {
   width: 130px;
