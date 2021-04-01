@@ -15,16 +15,13 @@ import FindingSVG from "./Components/FindingSVG";
 const RoadMap = () => {
   const [details] = useState([
     {
-      id: 1,
-      image: <WorkSVG />,
-      position: "Program Aid",
-      company: "Morristown Adult Day Care",
-      date: "June 2016 - July 2016",
-      location: "Parsippany, NJ, USA",
-      description: [
-        "Assisted and entertained elderly with their everyday needs, namely preparing food, daily check ups and daily exercise.",
-        "Occasionally went on field trips with elders to show them around the county.",
-      ],
+      id: 3,
+      image: <GraduationSVG />,
+      position: "BS Computer Science",
+      company: "De La Salle University-Manila",
+      date: "September 2016 - February 2021",
+      location: "Taft, Manila, Philippines",
+      description: [null],
     },
     {
       id: 2,
@@ -39,13 +36,16 @@ const RoadMap = () => {
       ],
     },
     {
-      id: 3,
-      image: <GraduationSVG />,
-      position: "BS Computer Science",
-      company: "De La Salle University-Manila",
-      date: "September 2016 - February 2021",
-      location: "Taft, Manila, Philippines",
-      description: [null],
+      id: 1,
+      image: <WorkSVG />,
+      position: "Program Aid",
+      company: "Morristown Adult Day Care",
+      date: "June 2016 - July 2016",
+      location: "Parsippany, NJ, USA",
+      description: [
+        "Assisted and entertained elderly with their everyday needs, namely preparing food, daily check ups and daily exercise.",
+        "Occasionally went on field trips with elders to show them around the county.",
+      ],
     },
   ]);
 
@@ -56,6 +56,16 @@ const RoadMap = () => {
       </Row>
       <Row className="roadmap-row">
         <VerticalTimeline>
+          <VerticalTimelineElement
+            lassName="vertical-timeline-element--work"
+            contentArrowStyle={{
+              borderRight: "7px solid #a2ebf6",
+            }}
+            iconStyle={{ background: "#F68375", color: "#fff" }}
+            icon={<FindingSVG />}
+          >
+            <p className="roadmap-detail-future">Currently Looking for Jobs</p>
+          </VerticalTimelineElement>
           {details.map((detail) => (
             <VerticalTimelineElement
               key={detail.id}
@@ -104,16 +114,6 @@ const RoadMap = () => {
               </p>
             </VerticalTimelineElement>
           ))}
-          <VerticalTimelineElement
-            lassName="vertical-timeline-element--work"
-            contentArrowStyle={{
-              borderRight: "7px solid #a2ebf6",
-            }}
-            iconStyle={{ background: "#F68375", color: "#fff" }}
-            icon={<FindingSVG />}
-          >
-            <p className="roadmap-detail-future">Currently Looking for Jobs</p>
-          </VerticalTimelineElement>
         </VerticalTimeline>
       </Row>
     </Container>
