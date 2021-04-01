@@ -21,6 +21,10 @@
     padding: 0px 5vh;
   }
 }
+/* Bootstrap */
+.badge-primary {
+  background-color: #6d545d !important;
+}
 /* HOVER EFFECT */
 .project-image-col {
   text-align: center;
@@ -69,14 +73,18 @@
   background: #dce2c8 !important;
   /* border-radius: 3px;
     box-shadow: 0 1px 3px rgb(0 0 0 / 20%); */
-  width: 70% !important;
-  height: 80% !important;
+  /* width: 70% !important; */
+  /* height: 80% !important; */
+  width: 90% !important;
+  height: 90% !important;
 }
 /* Custom Modal css */
 .project-modal-row {
   align-content: center;
-  height: 77.5vh;
+  /* height: 77.5vh; */
+  height: 92vh;
   padding: 5vh 10vh;
+  /* overflow-y: auto; */
 }
 .project-modal-name {
   font-family: "Bebas Neue", cursive;
@@ -96,25 +104,51 @@
   font-family: "Open Sans", sans-serif;
   text-align: left;
 }
+.project-modal-image {
+  width: 60vh;
+  cursor: pointer;
+  object-fit: cover;
+  transition: 0.5s ease;
+}
+.project-modal-features {
+  font-family: "Open Sans", sans-serif;
+  text-align: left;
+  margin-bottom: 0px !important;
+  font-style: italic;
+  font-weight: 600;
+}
+.project-modal-pill-row {
+  padding-top: 2vh;
+}
 @media (max-width: 356px) {
   .project-modal-image-col {
     content-visibility: hidden;
   }
 }
 @media (max-width: 767px) {
-  .project-image {
+  .project-modal-image {
     width: 50%;
   }
 }
-@media (max-width: 768px) {
-  .project-modal-row {
-    padding: 5vh 5vh;
+@media (max-width: 940px) {
+  .rodal-dialog {
+    width: 95% !important;
+    height: 95% !important;
   }
-  .project-image {
+  .project-modal-row {
+    align-content: center;
+    height: 92vh;
+    padding: 2vh;
+    overflow-y: auto;
+  }
+
+  .project-modal-image {
     padding-bottom: 10px;
   }
-  .project-modal-description-image {
-    content-visibility: hidden;
+  .project-modal-header,
+  .project-modal-bullet,
+  .project-modal-features {
+    font-size: small;
   }
 }
 /* animated button from codemyui.com */
@@ -137,7 +171,7 @@
 }
 .btn-8 {
   background-color: #f0ecfc;
-  background-image: linear-gradient(315deg, #f0ecfc 0%, #c797eb 74%);
+  background-image: linear-gradient(315deg, #f0ecfc 0%, #13b4cd 74%);
   line-height: 42px;
   padding: 0;
   border: none;
@@ -179,7 +213,7 @@
   background: transparent;
 }
 .btn-8 span:hover {
-  color: #c797eb;
+  color: #13b4cd;
 }
 .btn-8 span:before,
 .btn-8 span:after {
@@ -187,7 +221,7 @@
   content: "";
   left: 0;
   top: 0;
-  background: #c797eb;
+  background: #13b4cd;
   /*box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
               -4px -4px 6px 0 rgba(116, 125, 136, .2), 
     inset -4px -4px 6px 0 rgba(255,255,255,.5),
@@ -207,4 +241,14 @@
 }
 .btn-8 span:hover:after {
   width: 100%;
+}
+@media (max-width: 1310px) {
+  .project-description {
+    top: 37%;
+    left: 55%;
+  }
+  .project-description-details,
+  .custom-btn {
+    font-size: small;
+  }
 }

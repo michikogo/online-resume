@@ -59,6 +59,7 @@ const Education = () => {
   ]);
   const [isVisible, setIsVisible] = useState(false);
   const [specificProject, setSpecificProject] = useState(null);
+  const [isHovered, setIsHovered] = useState(false);
 
   const handleModal = (project) => {
     setIsVisible(true);
@@ -102,27 +103,30 @@ const Education = () => {
                   fluid
                   src={require(`../../Assets/Image/${project.image}`).default}
                   className="project-image"
+                  onMouseEnter={() => setIsHovered(true)}
                 />
                 {/* SEEN WHEN HOVERED */}
-                <Row className="project-description">
-                  <Col sm={12} className="project-description-details">
-                    {project.name}
-                  </Col>
-                  <Col sm={12} className="project-description-details">
-                    {project.language}
-                  </Col>
-                  <Col sm={12} className="project-description-details">
-                    {project.type}
-                  </Col>
-                  <Col sm={12}>
-                    <button
-                      className="custom-btn btn-8"
-                      onClick={(e) => handleModal(project)}
-                    >
-                      <span>Check me out</span>
-                    </button>
-                  </Col>
-                </Row>
+                {isHovered && (
+                  <Row className="project-description">
+                    <Col sm={12} className="project-description-details">
+                      {project.name}
+                    </Col>
+                    <Col sm={12} className="project-description-details">
+                      {project.language}
+                    </Col>
+                    <Col sm={12} className="project-description-details">
+                      {project.type}
+                    </Col>
+                    <Col sm={12}>
+                      <button
+                        className="custom-btn btn-8"
+                        onClick={(e) => handleModal(project)}
+                      >
+                        <span>Check me out</span>
+                      </button>
+                    </Col>
+                  </Row>
+                )}
               </Col>
             ))}
           </Row>
@@ -145,6 +149,14 @@ const Education = () => {
                   <p className="project-modal-name">{specificProject.name}</p>
                 </Col>
               </Row>
+              {/* Header */}
+              <Row>
+                <Col>
+                  <p className="project-modal-header">
+                    {specificProject.header}
+                  </p>
+                </Col>
+              </Row>
               <Row>
                 {/* IMAGE */}
                 <Col sm={12} md={6} className="project-modal-image-col">
@@ -154,16 +166,13 @@ const Education = () => {
                       require(`../../Assets/Image/${specificProject.image}`)
                         .default
                     }
-                    className="project-image"
+                    className="project-modal-image"
                   />
                 </Col>
                 <Col sm={12} md={6}>
-                  {/* Header */}
                   <Row>
                     <Col>
-                      <p className="project-modal-header">
-                        {specificProject.header}
-                      </p>
+                      <p className="project-modal-features">Features:</p>
                     </Col>
                   </Row>
                   {/* Bullet */}
@@ -173,7 +182,8 @@ const Education = () => {
                       className="project-modal-description-image"
                     >
                       <Col
-                        sm={2}
+                        xs={2}
+                        md={1}
                         className="project-modal-description-image-col"
                       >
                         <Image
@@ -189,17 +199,17 @@ const Education = () => {
                       </Col>
                     </Row>
                   ))}
-                  {/* Specigic Project */}
-                  <Row>
-                    {specificProject.tags.map((tag) => (
-                      <Col key={tag} sm={12} md={6} lg={4}>
-                        <Badge pill variant="primary">
-                          {tag}
-                        </Badge>
-                      </Col>
-                    ))}
-                  </Row>
                 </Col>
+              </Row>
+              {/* Specific Project */}
+              <Row className="project-modal-pill-row">
+                {specificProject.tags.map((tag) => (
+                  <Col key={tag} xs={6} md={3}>
+                    <Badge pill variant="primary">
+                      {tag}
+                    </Badge>
+                  </Col>
+                ))}
               </Row>
             </Col>
           </Row>
