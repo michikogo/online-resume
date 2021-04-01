@@ -1,6 +1,6 @@
-import "./Background1.css";
+import "./index.css";
 
-const Background1 = () => {
+const BackgroundAnimation = () => {
   return (
     <svg
       version="1.1"
@@ -122,4 +122,4 @@ const Background1 = () => {
   );
 };
 
-export default Background1;
+export default BackgroundAnimation;

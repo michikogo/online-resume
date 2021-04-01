@@ -6,6 +6,7 @@ import Portfolio from "./Components/Portfolio/Portfolio";
 import RoadMap from "./Components/RoadMap/RoadMap";
 import Skills from "./Components/Skills/Skills";
 import Contact from "./Components/Contact/Contact";
+import BackgroundAnimation from "./Components/BackgroundAnimation/BackgroundAnimation";
 
 function App() {
   useEffect(() => {
@@ -27,15 +28,14 @@ function App() {
 
   return (
     <>
-      <div>
-        <Welcome />
-        <Portfolio />
-        <RoadMap />
-        <Skills />
-        {/* <Contact /> */}
-        <div className="progress-header">
-          <div className="progress-bar" id="myBar"></div>
-        </div>
+      <BackgroundAnimation />
+      <Welcome />
+      <Portfolio />
+      <RoadMap />
+      <Skills />
+      {/* <Contact /> */}
+      <div className="progress-header">
+        <div className="progress-bar" id="myBar"></div>
       </div>
     </>
   );

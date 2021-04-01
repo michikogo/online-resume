@@ -1,12 +1,10 @@
 import "./index.css";
 import { hello } from "../../Assets/index";
 import { Col, Container, Image, Row } from "react-bootstrap";
-import Background1 from "./Component/Background1";
 
 const Welcome = () => {
   return (
     <Container fluid className="welcome-background">
-      <Background1 />
       <Row className="welcome-row">
         <Col sm={4} className="welcome-image-col">
           <Image
