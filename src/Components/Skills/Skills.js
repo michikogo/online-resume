@@ -104,7 +104,7 @@ const Skills = () => {
       <Row className="skills-row ">
         <Col>
           <Row className="skills-section justify-content-md-center">
-            <Col sm={6} lg={4} className="skills-hexagon1">
+            <Col sm={6} lg={4} className="skills-hexagon-background">
               {programming.map((indexRow, index) => (
                 <HoneyComb
                   key={index}
@@ -128,7 +128,7 @@ const Skills = () => {
                     <SkillDetails sectionData={sectionData} />
                   )} */}
             </Col>
-            <Col sm={6} lg={4}>
+            <Col sm={6} lg={4} className="skills-hexagon-background">
               {applications.map((indexRow, index) => (
                 <HoneyComb
                   key={index}
