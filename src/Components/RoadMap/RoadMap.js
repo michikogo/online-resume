@@ -64,7 +64,9 @@ const RoadMap = () => {
             iconStyle={{ background: "#F68375", color: "#fff" }}
             icon={<FindingSVG />}
           >
-            <p className="roadmap-detail-future">Currently Looking for Jobs</p>
+            <div className="roadmap-detail-future">
+              Currently Looking for Jobs
+            </div>
           </VerticalTimelineElement>
           {details.map((detail) => (
             <VerticalTimelineElement
@@ -77,22 +79,22 @@ const RoadMap = () => {
               icon={detail.image}
             >
               {/* Date and Location */}
-              <p className="roadmap-detail-date-location-p">
+              <div className="roadmap-detail-date-location-p">
                 <span className="roadmap-detail-date-location">
                   {detail.date} | {detail.location}
                 </span>
-              </p>
+              </div>
               {/* Position and Company */}
-              <p className="roadmap-detail-p">
+              <div className="roadmap-detail-p">
                 <span className="roadmap-detail-position">
                   {detail.position}
                 </span>
                 <span className="roadmap-detail-company">
                   , {detail.company}
                 </span>
-              </p>
+              </div>
               {/* Description */}
-              <p className="roadmap-detail-p">
+              <div className="roadmap-detail-p">
                 {detail.description[0] != null &&
                   detail.description.map((desc) => (
                     <Row key={desc}>
@@ -107,11 +109,11 @@ const RoadMap = () => {
                         />
                       </Col>
                       <Col>
-                        <p className="roadmap-detail-description">{desc}</p>
+                        <div className="roadmap-detail-description">{desc}</div>
                       </Col>
                     </Row>
                   ))}
-              </p>
+              </div>
             </VerticalTimelineElement>
           ))}
         </VerticalTimeline>
