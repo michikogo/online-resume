@@ -64,9 +64,9 @@ const Skills = () => {
   ]);
 
   // console.log("applications: " + applications.length);
-  const [setMouseEnterSection1] = useState(false);
-  const [setMouseEnterSection2] = useState(false);
-  const [setSectionData] = useState(null);
+  const [mouseEnterSection1, setMouseEnterSection1] = useState(false);
+  const [mouseEnterSection2, setMouseEnterSection2] = useState(false);
+  const [sectionData, setSectionData] = useState(null);
 
   const handleEnter = (boolean, id, section) => {
     // console.log(`Mouse Enter: ${boolean} | ${id} | ${section}`);
