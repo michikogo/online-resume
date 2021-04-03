@@ -16,9 +16,15 @@
   font-size: 10vh;
   font-family: "Knewave", cursive;
 }
+.skills-image-col {
+  /* background: wheat; */
+  /* padding: 20px; */
+  /* border-radius: 50%; */
+  align-self: end;
+}
 .skills-image-left {
-  width: 100%;
-  height: 100%;
+  width: 80%;
+  height: 80%;
 }
 .skills-image-right {
   width: 100%;
@@ -47,8 +53,8 @@
 }
 @media (min-width: 632px) {
   .skills-image-left {
-    width: 80%;
-    height: 80%;
+    width: 70%;
+    height: 70%;
   }
   .skills-image-right {
     width: 80%;

@@ -114,7 +114,11 @@ const Skills = () => {
                 />
               ))}
             </Col>
-            <Col sm={6} lg={{ offset: 4, span: 4 }}>
+            <Col
+              sm={6}
+              lg={{ offset: 4, span: 4 }}
+              className="skills-image-col"
+            >
               <ImageRight />
               {/* {mouseEnterSection1 && (
                 <SkillDetails sectionData={sectionData} />
@@ -122,7 +126,7 @@ const Skills = () => {
             </Col>
           </Row>
           <Row className="skills-section justify-content-md-center">
-            <Col sm={6} lg={4}>
+            <Col sm={6} lg={4} className="skills-image-col">
               <ImageLeft />
               {/* {mouseEnterSection2 && (
                     <SkillDetails sectionData={sectionData} />
