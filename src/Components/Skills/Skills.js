@@ -1,13 +1,12 @@
 import "./index.css";
 import { useState } from "react";
-import { Container, Row, Col, Image } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import HoneyComb from "./Components/HoneyComb";
-import SkillDetails from "./Components/SkillDetails";
 import ImageRight from "./Components/ImageRight";
 import ImageLeft from "./Components/ImageLeft";
 
 const Skills = () => {
-  const [programming, setProgramming] = useState([
+  const [programming] = useState([
     [
       { id: 1, name: "C", image: "c.png" },
       { id: 2, name: "C#", image: "c#.png" },
@@ -36,7 +35,7 @@ const Skills = () => {
   ]);
   // console.log("programming: " + programming.length);
 
-  const [applications, useApplication] = useState([
+  const [applications] = useState([
     [
       { id: 1, name: "Dev C", image: "dev-c.png" },
       { id: 2, name: "Netbeans", image: "intellij-idea.png" },
@@ -65,19 +64,19 @@ const Skills = () => {
   ]);
 
   // console.log("applications: " + applications.length);
-  const [mouseEnterSection1, setMouseEnterSection1] = useState(false);
-  const [mouseEnterSection2, setMouseEnterSection2] = useState(false);
-  const [sectionData, setSectionData] = useState(null);
+  const [setMouseEnterSection1] = useState(false);
+  const [setMouseEnterSection2] = useState(false);
+  const [setSectionData] = useState(null);
 
   const handleEnter = (boolean, id, section) => {
     // console.log(`Mouse Enter: ${boolean} | ${id} | ${section}`);
-    if (section == 1) {
+    if (section === 1) {
       // console.log("entered section 1");
       setMouseEnterSection1(boolean);
-      programming.map((rowArray) => {
+      programming.forEach((rowArray) => {
         rowArray
-          .filter((specificCol) => specificCol.id == id)
-          .map((item) => {
+          .filter((specificCol) => specificCol.id === id)
+          .forEach((item) => {
             // console.log(item);
             setSectionData(item);
           });
@@ -86,10 +85,10 @@ const Skills = () => {
     } else {
       // console.log("entered section 1");
       setMouseEnterSection2(boolean);
-      applications.map((rowArray) => {
+      applications.forEach((rowArray) => {
         rowArray
-          .filter((specificCol) => specificCol.id == id)
-          .map((item) => {
+          .filter((specificCol) => specificCol.id === id)
+          .forEach((item) => {
             setSectionData(item);
           });
       });
