@@ -34,10 +34,13 @@
   padding: 15px 0px;
 }
 .skills-hexagon-background {
-  background: white;
-  padding-top: 20px;
-  padding-bottom: 5px;
-  border-radius: 50%;
+  padding-top: 15px;
+  background: url(../../Assets/Image/hexagon.png);
+  background-size: 97% 100%;
+  background-repeat: space;
+  background-position: bottom;
+  text-align: center;
+  margin-bottom: 5vh;
 }
 @media (max-width: 600px) {
   .skills-row {
