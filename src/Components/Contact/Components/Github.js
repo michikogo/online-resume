@@ -16,7 +16,7 @@ const GithubSVG = () => {
             xmlns="http://www.w3.org/2000/svg"
           >
             <g id="github">
-              <g clip-path="url(#clip0)">
+              <g clipPath="url(#clip0)">
                 <path
                   id="github-bg"
                   d="M143.958 0H0.0421875C0.018888 0 0 0.018888 0 0.0421875V143.958C0 143.981 0.018888 144 0.0421875 144H143.958C143.981 144 144 143.981 144 143.958V0.0421875C144 0.018888 143.981 0 143.958 0Z"
@@ -48,7 +48,7 @@ const GithubSVG = () => {
             xmlns="http://www.w3.org/2000/svg"
           >
             <g id="github">
-              <g clip-path="url(#clip0)">
+              <g clipPath="url(#clip0)">
                 <path
                   id="github-bg"
                   d="M143.958 0H0.0421875C0.018888 0 0 0.018888 0 0.0421875V143.958C0 143.981 0.018888 144 0.0421875 144H143.958C143.981 144 144 143.981 144 143.958V0.0421875C144 0.018888 143.981 0 143.958 0Z"

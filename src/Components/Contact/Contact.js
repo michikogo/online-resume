@@ -16,8 +16,8 @@ const Contact = () => {
         <Col>Contact Me</Col>
       </Row>
       <Row className="contact-row">
-        {media.map((social) => (
-          <Col xs={6} sm={3} key={social}>
+        {media.map((social, index) => (
+          <Col xs={6} sm={3} key={index}>
             {social}
           </Col>
         ))}

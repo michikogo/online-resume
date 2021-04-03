@@ -23,8 +23,8 @@ const FacebookSVG = () => {
               />
               <path
                 id="facebook-text"
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M119.812 71H97.625V53.25C97.625 48.351 101.601 48.8125 106.5 48.8125H115.375V26.625H97.625C90.5636 26.625 83.7914 29.4301 78.7983 34.4233C73.8051 39.4164 71 46.1886 71 53.25V71H53.25V93.1875H71V142H97.625V93.1875H110.938L119.812 71Z"
                 fill="#FAFAFA"
               />
@@ -50,8 +50,8 @@ const FacebookSVG = () => {
               />
               <path
                 id="facebook-text"
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M119.812 71H97.625V53.25C97.625 48.351 101.601 48.8125 106.5 48.8125H115.375V26.625H97.625C90.5636 26.625 83.7914 29.4301 78.7983 34.4233C73.8051 39.4164 71 46.1886 71 53.25V71H53.25V93.1875H71V142H97.625V93.1875H110.938L119.812 71Z"
                 fill="#1976D2"
               />

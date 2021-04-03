@@ -15,7 +15,7 @@ const EmailSVG = () => {
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <g id="email" clip-path="url(#clip0)">
+            <g id="email" clipPath="url(#clip0)">
               <rect
                 id="email-logo"
                 x="9"
@@ -48,7 +48,7 @@ const EmailSVG = () => {
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <g id="email" clip-path="url(#clip0)">
+            <g id="email" clipPath="url(#clip0)">
               <rect
                 id="email-logo"
                 x="9"
