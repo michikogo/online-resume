@@ -33,7 +33,7 @@ function App() {
       <Portfolio />
       <RoadMap />
       <Skills />
-      {/* <Contact /> */}
+      <Contact />
       <div className="progress-header">
         <div className="progress-bar" id="myBar"></div>
       </div>
