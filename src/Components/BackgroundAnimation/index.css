@@ -11,8 +11,8 @@
   fill: none;
   opacity: 0.15;
   stroke: #f3543f;
-  strokewidth: 12;
-  strokemiterlimit: 10;
+  stroke-width: 12;
+  stroke-miterlimit: 10;
   animation: show 4s;
   animation-fill-mode: forwards;
   animation-iteration-count: infinite;
@@ -23,8 +23,8 @@
   fill: none;
   opacity: 0.15;
   stroke: #13b4cd;
-  strokewidth: 12;
-  strokemiterlimit: 10;
+  stroke-width: 12;
+  stroke-miterlimit: 10;
   animation: show 4s;
   animation-fill-mode: forwards;
   animation-iteration-count: infinite;
@@ -35,8 +35,8 @@
   fill: none;
   opacity: 0.15;
   stroke: #13b4cd;
-  strokewidth: 6;
-  strokemiterlimit: 10;
+  stroke-width: 12;
+  stroke-miterlimit: 10;
   stroke-dasharray: 200;
   stroke-dashoffset: 800;
   animation: draw 4s;
