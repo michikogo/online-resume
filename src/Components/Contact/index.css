@@ -16,7 +16,9 @@
 
 /* https://codepen.io/nelledejones/pen/gOOPWrK */
 .contact-media-image {
-  width: 100%;
+  height: 11vh;
+  width: 11vh;
+  border-radius: 15px;
 }
 .contact-media-image:hover {
   animation: bounce2 2s ease infinite;
@@ -38,6 +40,12 @@
   }
 }
 
+.contact-text {
+  font-family: "Zilla Slab Highlight", cursive;
+}
+a {
+  color: black !important;
+}
 @media (max-width: 600px) {
   .contact-row {
     padding: 0px 5vh;

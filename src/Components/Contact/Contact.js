@@ -8,7 +8,7 @@ import Github from "./Components/Github";
 import LinkedIn from "./Components/LinkedIn";
 
 const Contact = () => {
-  const [media] = useState([<Email />, <Facebook />, <Github />, <LinkedIn />]);
+  const [media] = useState([<Email />, <Github />, <LinkedIn />]);
 
   return (
     <Container fluid className="contact-background">
@@ -17,7 +17,7 @@ const Contact = () => {
       </Row>
       <Row className="contact-row">
         {media.map((social, index) => (
-          <Col xs={6} sm={3} key={index}>
+          <Col xs={12} sm={4} key={index}>
             {social}
           </Col>
         ))}
