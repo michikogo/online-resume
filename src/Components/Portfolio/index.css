@@ -28,8 +28,12 @@
 
 /* HOVER EFFECT */
 .project-image-col {
+  background-image: url(../../Assets/Image/whiteDesktop.png);
+  background-size: 90%;
+  background-repeat: space;
+  background-position: bottom;
   text-align: center;
-  padding-bottom: 5vh;
+  margin-bottom: 5vh;
 }
 .project-image {
   width: 60vh;
