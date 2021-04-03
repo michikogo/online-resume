@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { Row, Col } from "react-bootstrap";
 
 const EmailSVG = () => {
   const [email, setEmail] = useState(false);

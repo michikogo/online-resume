@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { Row, Col } from "react-bootstrap";
 
 const FacebookSVG = () => {
   const [facebook, setFacebook] = useState(false);

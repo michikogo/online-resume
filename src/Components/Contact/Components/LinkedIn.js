@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { Row, Col } from "react-bootstrap";
 
 const LinkedIn = () => {
   const [linkedIn, setLinkedIn] = useState(false);
