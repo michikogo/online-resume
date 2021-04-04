@@ -57,6 +57,12 @@
 }
 @media (max-width: 375px) {
   .col {
-    padding: 0px !important;
+    padding: 0vh 1vh !important;
+  }
+  .row {
+    margin: 0 !important;
+  }
+  .app-section-row {
+    padding: 2vh 2vh;
   }
 }
