@@ -5,6 +5,7 @@
   min-height: 100vh;
   text-align: center;
   padding: 15vh 0vh;
+  overflow: hidden;
 }
 /* .row {
   margin-right: 0px !important;
