@@ -75,7 +75,6 @@
   }
   .welcome-name {
     text-align: center;
-    font-size: 50px;
   }
   .welcome-email {
     text-align: center;
@@ -86,5 +85,38 @@
     text-align: center;
     font-size: 15px;
     padding-top: 15px;
+  }
+}
+@media (max-width: 321px) {
+  .welcome-im {
+    font-size: 18px;
+  }
+  .welcome-name {
+    font-size: 33px;
+  }
+  .welcome-paragraph {
+    font-size: 12px;
+  }
+  .welcome-email {
+    top: 0px;
+  }
+}
+@media (min-width: 322px) and (max-width: 377px) {
+  .welcome-name {
+    font-size: 42px;
+  }
+}
+@media (min-width: 378px) and (max-width: 576px) {
+  .welcome-name {
+    font-size: 48px;
+  }
+}
+@media (min-width: 577px) and (max-width: 1214px) {
+  .welcome-name {
+    font-size: 50px;
+  }
+  .welcome-im {
+    font-size: 36px;
+    top: 3vh;
   }
 }
