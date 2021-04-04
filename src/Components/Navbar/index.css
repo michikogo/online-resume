@@ -1,3 +1,9 @@
+.col {
+  padding: 0vh 1vh !important;
+}
+.row {
+  margin: 0 !important;
+}
 .app-nav-row-fixed {
   top: 0;
   z-index: 100;
@@ -55,13 +61,7 @@
   background: linear-gradient(to right, #a8dcd1, #c7eb53);
   width: 0%;
 }
-@media (max-width: 375px) {
-  .col {
-    padding: 0vh 1vh !important;
-  }
-  .row {
-    margin: 0 !important;
-  }
+@media (max-width: 435px) {
   .app-section-row {
     padding: 2vh 2vh;
   }
