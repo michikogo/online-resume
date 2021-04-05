@@ -29,7 +29,18 @@
   font-size: 100px;
   margin-bottom: 0px;
   color: white;
+  /* letter-spacing: 0.1em;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: white;
+  text-shadow: 8px 8px #ff1f8f, 20px 20px #000000; */
 }
+
+/* .welcome-name span {
+  color: wheat;
+  animation: drop 2s ease-in-out infinite;
+} */
+
 .welcome-email {
   font-family: "Zilla Slab Highlight", cursive;
   margin-bottom: 0px;

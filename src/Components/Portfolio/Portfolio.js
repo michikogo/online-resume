@@ -85,9 +85,9 @@ const Education = () => {
     <Container fluid className="project-background">
       <Row className="project-row">
         <Col>
-          <Row>
-            <Col className="project-title">
-              <p>Projects</p>
+          <Row className="project-title-row">
+            <Col>
+              <span className="project-title">Projects</span>
             </Col>
           </Row>
           <Row>

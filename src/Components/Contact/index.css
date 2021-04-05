@@ -9,12 +9,31 @@
   min-height: 78vh;
   align-items: center;
 }
-.contact-title {
+.contact-title-row {
   padding: 5vh 0vh;
   font-size: 10vh;
-  font-family: "Knewave", cursive;
 }
-
+.contact-title {
+  cursor: context-menu;
+  font-family: "Bebas Neue", cursive;
+  letter-spacing: 0.1em;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: #6d545d;
+  animation: titleShadow 10s infinite ease-in;
+}
+@keyframes titleShadow {
+  0%,
+  100% {
+    text-shadow: none;
+  }
+  50% {
+    text-shadow: 1px 1px 1px #dce2c8, 2px 2px 1px #dce2c8, 1px 1px 1px #dce2c8,
+      4px 4px 1px #dce2c8, 5px 5px 1px #dce2c8, 6px 6px 1px #dce2c8,
+      7px 7px 1px #dce2c8, 8px 8px 1px #dce2c8, 9px 9px 1px #dce2c8,
+      10px 10px 1px #c3cea1;
+  }
+}
 /* https://codepen.io/nelledejones/pen/gOOPWrK */
 .contact-media-image {
   height: 11vh;
@@ -24,7 +43,6 @@
 .contact-media-image:hover {
   animation: bounce2 2s ease infinite;
 }
-
 @keyframes bounce2 {
   0%,
   20%,
@@ -40,7 +58,6 @@
     transform: translateY(-15px);
   }
 }
-
 .contact-text {
   font-family: "Zilla Slab Highlight", cursive;
 }

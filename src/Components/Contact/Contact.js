@@ -12,8 +12,10 @@ const Contact = () => {
 
   return (
     <Container fluid className="contact-background">
-      <Row className="contact-title">
-        <Col>Contact Me</Col>
+      <Row className="contact-title-row">
+        <Col>
+          <span className="contact-title">Contact Me</span>
+        </Col>
       </Row>
       <Row className="contact-row">
         {media.map((social, index) => (

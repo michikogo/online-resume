@@ -52,7 +52,9 @@ const RoadMap = () => {
   return (
     <Container fluid className="roadmap-background">
       <Row>
-        <Col className="roadMap-title">Road Map</Col>
+        <Col className="roadmap-title-row">
+          <span className="roadmap-title">Road Map</span>
+        </Col>
       </Row>
       <Row className="roadmap-row">
         <VerticalTimeline>
