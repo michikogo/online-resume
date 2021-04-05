@@ -102,7 +102,7 @@ const About = () => {
     };
 
     function checkWidth() {
-      console.log(window.innerWidth);
+      // console.log(window.innerWidth);
       if (window.innerWidth > 1024) {
         setMobileMode(false);
       } else {

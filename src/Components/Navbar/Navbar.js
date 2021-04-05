@@ -1,6 +1,6 @@
 import "./index.css";
-import { useEffect, useState } from "react";
-import { Row, Col, Image } from "react-bootstrap";
+import { useEffect } from "react";
+import { Row, Col } from "react-bootstrap";
 import { Link } from "react-scroll";
 
 const Navbar = () => {
