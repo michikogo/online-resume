@@ -39,7 +39,7 @@ const Navbar = () => {
   return (
     <div id="navigation" className="app-nav-row-sticky">
       <Row className="app-section-row">
-        <Col>
+        <Col className="nav-col">
           <Link
             className="navbar-link"
             activeClass="active"
@@ -52,7 +52,7 @@ const Navbar = () => {
             Projects
           </Link>
         </Col>
-        <Col>
+        <Col className="nav-col">
           <Link
             className="navbar-link"
             activeClass="active"
@@ -74,7 +74,7 @@ const Navbar = () => {
           />
           <span>Michiko Go</span>
         </Col> */}
-        <Col>
+        <Col className="nav-col">
           <Link
             className="navbar-link"
             activeClass="active"
@@ -88,7 +88,7 @@ const Navbar = () => {
             About
           </Link>
         </Col>
-        <Col>
+        <Col className="nav-col">
           <Link
             className="navbar-link"
             activeClass="active"
