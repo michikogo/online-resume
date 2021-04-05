@@ -97,8 +97,10 @@ const Skills = () => {
 
   return (
     <Container fluid className="skills-background">
-      <Row className="skills-title">
-        <Col>Skills</Col>
+      <Row className="skills-title-row">
+        <Col>
+          <span className="skills-title">About</span>
+        </Col>
       </Row>
       <Row className="skills-row ">
         <Col>
