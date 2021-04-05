@@ -1,11 +1,9 @@
 import "./index.css";
 import { useEffect, useState } from "react";
-import { Row, Col } from "react-bootstrap";
+import { Row, Col, Image } from "react-bootstrap";
 import { Link } from "react-scroll";
 
 const Navbar = () => {
-  const [showNavBar, setShowNavBar] = useState(false);
-
   useEffect(() => {
     // When the user scrolls the page, execute myFunction
     window.onscroll = function () {
@@ -68,6 +66,14 @@ const Navbar = () => {
             RoadMap
           </Link>
         </Col>
+        {/* <Col>
+          <Image
+            fluid
+            src={require("../../Assets/Image/girlNodding.png").default}
+            width="27"
+          />
+          <span>Michiko Go</span>
+        </Col> */}
         <Col>
           <Link
             className="navbar-link"
