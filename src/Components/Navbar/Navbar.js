@@ -25,18 +25,21 @@ const Navbar = () => {
 
     function navbar() {
       // getting position of top scroll
-      console.log(window.innerHeight + window.scrollY);
-      if (window.innerHeight + window.scrollY >= 1326) {
-        console.log("Show nav bar " + (window.innerHeight + window.scrollY));
-        setShowNavBar(true);
-      } else if (window.innerHeight + window.scrollY < 1326) {
-        setShowNavBar(false);
-      }
+      // console.log("Hello: " + window.scrollY);
+      // console.log("Media Height: " + window.scrollY);
+      // console.log("Media Width: " + window.innerWidth);
+      // console.log(window.innerHeight + window.scrollY);
+      // if (window.innerHeight + window.scrollY >= 1326) {
+      //   console.log("Show nav bar " + (window.innerHeight + window.scrollY));
+      //   setShowNavBar(true);
+      // } else if (window.innerHeight + window.scrollY < 1326) {
+      //   setShowNavBar(false);
+      // }
     }
   }, []);
 
   return (
-    <div className={showNavBar ? "app-nav-row-fixed" : "app-nav-row"}>
+    <div id="navigation" className="app-nav-row-sticky">
       <Row className="app-section-row">
         <Col>
           <Link
