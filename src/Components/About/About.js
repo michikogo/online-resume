@@ -1,5 +1,5 @@
 import "./index.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import HoneyComb from "./Components/HoneyComb";
 import ImageRight from "./Components/ImageRight";
@@ -95,6 +95,22 @@ const About = () => {
     }
   };
 
+  const [mobileMode, setMobileMode] = useState(false);
+  useEffect(() => {
+    window.onscroll = function () {
+      checkWidth();
+    };
+
+    function checkWidth() {
+      console.log(window.innerWidth);
+      if (window.innerWidth > 1024) {
+        setMobileMode(false);
+      } else {
+        setMobileMode(true);
+      }
+    }
+  }, []);
+
   return (
     <Container fluid className="about-background">
       <Row className="about-title-row">
@@ -102,8 +118,19 @@ const About = () => {
           <span className="about-title">About</span>
         </Col>
       </Row>
-      <Row className="about-row ">
+      <Row className="about-row">
         <Col>
+          {mobileMode && (
+            <Row>
+              <Col>
+                <span className="about-description">
+                  Hey you! <br /> I am a software developer that makes web
+                  applications and sometimes mobile applications, on my free
+                  time I love exploring what the world is there to offer.
+                </span>
+              </Col>
+            </Row>
+          )}
           <Row className="about-section justify-content-md-center">
             <Col sm={6} lg={4} className="about-hexagon-background">
               {programming.map((indexRow, index) => (
@@ -115,7 +142,16 @@ const About = () => {
                 />
               ))}
             </Col>
-            <Col sm={6} lg={{ offset: 4, span: 4 }} className="about-image-col">
+            {!mobileMode && (
+              <Col lg={4}>
+                <span className="about-description">
+                  Hey you! <br />I am a software developer that makes web
+                  applications and sometimes mobile applications, on my free
+                  time I love exploring what the world is there to offer.
+                </span>
+              </Col>
+            )}
+            <Col sm={6} lg={4} className="about-image-col">
               <ImageRight />
               {/* {mouseEnterSection1 && (
                 <SkillDetails sectionData={sectionData} />
