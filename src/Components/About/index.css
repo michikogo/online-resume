@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Boogaloo&family=Knewave&family=Open+Sans:wght@300&family=Zilla+Slab+Highlight&display=swap");
+
+.about-background {
+  min-height: 100vh;
+  text-align: center;
+  padding: 15vh 0vh;
+}
+.about-row {
+  padding: 0vh 15vh;
+  min-height: 78vh;
+  align-items: center;
+  display: flex;
+}
+.about-title-row {
+  padding: 5vh 0vh;
+  font-size: 10vh;
+}
+
+.about-title {
+  cursor: context-menu;
+  font-family: "Bebas Neue", cursive;
+  letter-spacing: 0.1em;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: #6d545d;
+  animation: titleShadow 10s infinite ease-in;
+}
+
+@keyframes titleShadow {
+  0%,
+  100% {
+    text-shadow: none;
+  }
+  50% {
+    text-shadow: 1px 1px 1px #dce2c8, 2px 2px 1px #dce2c8, 1px 1px 1px #dce2c8,
+      4px 4px 1px #dce2c8, 5px 5px 1px #dce2c8, 6px 6px 1px #dce2c8,
+      7px 7px 1px #dce2c8, 8px 8px 1px #dce2c8, 9px 9px 1px #dce2c8,
+      10px 10px 1px #c3cea1;
+  }
+}
+
+.about-image-col {
+  /* background: wheat; */
+  /* padding: 20px; */
+  /* border-radius: 50%; */
+  align-self: end;
+}
+.about-image-left {
+  width: 80%;
+  height: 80%;
+}
+.about-image-right {
+  width: 100%;
+  height: 100%;
+}
+.about-section {
+  padding: 15px 0px;
+}
+.about-hexagon-background {
+  padding-top: 15px;
+  background: url(../../Assets/Image/hexagon.png);
+  background-size: 97% 100%;
+  background-repeat: space;
+  background-position: bottom;
+  text-align: center;
+  margin-bottom: 5vh;
+}
+@media (max-width: 600px) {
+  .about-row {
+    padding: 0px 5vh;
+  }
+}
+@media (max-width: 576px) {
+  .about-image-left {
+    content-visibility: hidden;
+    position: absolute;
+    left: 0;
+  }
+}
+@media (min-width: 632px) {
+  .about-image-left {
+    width: 70%;
+    height: 70%;
+  }
+  .about-image-right {
+    width: 80%;
+    height: 80%;
+  }
+}
+/* @media (min-width: 567px) and (max-width: 875px) {
+  .about-image-right {
+    width: 150px;
+    height: 150px;
+  }
+} */
+/* HoneyComb.js */
+.about-honeyComb-image {
+  -webkit-filter: grayscale(100%);
+  opacity: 0.3;
+  transition-duration: 0.5s;
+}
+.about-honeyComb-image:hover {
+  -webkit-filter: none;
+  opacity: 1;
+  display: block;
+}
+.about-honeyComb-col {
+  padding: 0px 1vh !important;
+}
+.about-honeyComb-row {
+  margin-top: -10px !important;
+}
+
+/* SkillDetails.js */
+.skill-details-card {
+  height: 43.5vh;
+  place-content: center;
+  font-family: "Open Sans", sans-serif;
+}
+/* ImageRight */
+#background {
+  animation: animate-background 3s ease-in-out infinite;
+}
+
+@keyframes animate-background {
+  0% {
+    transform: translateY(0%);
+  }
+  50% {
+    transform: translateY(-5%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+/* ImageLeft */
+#actionArrow {
+  animation: animate-action 3s infinite linear;
+}
+@keyframes animate-action {
+  0% {
+    transform: translate(0%);
+  }
+  50% {
+    transform: translate(2%, -2%);
+  }
+  100% {
+    transform: translate(0%);
+  }
+}
