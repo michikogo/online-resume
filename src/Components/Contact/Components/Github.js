@@ -5,7 +5,7 @@ const GithubSVG = () => {
   const [github, setGithub] = useState(false);
 
   return (
-    <p>
+    <>
       {!github && (
         <a href="https://github.com/michikogo">
           <OverlayTrigger
@@ -90,7 +90,7 @@ const GithubSVG = () => {
           </OverlayTrigger>
         </a>
       )}
-    </p>
+    </>
   );
 };
 

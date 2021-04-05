@@ -5,7 +5,7 @@ const LinkedIn = () => {
   const [linkedIn, setLinkedIn] = useState(false);
 
   return (
-    <p>
+    <>
       {!linkedIn && (
         <a href="https://www.linkedin.com/in/michikogo/">
           <OverlayTrigger
@@ -94,7 +94,7 @@ const LinkedIn = () => {
           </OverlayTrigger>
         </a>
       )}
-    </p>
+    </>
   );
 };
 
