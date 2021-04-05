@@ -3,10 +3,10 @@ import "./App.css";
 import Welcome from "./Components/Welcome/Welcome";
 import Portfolio from "./Components/Portfolio/Portfolio";
 import RoadMap from "./Components/RoadMap/RoadMap";
-import Skills from "./Components/Skills/Skills";
 import Contact from "./Components/Contact/Contact";
 import BackgroundAnimation from "./Components/BackgroundAnimation/BackgroundAnimation";
 import Navbar from "./Components/Navbar/Navbar";
+import About from "./Components/About/About";
 
 function App() {
   // var scale = "scale(1)";
@@ -26,8 +26,8 @@ function App() {
       <div id="roadmap">
         <RoadMap />
       </div>
-      <div id="skills">
-        <Skills />
+      <div id="about">
+        <About />
       </div>
       <div id="contact">
         <Contact />

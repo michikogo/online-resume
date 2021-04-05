@@ -72,14 +72,14 @@ const Navbar = () => {
           <Link
             className="navbar-link"
             activeClass="active"
-            to="skills"
+            to="about"
             offset={1}
             spy={true}
             smooth={true}
             duration={1000}
             // onClick={() => window.location.replace("/#skills")}
           >
-            Skills
+            About
           </Link>
         </Col>
         <Col>
