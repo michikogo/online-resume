@@ -1,5 +1,6 @@
-import { useState } from "react";
-import { Form, Button } from "react-bootstrap";
+import { useState, useEffect } from "react";
+import { Form } from "react-bootstrap";
+import firebaseDB from "../../../firebase";
 
 const ContactForm = () => {
   const [email, setEmail] = useState("");
@@ -7,23 +8,39 @@ const ContactForm = () => {
   const [body, setBody] = useState("");
   const [animate, setAnimate] = useState(false);
 
+  useEffect(() => {}, [animate]);
+
   const handleSubmit = (e, email, subject, body) => {
     e.preventDefault();
 
     // firebase here
-    console.log(email);
-    console.log(body);
-    console.log(subject);
-    console.log("Submitted");
-    setEmail("");
-    setSubject("");
-    setBody("");
+    firebaseDB
+      .firestore()
+      .collection("ResumeContacts")
+      .add({ email, subject, body })
+      .then(() => {
+        console.log("Submitted");
+        console.log(email);
+        console.log(body);
+        console.log(subject);
+        console.log("animate: " + animate);
+        setAnimate(true);
+        setEmail("");
+        setSubject("");
+        setBody("");
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+    // setAnimate(false);
   };
+
   return (
     <Form onSubmit={(e) => handleSubmit(e, email, subject, body)}>
       <Form.Group controlId="exampleForm.ControlInput1">
         <Form.Label>Email Address</Form.Label>
         <Form.Control
+          // required
           type="email"
           placeholder="Enter Email"
           value={email}
@@ -42,6 +59,7 @@ const ContactForm = () => {
       <Form.Group controlId="exampleForm.ControlTextarea1">
         <Form.Label>Body</Form.Label>
         <Form.Control
+          required
           as="textarea"
           rows={3}
           placeholder="Enter Body"
@@ -50,17 +68,15 @@ const ContactForm = () => {
         />
       </Form.Group>
       <div className={animate ? "contact-form-button-row-loading" : ""}>
-        {/* <div> */}
         <button
           className={
             animate
               ? "contact-form-button contact-form-button-sending"
               : "contact-form-button contact-form-button-sent"
           }
+          disabled={animate}
           type="submit"
-          onClick={() => console.log(setAnimate(!animate), animate)}
         ></button>
-        {/* </div> */}
       </div>
     </Form>
   );
