@@ -8,7 +8,7 @@ const Navbar = () => {
     // When the user scrolls the page, execute myFunction
     window.onscroll = function () {
       gradientBar();
-      navbar();
+      // navbar();
     };
 
     function gradientBar() {
