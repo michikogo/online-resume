@@ -5,3 +5,7 @@ font-family: 'Knewave', cursive;
 font-family: 'Open Sans', sans-serif;
 font-family: 'Zilla Slab Highlight', cursive; */
 /* https://coolors.co/f68375-13b4cd-a8dcd1-dce2c8-6d545d */
+
+html {
+  cursor: context-menu;
+}

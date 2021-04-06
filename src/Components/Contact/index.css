@@ -91,6 +91,14 @@
 .contact-media-padding {
   padding: 5vh 0vh !important;
 }
+.contact-email {
+  color: #6d545d !important;
+}
+.contact-email:hover {
+  color: #dce2c8 !important;
+  font-style: italic;
+  text-decoration: none;
+}
 .contact-social-row {
   justify-content: center;
 }

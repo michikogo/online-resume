@@ -3,7 +3,7 @@ import { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 
 // import Email from "./Components/Email";
-import Facebook from "./Components/Facebook";
+// import Facebook from "./Components/Facebook";
 import Github from "./Components/Github";
 import LinkedIn from "./Components/LinkedIn";
 import ContactForm from "./Components/ContactForm";
@@ -39,8 +39,10 @@ const Contact = () => {
           </Row>
           <Row>
             <Col className="contact-media-padding">
-              I am open for work, email me at <br />
-              michikogo98@gmail.com
+              I am open for work, directly email me at <br />
+              <a href="mailto:michikogo98@gmail.com" className="contact-email">
+                michikogo98@gmail.com
+              </a>
             </Col>
           </Row>
         </Col>

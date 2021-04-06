@@ -7,7 +7,11 @@ const LinkedIn = () => {
   return (
     <>
       {!linkedIn && (
-        <a href="https://www.linkedin.com/in/michikogo/">
+        <a
+          href="https://www.linkedin.com/in/michikogo/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <OverlayTrigger
             placement="bottom"
             overlay={
@@ -51,7 +55,11 @@ const LinkedIn = () => {
         </a>
       )}
       {linkedIn && (
-        <a href="https://www.linkedin.com/in/michikogo/">
+        <a
+          href="https://www.linkedin.com/in/michikogo/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <OverlayTrigger
             placement="bottom"
             overlay={

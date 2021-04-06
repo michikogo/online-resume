@@ -40,7 +40,7 @@ const ContactForm = () => {
       <Form.Group controlId="exampleForm.ControlInput1">
         <Form.Label>Email Address</Form.Label>
         <Form.Control
-          // required
+          required
           type="email"
           placeholder="Enter Email"
           value={email}

@@ -7,7 +7,11 @@ const GithubSVG = () => {
   return (
     <>
       {!github && (
-        <a href="https://github.com/michikogo">
+        <a
+          href="https://github.com/michikogo"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <OverlayTrigger
             placement="bottom"
             overlay={
@@ -49,7 +53,11 @@ const GithubSVG = () => {
         </a>
       )}
       {github && (
-        <a href="https://github.com/michikogo">
+        <a
+          href="https://github.com/michikogo"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <OverlayTrigger
             placement="bottom"
             overlay={
