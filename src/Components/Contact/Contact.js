@@ -1,14 +1,15 @@
 import "./index.css";
 import { useState } from "react";
-import { Container, Row, Col, Form, Button } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 
-import Email from "./Components/Email";
+// import Email from "./Components/Email";
 import Facebook from "./Components/Facebook";
 import Github from "./Components/Github";
 import LinkedIn from "./Components/LinkedIn";
+import ContactForm from "./Components/ContactForm";
 
 const Contact = () => {
-  const [media] = useState([<Email />, <Github />, <LinkedIn />]);
+  const [media] = useState([<Github />, <LinkedIn />]);
 
   return (
     <Container fluid className="contact-background">
@@ -17,44 +18,30 @@ const Contact = () => {
           <span className="contact-title">Contact Me</span>
         </Col>
       </Row>
-
       <Row className="contact-row">
         <Col>
           <Row>
             <Col className="contact-form">
-              <Form>
-                <Form.Group controlId="exampleForm.ControlInput1">
-                  <Form.Label>Email Address</Form.Label>
-                  <Form.Control type="email" placeholder="Enter Email" />
-                </Form.Group>
-                <Form.Group controlId="exampleForm.ControlInput1">
-                  <Form.Label>Subject</Form.Label>
-                  <Form.Control type="text" placeholder="Enter Subject" />
-                </Form.Group>
-                <Form.Group controlId="exampleForm.ControlTextarea1">
-                  <Form.Label>Body</Form.Label>
-                  <Form.Control
-                    as="textarea"
-                    rows={3}
-                    placeholder="Enter Body"
-                  />
-                </Form.Group>
-                <Button
-                  className="contact-form-button"
-                  variant="primary"
-                  type="submit"
-                >
-                  Submit
-                </Button>
-              </Form>
+              <ContactForm />
             </Col>
           </Row>
           <Row>
+            <Col className="contact-media-padding">
+              While waiting checkout my other profiles
+            </Col>
+          </Row>
+          <Row className="contact-social-row">
             {media.map((social, index) => (
-              <Col xs={4} sm={4} key={index} style={{ padding: "0px" }}>
+              <Col xs={6} sm={2} key={index} style={{ padding: "0px" }}>
                 {social}
               </Col>
             ))}
+          </Row>
+          <Row>
+            <Col className="contact-media-padding">
+              I am open for work, email me at <br />
+              michikogo98@gmail.com
+            </Col>
           </Row>
         </Col>
       </Row>
