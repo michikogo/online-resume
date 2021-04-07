@@ -5,36 +5,48 @@ import { Link } from "react-scroll";
 
 const Navbar = () => {
   useEffect(() => {
+    window.addEventListener("scroll", gradient, true);
+
     // When the user scrolls the page, execute myFunction
-    window.onscroll = function () {
-      gradientBar();
-      // navbar();
-    };
+    // window.onscroll = function () {
+    //   gradientBar();
+    //   // navbar();
+    // };
 
-    function gradientBar() {
-      var winScroll =
-        document.body.scrollTop || document.documentElement.scrollTop;
-      var height =
-        document.documentElement.scrollHeight -
-        document.documentElement.clientHeight;
-      var scrolled = (winScroll / height) * 100;
-      document.getElementById("myBar").style.width = scrolled + "%";
-    }
+    // function gradientBar() {
+    //   var winScroll =
+    //     document.body.scrollTop || document.documentElement.scrollTop;
+    //   var height =
+    //     document.documentElement.scrollHeight -
+    //     document.documentElement.clientHeight;
+    //   var scrolled = (winScroll / height) * 100;
+    //   document.getElementById("myBar").style.width = scrolled + "%";
+    // }
 
-    function navbar() {
-      // getting position of top scroll
-      // console.log("Hello: " + window.scrollY);
-      // console.log("Media Height: " + window.scrollY);
-      // console.log("Media Width: " + window.innerWidth);
-      // console.log(window.innerHeight + window.scrollY);
-      // if (window.innerHeight + window.scrollY >= 1326) {
-      //   console.log("Show nav bar " + (window.innerHeight + window.scrollY));
-      //   setShowNavBar(true);
-      // } else if (window.innerHeight + window.scrollY < 1326) {
-      //   setShowNavBar(false);
-      // }
-    }
+    // function navbar() {
+    // getting position of top scroll
+    // console.log("Hello: " + window.scrollY);
+    // console.log("Media Height: " + window.scrollY);
+    // console.log("Media Width: " + window.innerWidth);
+    // console.log(window.innerHeight + window.scrollY);
+    // if (window.innerHeight + window.scrollY >= 1326) {
+    //   console.log("Show nav bar " + (window.innerHeight + window.scrollY));
+    //   setShowNavBar(true);
+    // } else if (window.innerHeight + window.scrollY < 1326) {
+    //   setShowNavBar(false);
+    // }
+    // }
   }, []);
+
+  const gradient = () => {
+    var winScroll =
+      document.body.scrollTop || document.documentElement.scrollTop;
+    var height =
+      document.documentElement.scrollHeight -
+      document.documentElement.clientHeight;
+    var scrolled = (winScroll / height) * 100;
+    document.getElementById("myBar").style.width = scrolled + "%";
+  };
 
   return (
     <div id="navigation" className="app-nav-row-sticky">

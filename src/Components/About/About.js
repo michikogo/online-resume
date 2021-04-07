@@ -97,19 +97,28 @@ const About = () => {
 
   const [mobileMode, setMobileMode] = useState(false);
   useEffect(() => {
-    window.onscroll = function () {
-      checkWidth();
-    };
+    window.addEventListener("scroll", checkWidth, true);
+    // window.onscroll = function () {
+    //   checkWidth();
+    // };
 
-    function checkWidth() {
-      // console.log(window.innerWidth);
-      if (window.innerWidth > 1024) {
-        setMobileMode(false);
-      } else {
-        setMobileMode(true);
-      }
-    }
+    // function checkWidth() {
+    //   // console.log(window.innerWidth);
+    //   if (window.innerWidth > 1024) {
+    //     setMobileMode(false);
+    //   } else {
+    //     setMobileMode(true);
+    //   }
+    // }
   }, []);
+
+  const checkWidth = () => {
+    if (window.innerWidth > 1024) {
+      setMobileMode(false);
+    } else {
+      setMobileMode(true);
+    }
+  };
 
   return (
     <Container fluid className="about-background">
