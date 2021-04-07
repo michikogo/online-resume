@@ -21,9 +21,9 @@ const Welcome = () => {
               <p className="welcome-name">Michiko Young Go</p>
               <p className="welcome-email">michikogo98@gmail.com</p>
               <p className="welcome-paragraph">
-                Hey you! <br /> I am a software developer that makes web
-                applications and sometimes mobile applications, on my free time
-                I love exploring what the world is there to offer.
+                Hey you! <br /> I am a software developer that focuses on
+                fullstack web development and sometimes mobile development, on
+                my free time I love exploring what the world is there to offer.
               </p>
             </Col>
           </Row>
