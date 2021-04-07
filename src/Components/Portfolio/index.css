@@ -42,6 +42,7 @@
 }
 /* Bootstrap */
 .badge-primary {
+  width: 100%;
   background-color: #6d545d !important;
 }
 

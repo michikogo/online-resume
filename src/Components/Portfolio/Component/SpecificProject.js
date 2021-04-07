@@ -55,10 +55,8 @@ const SpecificProject = ({ project }) => {
       {/* Specific Project */}
       <Row className="project-modal-pill-row">
         {project.tags.map((tag) => (
-          <Col key={tag} xs={6} md={3}>
-            <Badge pill variant="primary">
-              {tag}
-            </Badge>
+          <Col key={tag}>
+            <Badge variant="primary">{tag}</Badge>
           </Col>
         ))}
       </Row>
