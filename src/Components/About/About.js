@@ -124,9 +124,13 @@ const About = () => {
             <Row>
               <Col>
                 <span className="about-description">
-                  Hey you! <br /> I am a software developer that makes web
-                  applications and sometimes mobile applications, on my free
-                  time I love exploring what the world is there to offer.
+                  Hi I am Michiko Go, I recently graduated last February 2021 in
+                  the course BS Computer Science. College was fun and I learned
+                  a lot and I can't wait to use my skills in your business. I
+                  learned various of languages and tools for development, but
+                  I'm most interested in web and mobile development since it
+                  challenged me the most especially when animating a web or
+                  mobile page.
                 </span>
               </Col>
             </Row>
@@ -143,11 +147,15 @@ const About = () => {
               ))}
             </Col>
             {!mobileMode && (
-              <Col lg={4}>
+              <Col lg={4} className="about-description-col">
                 <span className="about-description">
-                  Hey you! <br />I am a software developer that makes web
-                  applications and sometimes mobile applications, on my free
-                  time I love exploring what the world is there to offer.
+                  Hi I am Michiko Go, I recently graduated last February 2021 in
+                  the course BS Computer Science. College was fun and I learned
+                  a lot and I can't wait to use my skills in your business. I
+                  learned various of languages and tools for development, but
+                  I'm most interested in web and mobile development since it
+                  challenged me the most especially when animating a web or
+                  mobile page.
                 </span>
               </Col>
             )}
