@@ -5,7 +5,7 @@ import "rodal/lib/rodal.css";
 import Rodal from "rodal";
 import ProjectContent from "./Component/ProjectContent";
 
-const Project = () => {
+const Education = () => {
   const projects = [
     {
       id: 1,
@@ -13,7 +13,7 @@ const Project = () => {
       name: "BakeryMNL",
       type: "eCommerce Website",
       language: "ReactJs/ JSON",
-      header:
+      summary:
         "BakeryMNL is a simple responsive site that uses ReactJs and JSON Server. This site eCommerce site was created to enhance my skills in both React Hooks and JSON Server.",
       tags: [
         "React",
@@ -35,7 +35,7 @@ const Project = () => {
       name: "HUMALIT",
       type: "Catalogue Website",
       language: "Vue.js",
-      header:
+      summary:
         "HUMALIT Group 3 is an article and reflection catalogue website that was used as the final project for a non CS class.",
       tags: ["Vue", "BootStrap", "Responsive", "Agile", "Wireframe"],
       features: [
@@ -52,7 +52,7 @@ const Project = () => {
       name: "The Mermaid and Spa",
       type: "Business Website",
       language: "ReactJs/ Firebase",
-      header:
+      summary:
         "MermaidSpa is an ecommerce site that users can buy products, check their services and promos. This site was used practice my react and firebase skills.",
       tags: ["React", "react-bootstrap", "Responsive", "Agile", "Wireframe"],
       features: [
@@ -71,4 +71,4 @@ const Project = () => {
   );
 };
 
-export default Project;
+export default Education;

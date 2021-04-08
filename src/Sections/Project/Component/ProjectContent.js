@@ -12,7 +12,7 @@ const Content = ({ projects }) => {
       </Row>
       <Row className="project-row">
         {projects.map((project) => (
-          <Col sm={12} className="project-specific-project">
+          <Col sm={12} lg={5}>
             <SpecificProject project={project} />
           </Col>
         ))}

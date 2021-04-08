@@ -1,19 +1,13 @@
 import "./App.css";
-
-import Welcome from "./Components/Welcome/Welcome";
-import Project from "./Components/Portfolio/Project";
-import RoadMap from "./Components/RoadMap/RoadMap";
-import Contact from "./Components/Contact/Contact";
-import BackgroundAnimation from "./Components/BackgroundAnimation/BackgroundAnimation";
-import Navbar from "./Components/Navbar/Navbar";
-import About from "./Components/About/About";
+import BackgroundAnimation from "./Sections/BackgroundAnimation/BackgroundAnimation";
+import Navbar from "./Sections/Navbar/Navbar";
+import Welcome from "./Sections/Welcome/Welcome";
+import Project from "./Sections/Project/Project";
+import RoadMap from "./Sections/RoadMap/RoadMap";
+import About from "./Sections/About/About";
+import Contact from "./Sections/Contact/Contact";
 
 function App() {
-  // var scale = "scale(1)";
-  // document.body.style.webkitTransform = scale; // Chrome, Opera, Safari
-  // document.body.style.msTransform = scale; // IE 9
-  // document.body.style.transform = scale; // General
-
   return (
     <>
       <BackgroundAnimation />

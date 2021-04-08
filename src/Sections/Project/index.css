@@ -6,9 +6,10 @@
   padding: 15vh 0vh;
 }
 .project-row {
-  padding: 0vh 15vh;
+  padding: 0vh 0vh;
   min-height: 78vh;
   align-items: center;
+  justify-content: center;
 }
 .project-title-row {
   padding: 5vh 0vh;
@@ -113,6 +114,7 @@
 .project-modal-name {
   font-family: "Bebas Neue", cursive;
   font-size: xx-large;
+  margin-bottom: 0px;
 }
 .project-modal-image-col {
   align-self: center;
@@ -288,12 +290,13 @@
 
 /* NEW DESIGN */
 .project-specific-project {
-  background-color: #dce2c8;
+  /* background-color: #dce2c8 !important; */
   opacity: 0.8;
   border-radius: 15px;
-  min-height: 25vh;
   padding: 5vh;
-  margin-bottom: 5vh;
+  margin: 2vh;
+  height: 100vh;
+  /* max-height: 100vh; */
 }
 .project-specific-button {
   place-content: center;
