@@ -1,13 +1,12 @@
 import "./index.css";
-import { useState } from "react";
-import { Container, Row, Col, Image, Badge } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 
 import "rodal/lib/rodal.css";
 import Rodal from "rodal";
-import SpecificProject from "./Component/SpecificProject";
+import ProjectContent from "./Component/ProjectContent";
 
 const Education = () => {
-  const [projects] = useState([
+  const projects = [
     {
       id: 1,
       image: "bakeryMNL.PNG",
@@ -63,22 +62,11 @@ const Education = () => {
       isAddress: false,
       address: "https://michikogo.github.io/The-Mermaid-Spa-and-Bath/#/",
     },
-  ]);
+  ];
 
   return (
     <Container fluid className="project-background">
-      <Row className="project-title-row">
-        <Col>
-          <span className="project-title">Projects</span>
-        </Col>
-      </Row>
-      <Row className="project-row">
-        {projects.map((project) => (
-          <Col sm={12} className="project-specific-project">
-            <SpecificProject project={project} />
-          </Col>
-        ))}
-      </Row>
+      <ProjectContent projects={projects} />
     </Container>
   );
 };
