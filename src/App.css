@@ -9,3 +9,27 @@ font-family: 'Zilla Slab Highlight', cursive; */
 html {
   cursor: context-menu;
 }
+
+/* SCROLL */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: grey;
+  border-radius: 10px;
+  opacity: 0.8;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: grey;
+  border-radius: 0px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: grey;
+}

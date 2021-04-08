@@ -1,6 +1,7 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
 import SpecificProject from "./SpecificProject";
+import CardAnimation from "./CardAnimation/CardAnimation";
 
 const Content = ({ projects }) => {
   return (
@@ -12,11 +13,18 @@ const Content = ({ projects }) => {
       </Row>
       <Row className="project-row">
         {projects.map((project) => (
-          <Col sm={12} lg={5}>
+          <div>
+            <CardAnimation project={project} />
+          </div>
+        ))}
+      </Row>
+      {/* <Row className="project-row">
+        {projects.map((project) => (
+          <Col sm={12} lg={5} className="project-specific-project ">
             <SpecificProject project={project} />
           </Col>
         ))}
-      </Row>
+      </Row> */}
     </>
   );
 };
