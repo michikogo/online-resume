@@ -1,7 +1,7 @@
 import "./App.css";
 
 import Welcome from "./Components/Welcome/Welcome";
-import Portfolio from "./Components/Portfolio/Portfolio";
+import Project from "./Components/Portfolio/Project";
 import RoadMap from "./Components/RoadMap/RoadMap";
 import Contact from "./Components/Contact/Contact";
 import BackgroundAnimation from "./Components/BackgroundAnimation/BackgroundAnimation";
@@ -21,7 +21,7 @@ function App() {
       <Navbar />
 
       <div id="projects">
-        <Portfolio />
+        <Project />
       </div>
       <div id="roadmap">
         <RoadMap />
