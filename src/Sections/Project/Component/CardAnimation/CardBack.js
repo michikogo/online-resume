@@ -54,11 +54,11 @@ const CardBack = ({ project }) => {
       </Row>
       <Row className="project-specific-button">
         {project.isAddress && (
-          <button className="custom-btn btn-8">
-            <a href={project.address} target="_block">
-              Launch
-            </a>
-          </button>
+          <a href={project.address} target="_block">
+            <button className="custom-btn btn-8">
+              <span>Launch</span>
+            </button>
+          </a>
         )}
         {!project.isAddress && (
           <button className="custom-btn custom-button-disabled">
