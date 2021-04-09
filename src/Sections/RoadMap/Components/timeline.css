@@ -1,0 +1,18 @@
+/* TIMELINE PACKAGE */
+.vertical-timeline::before {
+  background: #a2ebf6 !important;
+}
+.vertical-timeline-element-icon {
+  -webkit-box-shadow: 0 0 0 4px #a2ebf6, inset 0 2px 0 rgb(0 0 0 / 8%),
+    0 3px 0 4px rgb(0 0 0 / 5%) !important;
+}
+.vertical-timeline-element-content {
+  position: relative;
+  margin-left: 60px;
+  background: #a2ebf6 !important;
+  border-radius: 10px !important;
+  padding: 1em;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  font-family: "Open Sans", sans-serif;
+}

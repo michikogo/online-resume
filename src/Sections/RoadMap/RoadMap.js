@@ -1,19 +1,12 @@
 import "./index.css";
-import { useState } from "react";
-import { Container, Row, Col, Image } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 
-import {
-  VerticalTimeline,
-  VerticalTimelineElement,
-} from "react-vertical-timeline-component";
-import "react-vertical-timeline-component/style.min.css";
-
-import GraduationSVG from "./Components/GraduationSVG";
-import WorkSVG from "./Components/WorkSVG";
-import FindingSVG from "./Components/FindingSVG";
+import RoadMapContent from "./Components/RoadMapContent";
+import WorkSVG from "./Components/SVG/WorkSVG";
+import GraduationSVG from "./Components/SVG/GraduationSVG";
 
 const RoadMap = () => {
-  const [details] = useState([
+  const details = [
     {
       id: 3,
       image: <GraduationSVG />,
@@ -47,79 +40,11 @@ const RoadMap = () => {
         "Occasionally went on field trips with elders to show them around the county.",
       ],
     },
-  ]);
+  ];
 
   return (
     <Container fluid className="roadmap-background">
-      <Row>
-        <Col className="roadmap-title-row">
-          <span className="roadmap-title">Road Map</span>
-        </Col>
-      </Row>
-      <Row className="roadmap-row">
-        <VerticalTimeline>
-          <VerticalTimelineElement
-            lassName="vertical-timeline-element--work"
-            contentArrowStyle={{
-              borderRight: "7px solid #a2ebf6",
-            }}
-            iconStyle={{ background: "#F68375", color: "#fff" }}
-            icon={<FindingSVG />}
-          >
-            <div className="roadmap-detail-future">
-              Currently Looking for Jobs
-            </div>
-          </VerticalTimelineElement>
-          {details.map((detail) => (
-            <VerticalTimelineElement
-              key={detail.id}
-              className="vertical-timeline-element--work"
-              contentArrowStyle={{
-                borderRight: "7px solid #a2ebf6",
-              }}
-              iconStyle={{ background: "#F68375", color: "#fff" }}
-              icon={detail.image}
-            >
-              {/* Date and Location */}
-              <div className="roadmap-detail-date-location-p">
-                <span className="roadmap-detail-date-location">
-                  {detail.date} | {detail.location}
-                </span>
-              </div>
-              {/* Position and Company */}
-              <div className="roadmap-detail-p">
-                <span className="roadmap-detail-position">
-                  {detail.position}
-                </span>
-                <span className="roadmap-detail-company">
-                  , {detail.company}
-                </span>
-              </div>
-              {/* Description */}
-              <div className="roadmap-detail-p">
-                {detail.description[0] != null &&
-                  detail.description.map((desc) => (
-                    <Row key={desc}>
-                      <Col xs={2} sm={1} className="roadmap-detail-image">
-                        <Image
-                          fluid
-                          alt="check-mark"
-                          src={
-                            require("../../Assets/Image/check-mark.png").default
-                          }
-                          width="15"
-                        />
-                      </Col>
-                      <Col>
-                        <div className="roadmap-detail-description">{desc}</div>
-                      </Col>
-                    </Row>
-                  ))}
-              </div>
-            </VerticalTimelineElement>
-          ))}
-        </VerticalTimeline>
-      </Row>
+      <RoadMapContent details={details} />
     </Container>
   );
 };
