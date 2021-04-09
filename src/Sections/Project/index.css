@@ -45,7 +45,7 @@
 }
 @media (max-width: 600px) {
   .project-row {
-    padding: 0px 5vh;
+    padding: 0px 0vh;
   }
 }
 /* Bootstrap */
@@ -123,6 +123,13 @@
   font-size: xx-large;
   margin-bottom: -15px;
 }
+@media (max-width: 400px) {
+  .project-modal-name {
+    font-family: "Bebas Neue", cursive;
+    font-size: 26px;
+    margin-bottom: -10px;
+  }
+}
 .project-modal-image-col {
   align-self: center;
 }
@@ -138,9 +145,13 @@
   text-align: left;
 }
 .project-modal-image {
-  width: 60vh;
+  width: 40vh;
   object-fit: cover;
   transition: 0.5s ease;
+}
+.project-front-row {
+  height: 100%;
+  align-content: center;
 }
 .project-modal-features {
   font-family: "Open Sans", sans-serif;
@@ -157,11 +168,11 @@
     content-visibility: hidden;
   }
 }
-@media (max-width: 767px) {
+/* @media (max-width: 767px) {
   .project-modal-image {
     width: 50%;
   }
-}
+} */
 @media (max-width: 940px) {
   .rodal-dialog {
     width: 95% !important;
@@ -172,10 +183,6 @@
     height: 92vh;
     padding: 2vh;
     overflow-y: auto;
-  }
-
-  .project-modal-image {
-    padding-bottom: 10px;
   }
   .project-modal-header,
   .project-modal-bullet,
