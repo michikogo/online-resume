@@ -12,6 +12,7 @@
   padding: 0vh 15vh;
   min-height: 78vh;
   align-items: center;
+  place-content: center;
 }
 .roadmap-title-row {
   padding: 5vh 0vh;
@@ -88,6 +89,13 @@
   font-family: "Boogaloo", cursive;
   font-size: xx-large !important;
   color: #f68375;
+}
+/*  */
+@media (min-width: 1170px) {
+  .vertical-timeline.vertical-timeline--two-columns {
+    width: 100% !important;
+    margin: 0px;
+  }
 }
 @media (max-width: 600px) {
   .roadmap-row {
