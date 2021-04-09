@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Boogaloo&family=Knewave&family=Open+Sans:wght@300&family=Zilla+Slab+Highlight&display=swap");
-
 .roadmap-background {
   background-color: #f68375;
   min-height: 100vh;
@@ -96,21 +94,39 @@
     padding: 0px 5vh;
   }
 }
-/* TIMELINE PACKAGE */
-.vertical-timeline::before {
-  background: #a2ebf6 !important;
-}
-.vertical-timeline-element-icon {
-  -webkit-box-shadow: 0 0 0 4px #a2ebf6, inset 0 2px 0 rgb(0 0 0 / 8%),
-    0 3px 0 4px rgb(0 0 0 / 5%) !important;
-}
-.vertical-timeline-element-content {
-  position: relative;
-  margin-left: 60px;
-  background: #a2ebf6 !important;
-  border-radius: 10px !important;
-  padding: 1em;
-  -webkit-box-shadow: none !important;
-  box-shadow: none !important;
-  font-family: "Open Sans", sans-serif;
+@media (min-width: 1445px) {
+  .roadmap-title {
+    font-size: 15vh;
+  }
+  .roadmap-detail-position,
+  .roadmap-detail-future {
+    font-size: 8vh !important;
+  }
+  .roadmap-detail-company {
+    font-size: 5vh;
+  }
+  .roadmap-detail-date-location {
+    font-size: 4vh;
+  }
+  .roadmap-detail-description {
+    font-size: xx-large !important;
+  }
+  .vertical-timeline {
+    max-width: 100% !important;
+  }
+  .vertical-timeline::before {
+    width: 1vh !important;
+  }
+  .vertical-timeline--two-columns .vertical-timeline-element-icon {
+    width: 13vh !important;
+    height: 13vh !important;
+    left: 48% !important;
+    margin-left: -22px !important;
+  }
+  .roadmap-svg {
+    width: 8vh !important;
+    height: 8vh !important;
+    left: 30% !important;
+    top: 30% !important;
+  }
 }
