@@ -6,10 +6,10 @@
   padding: 15vh 0vh;
 }
 .project-row {
-  padding: 0vh 0vh;
+  padding: 0vh 5vh;
   min-height: 78vh;
-  align-items: center;
-  justify-content: center;
+  /* align-items: center; */
+  /* justify-content: center; */
 }
 .project-title-row {
   padding: 5vh 0vh;
@@ -23,6 +23,13 @@
   -webkit-text-stroke-width: 3px;
   -webkit-text-stroke-color: #6d545d;
   animation: titleShadow 10s infinite ease-in;
+}
+.project-tab-row {
+  padding: 5vh 0vh;
+  background-color: rgb(237, 232, 234, 0.5);
+  border: 0.5px solid lightgray;
+  border-bottom-left-radius: 2vh;
+  border-bottom-right-radius: 2vh;
 }
 @keyframes titleShadow {
   0%,
