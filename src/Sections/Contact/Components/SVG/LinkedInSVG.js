@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { OverlayTrigger, Tooltip } from "react-bootstrap";
 
-const LinkedIn = () => {
+const LinkedInSVG = () => {
   const [linkedIn, setLinkedIn] = useState(false);
 
   return (
@@ -106,4 +106,4 @@ const LinkedIn = () => {
   );
 };
 
-export default LinkedIn;
+export default LinkedInSVG;

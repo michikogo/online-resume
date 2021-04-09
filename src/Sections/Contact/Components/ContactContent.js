@@ -1,12 +1,12 @@
 import { useState } from "react";
 import { Row, Col } from "react-bootstrap";
 
-import Github from "./Github";
-import LinkedIn from "./LinkedIn";
+import GithubSVG from "./SVG/GithubSVG";
+import LinkedInSVG from "./SVG/LinkedInSVG";
 import ContactForm from "./ContactForm";
 
 const ContactContent = () => {
-  const [media] = useState([<Github />, <LinkedIn />]);
+  const [media] = useState([<GithubSVG />, <LinkedInSVG />]);
 
   return (
     <>
