@@ -61,3 +61,11 @@
     padding: 2vh 2vh;
   }
 }
+@media (min-width: 1445px) {
+  .navbar-link {
+    font-size: 5vh;
+  }
+  .progress-bar {
+    height: 2vh;
+  }
+}
