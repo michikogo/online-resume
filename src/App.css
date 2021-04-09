@@ -10,25 +10,44 @@ html {
   cursor: context-menu;
 }
 
+/* Bootstrap */
+.badge-primary {
+  width: 100%;
+  background-color: #6d545d !important;
+}
+.nav-justified .nav-item {
+  align-self: flex-end;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+}
+.nav-tabs .nav-link {
+  border: 1px solid lightgrey !important;
+  background-color: rgb(109, 84, 93, 0.8) !important;
+  color: white !important;
+}
+.nav-tabs .nav-link.active {
+  color: #6d545d !important;
+  border-color: lightgrey !important;
+  background-color: rgb(237, 232, 234, 0.8) !important;
+  border-bottom: rgb(237, 232, 234, 0.8) !important;
+}
+
 /* SCROLL */
 /* width */
 ::-webkit-scrollbar {
   width: 10px;
 }
-
 /* Track */
 ::-webkit-scrollbar-track {
   box-shadow: grey;
   border-radius: 10px;
   opacity: 0.8;
 }
-
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: grey;
   border-radius: 0px;
 }
-
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: grey;
