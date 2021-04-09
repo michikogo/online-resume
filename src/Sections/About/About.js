@@ -1,12 +1,9 @@
 import "./index.css";
-import { useState, useEffect } from "react";
-import { Container, Row, Col } from "react-bootstrap";
-import HoneyComb from "./Components/HoneyComb";
-import ImageRight from "./Components/ImageRight";
-import ImageLeft from "./Components/ImageLeft";
+import { Container } from "react-bootstrap";
+import AboutContent from "./Components/AboutContent";
 
 const About = () => {
-  const [programming] = useState([
+  const programming = [
     [
       { id: 1, name: "C", image: "c.png" },
       { id: 2, name: "C#", image: "c#.png" },
@@ -32,10 +29,10 @@ const About = () => {
       { id: 14, name: "mySQL", image: "mysql.png" },
       { id: 15, name: "mongoDB", image: "mongodb.png" },
     ],
-  ]);
+  ];
   // console.log("programming: " + programming.length);
 
-  const [applications] = useState([
+  const applications = [
     [
       { id: 1, name: "Dev C", image: "dev-c.png" },
       { id: 2, name: "Netbeans", image: "intellij-idea.png" },
@@ -61,140 +58,12 @@ const About = () => {
       { id: 14, name: "Pentaho", image: "pentaho.png" },
       { id: 15, name: "PowerBI", image: "powerBi.png" },
     ],
-  ]);
-
+  ];
   // console.log("applications: " + applications.length);
-  const [mouseEnterSection1, setMouseEnterSection1] = useState(false);
-  const [mouseEnterSection2, setMouseEnterSection2] = useState(false);
-  const [sectionData, setSectionData] = useState(null);
-
-  const handleEnter = (boolean, id, section) => {
-    // console.log(`Mouse Enter: ${boolean} | ${id} | ${section}`);
-    if (section === 1) {
-      // console.log("entered section 1");
-      setMouseEnterSection1(boolean);
-      programming.forEach((rowArray) => {
-        rowArray
-          .filter((specificCol) => specificCol.id === id)
-          .forEach((item) => {
-            // console.log(item);
-            setSectionData(item);
-          });
-      });
-      //
-    } else {
-      // console.log("entered section 1");
-      setMouseEnterSection2(boolean);
-      applications.forEach((rowArray) => {
-        rowArray
-          .filter((specificCol) => specificCol.id === id)
-          .forEach((item) => {
-            setSectionData(item);
-          });
-      });
-    }
-  };
-
-  const [mobileMode, setMobileMode] = useState(false);
-  useEffect(() => {
-    window.addEventListener("scroll", checkWidth, true);
-    // window.onscroll = function () {
-    //   checkWidth();
-    // };
-
-    // function checkWidth() {
-    //   // console.log(window.innerWidth);
-    //   if (window.innerWidth > 1024) {
-    //     setMobileMode(false);
-    //   } else {
-    //     setMobileMode(true);
-    //   }
-    // }
-  }, []);
-
-  const checkWidth = () => {
-    if (window.innerWidth > 1024) {
-      setMobileMode(false);
-    } else {
-      setMobileMode(true);
-    }
-  };
 
   return (
     <Container fluid className="about-background">
-      <Row className="about-title-row">
-        <Col>
-          <span className="about-title">About</span>
-        </Col>
-      </Row>
-      <Row className="about-row">
-        <Col>
-          {mobileMode && (
-            <Row>
-              <Col>
-                <span className="about-description">
-                  Hi I am Michiko Go, I recently graduated last February 2021 in
-                  the course BS Computer Science. College was fun and I learned
-                  a lot and I can't wait to use my skills in your business. I
-                  learned various of languages and tools for development, but
-                  I'm most interested in web and mobile development since it
-                  challenged me the most especially when animating a web or
-                  mobile page.
-                </span>
-              </Col>
-            </Row>
-          )}
-          <Row className="about-section justify-content-md-center">
-            <Col sm={6} lg={4} className="about-hexagon-background">
-              {programming.map((indexRow, index) => (
-                <HoneyComb
-                  key={index}
-                  handleEnter={handleEnter}
-                  row={indexRow}
-                  section="1"
-                />
-              ))}
-            </Col>
-            {!mobileMode && (
-              <Col lg={4} className="about-description-col">
-                <span className="about-description">
-                  Hi I am Michiko Go, I recently graduated last February 2021 in
-                  the course BS Computer Science. College was fun and I learned
-                  a lot and I can't wait to use my skills in your business. I
-                  learned various of languages and tools for development, but
-                  I'm most interested in web and mobile development since it
-                  challenged me the most especially when animating a web or
-                  mobile page.
-                </span>
-              </Col>
-            )}
-            <Col sm={6} lg={4} className="about-image-col">
-              <ImageRight />
-              {/* {mouseEnterSection1 && (
-                <SkillDetails sectionData={sectionData} />
-              )} */}
-            </Col>
-          </Row>
-          <Row className="about-section justify-content-md-center">
-            <Col sm={6} lg={4} className="about-image-col">
-              <ImageLeft />
-              {/* {mouseEnterSection2 && (
-                    <SkillDetails sectionData={sectionData} />
-                  )} */}
-            </Col>
-            <Col sm={6} lg={4} className="about-hexagon-background">
-              {applications.map((indexRow, index) => (
-                <HoneyComb
-                  key={index}
-                  handleEnter={handleEnter}
-                  row={indexRow}
-                  section="2"
-                />
-              ))}
-            </Col>
-          </Row>
-        </Col>
-      </Row>
+      <AboutContent programming={programming} applications={applications} />
     </Container>
   );
 };
