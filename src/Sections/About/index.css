@@ -104,6 +104,9 @@
   .about-description {
     font-size: xx-large;
   }
+  .about-title {
+    font-size: 30vh;
+  }
 }
 /* HoneyComb.js */
 .about-honeyComb-image {
