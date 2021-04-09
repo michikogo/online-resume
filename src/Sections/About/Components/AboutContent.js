@@ -62,7 +62,13 @@ const AboutContent = ({ programming, applications }) => {
         <Col>
           <Row className="about-section justify-content-md-center">
             {/* LANGUAGES */}
-            <Col sm={6} lg={4} className="about-hexagon-background">
+            <Col
+              data-aos="fade-right"
+              data-aos-offset="300"
+              sm={6}
+              lg={4}
+              className="about-hexagon-background"
+            >
               {programming.map((indexRow, index) => (
                 <HoneyComb
                   key={index}
@@ -74,7 +80,7 @@ const AboutContent = ({ programming, applications }) => {
             </Col>
             {/* DESCRIPTION-DESKTOP */}
             {!isMobileMode && (
-              <Col lg={4} className="about-description-col">
+              <Col data-aos="flip-up" lg={4} className="about-description-col">
                 <span className="about-description">
                   Hi I am Michiko Go, I recently graduated last February 2021 in
                   the course BS Computer Science. College was fun and I learned
@@ -87,14 +93,20 @@ const AboutContent = ({ programming, applications }) => {
               </Col>
             )}
             {/* LANGUAGE-IMAGE */}
-            <Col sm={6} lg={4} className="about-image-col">
+            <Col
+              data-aos="fade-left"
+              data-aos-offset="300"
+              sm={6}
+              lg={4}
+              className="about-image-col"
+            >
               <LanguageImage />
             </Col>
           </Row>
           {/* DESCRIPTION-MOBILE */}
           {isMobileMode && (
             <Row>
-              <Col>
+              <Col data-aos="flip-up">
                 <span className="about-description">
                   Hi I am Michiko Go, I recently graduated last February 2021 in
                   the course BS Computer Science. College was fun and I learned
@@ -109,11 +121,23 @@ const AboutContent = ({ programming, applications }) => {
           )}
           <Row className="about-section justify-content-md-center">
             {/* TOOLS-IMAGE */}
-            <Col sm={6} lg={4} className="about-image-col">
+            <Col
+              data-aos="zoom-in-right"
+              data-aos-offset="200"
+              sm={6}
+              lg={4}
+              className="about-image-col"
+            >
               <ToolsImage />
             </Col>
             {/* TOOLS */}
-            <Col sm={6} lg={4} className="about-hexagon-background">
+            <Col
+              data-aos="zoom-in-left"
+              data-aos-offset="200"
+              sm={6}
+              lg={4}
+              className="about-hexagon-background"
+            >
               {applications.map((indexRow, index) => (
                 <HoneyComb
                   key={index}
