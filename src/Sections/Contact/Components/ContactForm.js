@@ -1,32 +1,30 @@
 import { useState, useEffect } from "react";
 import { Form } from "react-bootstrap";
+
 import firebaseDB from "../../../firebase";
 
 const ContactForm = () => {
   const [email, setEmail] = useState("");
-  const [subject, setSubject] = useState("");
   const [body, setBody] = useState("");
   const [animate, setAnimate] = useState(false);
 
   useEffect(() => {}, [animate]);
 
-  const handleSubmit = (e, email, subject, body) => {
+  const handleSubmit = (e, email, body) => {
     e.preventDefault();
 
     // firebase here
     firebaseDB
       .firestore()
       .collection("ResumeContacts")
-      .add({ email, subject, body })
+      .add({ email, body })
       .then(() => {
         console.log("Submitted");
         console.log(email);
         console.log(body);
-        console.log(subject);
         console.log("animate: " + animate);
         setAnimate(true);
         setEmail("");
-        setSubject("");
         setBody("");
       })
       .catch((err) => {
@@ -36,7 +34,8 @@ const ContactForm = () => {
   };
 
   return (
-    <Form onSubmit={(e) => handleSubmit(e, email, subject, body)}>
+    <Form onSubmit={(e) => handleSubmit(e, email, body)}>
+      {/* Email */}
       <Form.Group controlId="exampleForm.ControlInput1">
         <Form.Label>Email Address</Form.Label>
         <Form.Control
@@ -47,26 +46,19 @@ const ContactForm = () => {
           onChange={(e) => setEmail(e.target.value)}
         />
       </Form.Group>
-      <Form.Group controlId="exampleForm.ControlInput1">
-        <Form.Label>Subject</Form.Label>
-        <Form.Control
-          type="text"
-          placeholder="Enter Subject"
-          value={subject}
-          onChange={(e) => setSubject(e.target.value)}
-        />
-      </Form.Group>
+      {/* Message */}
       <Form.Group controlId="exampleForm.ControlTextarea1">
-        <Form.Label>Body</Form.Label>
+        <Form.Label>Message</Form.Label>
         <Form.Control
           required
           as="textarea"
-          rows={3}
+          rows={4}
           placeholder="Enter Body"
           value={body}
           onChange={(e) => setBody(e.target.value)}
         />
       </Form.Group>
+      {/* Button */}
       <div className={animate ? "contact-form-button-row-loading" : ""}>
         <button
           className={
