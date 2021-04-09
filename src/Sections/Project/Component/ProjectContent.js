@@ -1,4 +1,4 @@
-import React from "react";
+import "./buttonAnimate.css";
 import { Col, Row } from "react-bootstrap";
 import SpecificProject from "./SpecificProject";
 import CardAnimation from "./CardAnimation/CardAnimation";
