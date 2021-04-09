@@ -1,6 +1,4 @@
-import React from "react";
-
-const ImageLeft = () => {
+const ToolsImage = () => {
   return (
     <svg
       className="about-image-left"
@@ -1383,4 +1381,4 @@ const ImageLeft = () => {
   );
 };
 
-export default ImageLeft;
+export default ToolsImage;

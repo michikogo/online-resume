@@ -1,6 +1,4 @@
-import React from "react";
-
-const ImageRight = () => {
+const LanguageImage = () => {
   return (
     <svg
       className="about-image-right"
@@ -2221,4 +2219,4 @@ const ImageRight = () => {
   );
 };
 
-export default ImageRight;
+export default LanguageImage;
