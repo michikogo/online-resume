@@ -1,25 +1,26 @@
-import "./buttonAnimate.css";
 import { useState } from "react";
 import { Col, Row, Nav } from "react-bootstrap";
-import SpecificProject from "./SpecificProject";
+
 import CardAnimation from "./CardAnimation/CardAnimation";
 
-const Content = ({ webProjects, mobileProjects, otherProjects }) => {
+const ProjectContent = ({ webProjects, mobileProjects, otherProjects }) => {
   const [activeNav, setActiveNav] = useState("webProjects");
   return (
     <>
       {/* TITLE */}
-      <Row className="project-title-row">
+      <Row className="project-content-title-row">
         <Col>
-          <span className="project-title">Projects</span>
+          <span className="project-content-title">Projects</span>
         </Col>
       </Row>
-      <Row className="project-row">
+      <Row className="project-content-content-row">
         <Col>
           {/* NAV BAR */}
           <Nav justify variant="tabs" defaultActiveKey={activeNav}>
             <Nav.Item>
+              {/* WEB PROJECTS */}
               <Nav.Link
+                className="project-content-nav-link"
                 eventKey="webProjects"
                 onClick={() => setActiveNav("webProjects")}
               >
@@ -27,7 +28,9 @@ const Content = ({ webProjects, mobileProjects, otherProjects }) => {
               </Nav.Link>
             </Nav.Item>
             <Nav.Item>
+              {/* MOBILE PROJECTS */}
               <Nav.Link
+                className="project-content-nav-link"
                 eventKey="mobileProjects"
                 onClick={() => setActiveNav("mobileProjects")}
               >
@@ -35,7 +38,9 @@ const Content = ({ webProjects, mobileProjects, otherProjects }) => {
               </Nav.Link>
             </Nav.Item>
             <Nav.Item>
+              {/* OTHER PROJECTS */}
               <Nav.Link
+                className="project-content-nav-link"
                 eventKey="otherProjects"
                 onClick={() => setActiveNav("otherProjects")}
               >
@@ -44,19 +49,22 @@ const Content = ({ webProjects, mobileProjects, otherProjects }) => {
             </Nav.Item>
           </Nav>
           {/* ANIMATED CARD */}
-          <Row className="project-tab-row">
+          <Row className="project-content-projects-row">
+            {/* WEB PROJECTS */}
             {activeNav == "webProjects" &&
               webProjects.map((webProject) => (
                 <Col sm={6}>
                   <CardAnimation project={webProject} />
                 </Col>
               ))}
+            {/* MOBILE PROJECTS */}
             {activeNav == "mobileProjects" &&
               mobileProjects.map((mobileProject) => (
                 <Col sm={6}>
                   <CardAnimation project={mobileProject} />
                 </Col>
               ))}
+            {/* OTHER PROJECTS */}
             {activeNav == "otherProjects" &&
               otherProjects.map((otherProject) => (
                 <Col sm={6}>
@@ -66,16 +74,8 @@ const Content = ({ webProjects, mobileProjects, otherProjects }) => {
           </Row>
         </Col>
       </Row>
-      {/* CARD WITHOUT ANIMATION */}
-      {/* <Row className="project-row">
-        {projects.map((project) => (
-          <Col sm={12} lg={5} className="project-specific-project ">
-            <SpecificProject project={project} />
-          </Col>
-        ))}
-      </Row> */}
     </>
   );
 };
 
-export default Content;
+export default ProjectContent;

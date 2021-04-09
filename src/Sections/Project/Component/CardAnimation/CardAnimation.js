@@ -1,7 +1,7 @@
 import "./cardStyle.css";
+
 import CardFront from "./CardFront";
 import CardBack from "./CardBack";
-import { Row, Col } from "react-bootstrap";
 
 // https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_flip_card
 const CardAnimationTrial = ({ project }) => {
