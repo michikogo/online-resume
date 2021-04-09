@@ -1,7 +1,6 @@
-import React from "react";
 import { Col, Row, Image, Badge } from "react-bootstrap";
 
-import Flippy, { FrontSide, BackSide } from "react-flippy";
+// import Flippy, { FrontSide, BackSide } from "react-flippy";
 
 const SpecificProject = ({ project }) => {
   return (
@@ -68,9 +67,11 @@ const SpecificProject = ({ project }) => {
       </Row>
       <Row className="project-specific-button">
         {project.isAddress && (
-          <button className="custom-btn btn-8">
-            <span>Launch</span>
-          </button>
+          <a href="https://coolors.co/f68375-13b4cd-a8dcd1-dce2c8-6d545d">
+            <button className="custom-btn btn-8">
+              <span>Launch</span>
+            </button>
+          </a>
         )}
         {!project.isAddress && (
           <button className="custom-btn custom-button-disabled">
