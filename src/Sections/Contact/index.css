@@ -1,8 +1,35 @@
+/* Contact.js */
 .contact-background {
   background-color: #f68375;
   min-height: 100vh;
   text-align: center;
   padding: 15vh 0vh;
+}
+/* ContactContent.js */
+.contact-title-row {
+  padding: 5vh 0vh;
+  font-size: 10vh;
+}
+.contact-title {
+  cursor: context-menu;
+  font-family: "Bebas Neue", cursive;
+  letter-spacing: 0.1em;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: #6d545d;
+  animation: titleShadow 10s infinite ease-in;
+}
+@keyframes titleShadow {
+  0%,
+  100% {
+    text-shadow: none;
+  }
+  50% {
+    text-shadow: 1px 1px 1px #dce2c8, 2px 2px 1px #dce2c8, 1px 1px 1px #dce2c8,
+      4px 4px 1px #dce2c8, 5px 5px 1px #dce2c8, 6px 6px 1px #dce2c8,
+      7px 7px 1px #dce2c8, 8px 8px 1px #dce2c8, 9px 9px 1px #dce2c8,
+      10px 10px 1px #c3cea1;
+  }
 }
 .contact-row {
   padding: 0px 15vh;
@@ -15,9 +42,13 @@
   padding: 0px 20vh !important;
   text-align: left;
 }
-.contact-form-button-row {
-  /* text-align: center; */
+.contact-media-padding {
+  padding: 5vh 0vh !important;
 }
+.contact-social-row {
+  justify-content: center;
+}
+/* ContactForm */
 .contact-form-button-row-loading {
   background-color: #6d545d;
   height: 31px;
@@ -32,16 +63,6 @@
     transparent 75%,
     transparent
   );
-  /* animation: animate-stripes 0.6s linear infinite; */
-}
-@keyframes animate-stripes {
-  0% {
-    background-position: 0 0;
-  }
-
-  100% {
-    background-position: 60px 0;
-  }
 }
 .contact-form-button {
   align-items: center;
@@ -68,7 +89,7 @@
 .contact-form-button-sending,
 .contact-form-button-sending::after {
   content: "Sent";
-  animation: sending 2s linear;
+  animation: sending 1s linear;
   animation-iteration-count: 1s;
   vertical-align: top;
   border-radius: 5px;
@@ -88,9 +109,6 @@
     content: "Sent";
   }
 }
-.contact-media-padding {
-  padding: 5vh 0vh !important;
-}
 .contact-email {
   color: #6d545d !important;
 }
@@ -98,34 +116,6 @@
   color: #dce2c8 !important;
   font-style: italic;
   text-decoration: none;
-}
-.contact-social-row {
-  justify-content: center;
-}
-.contact-title-row {
-  padding: 5vh 0vh;
-  font-size: 10vh;
-}
-.contact-title {
-  cursor: context-menu;
-  font-family: "Bebas Neue", cursive;
-  letter-spacing: 0.1em;
-  -webkit-text-fill-color: transparent;
-  -webkit-text-stroke-width: 3px;
-  -webkit-text-stroke-color: #6d545d;
-  animation: titleShadow 10s infinite ease-in;
-}
-@keyframes titleShadow {
-  0%,
-  100% {
-    text-shadow: none;
-  }
-  50% {
-    text-shadow: 1px 1px 1px #dce2c8, 2px 2px 1px #dce2c8, 1px 1px 1px #dce2c8,
-      4px 4px 1px #dce2c8, 5px 5px 1px #dce2c8, 6px 6px 1px #dce2c8,
-      7px 7px 1px #dce2c8, 8px 8px 1px #dce2c8, 9px 9px 1px #dce2c8,
-      10px 10px 1px #c3cea1;
-  }
 }
 @media (max-width: 600px) {
   .contact-row {
@@ -140,7 +130,7 @@
     padding: 0px 10vh !important;
   }
 }
-/* https://codepen.io/nelledejones/pen/gOOPWrK */
+/* Github.js LinkedIn.js */
 .contact-media-image {
   height: 11vh;
   width: 11vh;
@@ -163,10 +153,4 @@
   60% {
     transform: translateY(-15px);
   }
-}
-.contact-text {
-  font-family: "Zilla Slab Highlight", cursive;
-}
-a {
-  color: black !important;
 }

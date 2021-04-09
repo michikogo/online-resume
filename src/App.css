@@ -9,7 +9,9 @@ font-family: 'Zilla Slab Highlight', cursive; */
 html {
   cursor: context-menu;
 }
-
+a {
+  color: black !important;
+}
 /* Bootstrap */
 .badge-primary {
   width: 100%;
