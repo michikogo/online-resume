@@ -8,7 +8,7 @@ const ProjectBack = ({ project }) => {
         {/* TITLE & TYPE*/}
         <Col>
           <p className="project-front-name">{project.name}</p>
-          <p>{project.type}</p>
+          <p className="project-front-type">{project.type}</p>
         </Col>
       </Row>
       {/* SUMMARY */}
