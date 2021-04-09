@@ -1,8 +1,6 @@
 import "./index.css";
 import { Container } from "react-bootstrap";
 
-import "rodal/lib/rodal.css";
-import Rodal from "rodal";
 import ProjectContent from "./Component/ProjectContent";
 
 const Education = () => {
