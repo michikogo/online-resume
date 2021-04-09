@@ -9,8 +9,8 @@ const HoneyComb = ({ row, handleEnter, section }) => {
           key={item.id}
           xs={3}
           className="about-honeyComb-col"
-          onMouseEnter={() => handleEnter(true, item.id, section)}
-          onMouseLeave={() => handleEnter(false, item.id, section)}
+          // onMouseEnter={() => handleEnter(true, item.id, section)}
+          // onMouseLeave={() => handleEnter(false, item.id, section)}
         >
           <Hexagon
             className="about-honeyComb-image"
@@ -18,7 +18,6 @@ const HoneyComb = ({ row, handleEnter, section }) => {
             backgroundImage={
               require(`../../../Assets/Logo/${item.image}`).default
             }
-            // href="http://espen.codes/"
           />
         </Col>
       ))}
