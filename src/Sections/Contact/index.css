@@ -130,6 +130,24 @@
     padding: 0px 10vh !important;
   }
 }
+@media (min-width: 1445px) {
+  .contact-form-label,
+  .contact-form-button-sent,
+  .contact-media-padding {
+    font-size: xx-large;
+  }
+  .contact-form-input {
+    font-size: xx-large !important;
+    border-radius: 1vh !important;
+  }
+  .contact-title {
+    font-size: 15vh;
+  }
+  .contact-media-image {
+    width: 20vh !important;
+    height: 20vh !important;
+  }
+}
 /* Github.js LinkedIn.js */
 .contact-media-image {
   height: 11vh;

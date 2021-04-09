@@ -37,9 +37,10 @@ const ContactForm = () => {
     <Form onSubmit={(e) => handleSubmit(e, email, body)}>
       {/* Email */}
       <Form.Group controlId="exampleForm.ControlInput1">
-        <Form.Label>Email Address</Form.Label>
+        <Form.Label className="contact-form-label">Email Address</Form.Label>
         <Form.Control
           required
+          className="contact-form-input"
           type="email"
           placeholder="Enter Email"
           value={email}
@@ -48,12 +49,13 @@ const ContactForm = () => {
       </Form.Group>
       {/* Message */}
       <Form.Group controlId="exampleForm.ControlTextarea1">
-        <Form.Label>Message</Form.Label>
+        <Form.Label className="contact-form-label">Message</Form.Label>
         <Form.Control
           required
+          className="contact-form-input"
           as="textarea"
           rows={4}
-          placeholder="Enter Body"
+          placeholder="Enter Message"
           value={body}
           onChange={(e) => setBody(e.target.value)}
         />
