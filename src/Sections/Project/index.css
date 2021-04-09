@@ -113,3 +113,38 @@
     font-size: small;
   }
 }
+@media (min-width: 1445px) {
+  .project-content-title {
+    font-size: 15vh;
+  }
+  .project-content-nav-link {
+    font-size: 4vh;
+  }
+  .project-front-name {
+    font-size: 8vh;
+  }
+  .project-front-type {
+    font-size: 4vh;
+  }
+  .project-back-summary,
+  .project-back-section-title,
+  .project-back-bullet,
+  .badge-primary {
+    font-size: xx-large;
+    font-weight: 600;
+  }
+  .badge-primary {
+    font-size: xx-large !important;
+    border-radius: 1vh !important;
+  }
+  .custom-btn {
+    width: 27vh !important;
+    height: 7vh !important;
+    border-radius: 1vh !important;
+  }
+  .btn-8 span,
+  .custom-button-disabled {
+    font-size: xx-large !important;
+    padding-top: 1vh;
+  }
+}
