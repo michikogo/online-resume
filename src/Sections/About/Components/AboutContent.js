@@ -66,7 +66,7 @@ const AboutContent = ({ programming, applications }) => {
               data-aos="fade-right"
               data-aos-offset="300"
               sm={6}
-              lg={4}
+              lg={3}
               className="about-hexagon-background"
             >
               {programming.map((indexRow, index) => (
@@ -80,7 +80,7 @@ const AboutContent = ({ programming, applications }) => {
             </Col>
             {/* DESCRIPTION-DESKTOP */}
             {!isMobileMode && (
-              <Col data-aos="flip-up" lg={4} className="about-description-col">
+              <Col data-aos="flip-up" lg={6} className="about-description-col">
                 <span className="about-description">
                   Hi I am Michiko Go, I recently graduated last February 2021 in
                   the course BS Computer Science. College was fun and I learned
@@ -97,7 +97,7 @@ const AboutContent = ({ programming, applications }) => {
               data-aos="fade-left"
               data-aos-offset="300"
               sm={6}
-              lg={4}
+              lg={3}
               className="about-image-col"
             >
               <LanguageImage />
@@ -125,7 +125,7 @@ const AboutContent = ({ programming, applications }) => {
               data-aos="zoom-in-right"
               data-aos-offset="200"
               sm={6}
-              lg={4}
+              lg={3}
               className="about-image-col"
             >
               <ToolsImage />
@@ -135,7 +135,7 @@ const AboutContent = ({ programming, applications }) => {
               data-aos="zoom-in-left"
               data-aos-offset="200"
               sm={6}
-              lg={4}
+              lg={{ offset: 2, span: 3 }}
               className="about-hexagon-background"
             >
               {applications.map((indexRow, index) => (
