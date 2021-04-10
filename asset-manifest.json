@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/resume/static/css/main.e08f0955.chunk.css",
-    "main.js": "/resume/static/js/main.d96869b5.chunk.js",
-    "main.js.map": "/resume/static/js/main.d96869b5.chunk.js.map",
+    "main.css": "/resume/static/css/main.4708406f.chunk.css",
+    "main.js": "/resume/static/js/main.eb79144b.chunk.js",
+    "main.js.map": "/resume/static/js/main.eb79144b.chunk.js.map",
     "runtime-main.js": "/resume/static/js/runtime-main.13481452.js",
     "runtime-main.js.map": "/resume/static/js/runtime-main.13481452.js.map",
     "static/css/2.33946507.chunk.css": "/resume/static/css/2.33946507.chunk.css",
@@ -12,7 +12,7 @@
     "static/js/3.fdbb0ff2.chunk.js.map": "/resume/static/js/3.fdbb0ff2.chunk.js.map",
     "index.html": "/resume/index.html",
     "static/css/2.33946507.chunk.css.map": "/resume/static/css/2.33946507.chunk.css.map",
-    "static/css/main.e08f0955.chunk.css.map": "/resume/static/css/main.e08f0955.chunk.css.map",
+    "static/css/main.4708406f.chunk.css.map": "/resume/static/css/main.4708406f.chunk.css.map",
     "static/js/2.032c3704.chunk.js.LICENSE.txt": "/resume/static/js/2.032c3704.chunk.js.LICENSE.txt",
     "static/media/HUMALIT.PNG": "/resume/static/media/HUMALIT.526024d8.PNG",
     "static/media/android-studio.png": "/resume/static/media/android-studio.69784de8.png",
@@ -56,7 +56,7 @@
     "static/js/runtime-main.13481452.js",
     "static/css/2.33946507.chunk.css",
     "static/js/2.032c3704.chunk.js",
-    "static/css/main.e08f0955.chunk.css",
-    "static/js/main.d96869b5.chunk.js"
+    "static/css/main.4708406f.chunk.css",
+    "static/js/main.eb79144b.chunk.js"
   ]
 }
