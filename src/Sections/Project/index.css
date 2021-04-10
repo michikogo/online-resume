@@ -50,13 +50,15 @@
   height: 100%;
   align-content: center;
 }
-.project-front-name {
+.project-front-name,
+.project-back-name {
   font-family: "Bebas Neue", cursive;
   font-size: xx-large;
   margin-bottom: -15px;
 }
 @media (max-width: 400px) {
-  .project-front-name {
+  .project-front-name,
+  .project-back-name {
     font-size: 26px;
     margin-bottom: -10px;
   }
@@ -120,11 +122,19 @@
   .project-content-nav-link {
     font-size: 4vh;
   }
-  .project-front-name {
+  .project-front-name,
+  .project-back-name {
     font-size: 8vh;
   }
-  .project-front-type {
+  .project-front-type,
+  .project-back-type {
     font-size: 4vh;
+  }
+  .project-front-name,
+  .project-front-type {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
   .project-back-summary,
   .project-back-section-title,

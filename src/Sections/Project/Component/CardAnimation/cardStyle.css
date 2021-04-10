@@ -55,3 +55,9 @@ div::-webkit-scrollbar-thumb {
     perspective: 1000px;
   }
 }
+@media (max-width: 400px) {
+  .flip-card-front,
+  .flip-card-back {
+    padding: 2vh 0vh;
+  }
+}
