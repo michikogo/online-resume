@@ -20,20 +20,20 @@
   text-align: left;
 }
 .welcome-im {
-  font-family: "Zilla Slab Highlight", cursive;
+  font-family: "Bebas Neue", cursive;
   margin-bottom: 0px;
-  font-size: 37px;
+  font-size: 5vh;
   position: relative;
   top: 3vh;
 }
 .welcome-name {
   font-family: "Boogaloo", cursive;
-  font-size: 50px;
+  font-size: 10vh;
   margin-bottom: 0px;
   color: white;
 }
 .welcome-email {
-  font-family: "Zilla Slab Highlight", cursive;
+  font-family: "Bebas Neue", cursive;
   margin-bottom: 0px;
   position: relative;
   bottom: 15px;
@@ -42,9 +42,10 @@
 .welcome-paragraph {
   font-family: "Open Sans", sans-serif;
   margin-bottom: 0px;
-  font-size: larger;
+  font-size: 3vh;
+  font-weight: 600;
 }
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .welcome-row {
     padding: 0px;
   }
@@ -99,11 +100,11 @@
 }
 @media (min-width: 1445px) {
   .welcome-im {
-    font-size: 95px;
+    font-size: 5vh;
     top: 5vh;
   }
   .welcome-name {
-    font-size: 150px;
+    font-size: 10vh;
   }
   .welcome-email {
     font-size: 50px;
@@ -112,4 +113,4 @@
   .welcome-paragraph {
     font-size: 45px;
   }
-}
+} */
