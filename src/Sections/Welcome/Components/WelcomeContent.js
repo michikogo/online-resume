@@ -17,7 +17,7 @@ const WelcomeContent = () => {
             <Col>
               <p className="welcome-im">Hello! I'm</p>
               <p className="welcome-name">Michiko Young Go</p>
-              <p className="welcome-email">michikogo98@gmail.com</p>
+              {/* <p className="welcome-email">michikogo98@gmail.com</p> */}
               <p className="welcome-paragraph">
                 Hey you! <br /> I am a software developer that focuses on
                 fullstack web development and sometimes mobile development, on
