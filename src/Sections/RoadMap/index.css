@@ -108,16 +108,14 @@
   }
   .roadmap-detail-position,
   .roadmap-detail-future {
-    font-size: 8vh !important;
+    font-size: 5vh !important;
   }
-  .roadmap-detail-company {
-    font-size: 5vh;
-  }
+  .roadmap-detail-company,
   .roadmap-detail-date-location {
-    font-size: 4vh;
+    font-size: 3vh;
   }
   .roadmap-detail-description {
-    font-size: xx-large !important;
+    font-size: 2.2vh !important;
   }
   .vertical-timeline {
     max-width: 100% !important;
@@ -125,16 +123,19 @@
   .vertical-timeline::before {
     width: 1vh !important;
   }
+  .vertical-timeline--animate .vertical-timeline-element-content.bounce-in {
+    border-radius: 1vh !important;
+  }
   .vertical-timeline--two-columns .vertical-timeline-element-icon {
-    width: 13vh !important;
-    height: 13vh !important;
-    left: 48% !important;
-    margin-left: -22px !important;
+    width: 10vh !important;
+    height: 10vh !important;
+    left: 55.5vh !important;
+    margin-left: -2vh !important;
   }
   .roadmap-svg {
-    width: 8vh !important;
-    height: 8vh !important;
-    left: 30% !important;
-    top: 30% !important;
+    width: 7vh !important;
+    height: 7vh !important;
+    left: 2vh !important;
+    top: 2vh !important;
   }
 }
