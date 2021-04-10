@@ -46,6 +46,7 @@
   border-top: none;
 }
 .project-content-nav-link {
+  font-size: 2vh;
   border-top-left-radius: 1vh !important;
   border-top-right-radius: 1vh !important;
 }
@@ -57,7 +58,7 @@
 .project-front-name,
 .project-back-name {
   font-family: "Bebas Neue", cursive;
-  font-size: 6vh;
+  font-size: 4vh;
   margin-bottom: -15px;
 }
 .project-front-type,
@@ -107,6 +108,7 @@
   font-weight: 600;
 }
 .badge-primary {
+  margin-top: 0.5vh !important;
   font-size: 2vh !important;
   border-radius: 1vh !important;
 }
