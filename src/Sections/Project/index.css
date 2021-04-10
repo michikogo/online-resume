@@ -45,6 +45,10 @@
   border-bottom-right-radius: 2vh;
   border-top: none;
 }
+.project-content-nav-link {
+  border-top-left-radius: 1vh !important;
+  border-top-right-radius: 1vh !important;
+}
 /* ProjectFront.js */
 .project-front-row {
   height: 100%;
@@ -53,8 +57,13 @@
 .project-front-name,
 .project-back-name {
   font-family: "Bebas Neue", cursive;
-  font-size: xx-large;
+  font-size: 6vh;
   margin-bottom: -15px;
+}
+.project-front-type,
+.project-back-type {
+  font-family: "Open Sans", sans-serif;
+  font-size: 2.5vh;
 }
 @media (max-width: 400px) {
   .project-front-name,
@@ -77,6 +86,7 @@
 .project-back-summary {
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
+  font-size: 2vh;
 }
 .project-back-section-title {
   font-family: "Open Sans", sans-serif;
@@ -84,6 +94,7 @@
   margin-bottom: 0px !important;
   font-style: italic;
   font-weight: 600;
+  font-size: 2vh;
 }
 .project-back-bullet-image-col {
   padding: 0px 0px 0px 15px !important;
@@ -92,6 +103,12 @@
   font-family: "Open Sans", sans-serif;
   text-align: left;
   padding-left: 0px !important ;
+  font-size: 2vh;
+  font-weight: 600;
+}
+.badge-primary {
+  font-size: 2vh !important;
+  border-radius: 1vh !important;
 }
 .project-back-pill-row {
   /* padding-top: 2vh; */
@@ -100,6 +117,17 @@
   place-content: center;
   margin: 1vh;
 }
+.custom-btn {
+  width: 25vh !important;
+  height: 6vh !important;
+  border-radius: 1vh !important;
+}
+.btn-8 span,
+.custom-button-disabled {
+  font-size: 2.5vh !important;
+  padding-top: 1vh;
+}
+
 @media (max-width: 600px) {
   .project-content-content-row {
     padding: 0vh;
@@ -124,8 +152,8 @@
   }
   .project-content-nav-link {
     font-size: 3vh;
-    border-top-left-radius: 2vh !important;
-    border-top-right-radius: 2vh !important;
+    /* border-top-left-radius: 2vh !important; */
+    /* border-top-right-radius: 2vh !important; */
   }
   .project-front-name,
   .project-back-name {

@@ -120,22 +120,4 @@
   .vertical-timeline {
     max-width: 100% !important;
   }
-  .vertical-timeline::before {
-    width: 1vh !important;
-  }
-  .vertical-timeline--animate .vertical-timeline-element-content.bounce-in {
-    border-radius: 1vh !important;
-  }
-  .vertical-timeline--two-columns .vertical-timeline-element-icon {
-    width: 10vh !important;
-    height: 10vh !important;
-    left: 55.5vh !important;
-    margin-left: -2vh !important;
-  }
-  .roadmap-svg {
-    width: 7vh !important;
-    height: 7vh !important;
-    left: 2vh !important;
-    top: 2vh !important;
-  }
 }

@@ -132,27 +132,30 @@
 }
 @media (min-width: 1445px) {
   .contact-form-label,
-  .contact-form-button-sent,
   .contact-media-padding {
-    font-size: xx-large;
+    font-size: 3vh;
   }
   .contact-form-input {
-    font-size: xx-large !important;
+    font-size: 3vh !important;
     border-radius: 1vh !important;
   }
   .contact-title {
     font-size: 15vh;
   }
   .contact-media-image {
-    width: 20vh !important;
-    height: 20vh !important;
+    width: 10vh !important;
+    height: 10vh !important;
+  }
+  .contact-form-button-sent {
+    font-size: 3vh;
+    border-radius: 1vh;
   }
 }
 /* Github.js LinkedIn.js */
 .contact-media-image {
   height: 11vh;
   width: 11vh;
-  border-radius: 15px;
+  border-radius: 5vh;
 }
 .contact-media-image:hover {
   animation: bounce2 2s ease infinite;
