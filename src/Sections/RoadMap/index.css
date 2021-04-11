@@ -102,7 +102,7 @@
     padding: 0px 5vh;
   }
 }
-@media (min-width: 1445px) {
+/* @media (min-width: 1445px) {
   .roadmap-title {
     font-size: 15vh;
   }
@@ -120,4 +120,4 @@
   .vertical-timeline {
     max-width: 100% !important;
   }
-}
+} */

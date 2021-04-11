@@ -152,7 +152,7 @@
     font-size: 2vh;
   }
 }
-@media (min-width: 1445px) {
+/* @media (min-width: 1445px) {
   .project-content-title {
     font-size: 15vh;
   }
@@ -161,8 +161,6 @@
   }
   .project-content-nav-link {
     font-size: 3vh;
-    /* border-top-left-radius: 2vh !important; */
-    /* border-top-right-radius: 2vh !important; */
   }
   .project-front-name,
   .project-back-name {
@@ -200,4 +198,4 @@
     font-size: 3vh !important;
     padding-top: 2vh;
   }
-}
+} */
