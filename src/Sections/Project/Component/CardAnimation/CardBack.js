@@ -8,7 +8,7 @@ const CardBack = ({ project }) => {
 
   return (
     <div
-      class="flip-card-back"
+      className="flip-card-back"
       // onMouseLeave={handleResetScroll}
     >
       <ProjectBack project={project} />

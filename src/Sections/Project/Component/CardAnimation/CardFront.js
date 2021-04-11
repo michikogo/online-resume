@@ -1,7 +1,7 @@
 import ProjectFront from "../ProjectFront";
 const CardFront = ({ project }) => {
   return (
-    <div class="flip-card-front">
+    <div className="flip-card-front">
       <ProjectFront project={project} />
     </div>
   );
