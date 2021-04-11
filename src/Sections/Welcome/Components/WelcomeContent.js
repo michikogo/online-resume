@@ -1,6 +1,21 @@
+import { useState, useEffect } from "react";
 import { Row, Col, Image } from "react-bootstrap";
 
 const WelcomeContent = () => {
+  const [isMobileMode, setIsMobileMode] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener("scroll", checkWidth, true);
+  }, []);
+
+  const checkWidth = () => {
+    if (window.innerWidth > 1024) {
+      setIsMobileMode(false);
+    } else {
+      setIsMobileMode(true);
+    }
+  };
+
   return (
     <>
       <Row className="welcome-row">
@@ -26,15 +41,31 @@ const WelcomeContent = () => {
             </Col>
           </Row>
           <Row>
-            <Col className="welcome-paragraph" style={{ paddingTop: "5vh" }}>
-              <a
-                href={require("../../../Assets/michikogo-resume.pdf").default}
-                className="contact-email"
-                download
+            {!isMobileMode && (
+              <Col className="welcome-paragraph" style={{ padding: "2vh" }}>
+                <a
+                  href={require("../../../Assets/michikogo-resume.pdf").default}
+                  className="contact-email"
+                  download
+                >
+                  👉Click me to download my resume👈
+                </a>
+              </Col>
+            )}
+            {isMobileMode && (
+              <Col
+                className="welcome-paragraph"
+                style={{ paddingTop: "2vhpx", fontSize: "2vh" }}
               >
-                👉Click me to download my resume👈
-              </a>
-            </Col>
+                <a
+                  href={require("../../../Assets/michikogo-resume.pdf").default}
+                  className="contact-email"
+                  download
+                >
+                  👉Download my resume👈
+                </a>
+              </Col>
+            )}
           </Row>
         </Col>
       </Row>

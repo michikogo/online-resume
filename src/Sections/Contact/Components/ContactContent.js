@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Row, Col } from "react-bootstrap";
 
 import GithubSVG from "./SVG/GithubSVG";
@@ -7,6 +7,19 @@ import ContactForm from "./ContactForm";
 
 const ContactContent = () => {
   const [media] = useState([<GithubSVG />, <LinkedInSVG />]);
+
+  const [isMobileMode, setIsMobileMode] = useState(false);
+  useEffect(() => {
+    window.addEventListener("scroll", checkWidth, true);
+  }, []);
+
+  const checkWidth = () => {
+    if (window.innerWidth > 1024) {
+      setIsMobileMode(false);
+    } else {
+      setIsMobileMode(true);
+    }
+  };
 
   return (
     <>
@@ -49,15 +62,28 @@ const ContactContent = () => {
             </Col>
           </Row>
           <Row>
-            <Col>
-              <a
-                href={require("../../../Assets/michikogo-resume.pdf").default}
-                className="contact-email"
-                download
-              >
-                👉Click me to download my resume👈
-              </a>
-            </Col>
+            {!isMobileMode && (
+              <Col style={{ padding: "0px" }}>
+                <a
+                  href={require("../../../Assets/michikogo-resume.pdf").default}
+                  className="contact-email"
+                  download
+                >
+                  👉Click me to download my resume👈
+                </a>
+              </Col>
+            )}
+            {isMobileMode && (
+              <Col style={{ padding: "0px", fontSize: "2vh" }}>
+                <a
+                  href={require("../../../Assets/michikogo-resume.pdf").default}
+                  className="contact-email"
+                  download
+                >
+                  👉Download my resume👈
+                </a>
+              </Col>
+            )}
           </Row>
         </Col>
       </Row>
