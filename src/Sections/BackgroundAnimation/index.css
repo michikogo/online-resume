@@ -5,6 +5,7 @@
   height: 100%;
   width: 107%;
   z-index: -1;
+  overflow: hidden;
 }
 
 #red {
@@ -63,7 +64,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   #home-anim {
     width: auto;
   }

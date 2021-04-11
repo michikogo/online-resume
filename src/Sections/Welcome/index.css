@@ -42,10 +42,10 @@
 .welcome-paragraph {
   font-family: "Open Sans", sans-serif;
   margin-bottom: 0px;
-  font-size: 3vh;
+  font-size: 2.5vh;
   font-weight: 600;
 }
-/* @media (max-width: 768px) {
+@media (max-width: 768px) {
   .welcome-row {
     padding: 0px;
   }
@@ -84,33 +84,33 @@
     height: 80%;
   }
   .welcome-im {
-    font-size: 50px;
+    /* font-size: 50px; */
     top: 5vh;
   }
   .welcome-name {
-    font-size: 100px;
+    /* font-size: 100px; */
   }
   .welcome-email {
-    font-size: 30px;
+    /* font-size: 30px; */
     bottom: 4vh;
   }
   .welcome-paragraph {
-    font-size: 30px;
+    /* font-size: 30px; */
   }
 }
 @media (min-width: 1445px) {
   .welcome-im {
-    font-size: 5vh;
+    font-size: 10vh;
     top: 5vh;
   }
   .welcome-name {
-    font-size: 10vh;
+    font-size: 15vh;
   }
   .welcome-email {
-    font-size: 50px;
+    font-size: 10vh;
     bottom: 4vh;
   }
   .welcome-paragraph {
-    font-size: 45px;
+    font-size: 5vh;
   }
-} */
+}

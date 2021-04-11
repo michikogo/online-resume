@@ -59,19 +59,13 @@
 .project-back-name {
   font-family: "Bebas Neue", cursive;
   font-size: 4vh;
-  margin-bottom: -15px;
+  margin-bottom: -10px;
 }
 .project-front-type,
 .project-back-type {
   font-family: "Open Sans", sans-serif;
   font-size: 2.5vh;
-}
-@media (max-width: 400px) {
-  .project-front-name,
-  .project-back-name {
-    font-size: 26px;
-    margin-bottom: -10px;
-  }
+  font-weight: 600;
 }
 /* INSERT project-front-type HERE */
 .project-front-image-col {
@@ -82,7 +76,6 @@
   object-fit: cover;
   /* transition: 0.5s ease; */
 }
-
 /* ProjectBack.js */
 .project-back-summary {
   font-family: "Open Sans", sans-serif;
@@ -130,19 +123,30 @@
   padding-top: 1vh;
 }
 
+@media (max-width: 290px) {
+  .btn-8 span,
+  .custom-button-disabled {
+    font-size: 2vh !important;
+    padding-top: 0vh;
+  }
+  .custom-btn {
+    width: 20vh !important;
+    height: 6vh !important;
+  }
+}
 @media (max-width: 600px) {
   .project-content-content-row {
     padding: 0vh;
   }
   .project-content-nav-link {
-    font-size: x-small;
+    font-size: 1.8vh;
   }
 }
 @media (max-width: 940px) {
   .project-back-summary,
   .project-back-features,
   .project-back-bullet {
-    font-size: small;
+    font-size: 2vh;
   }
 }
 @media (min-width: 1445px) {
