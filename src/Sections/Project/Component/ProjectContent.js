@@ -16,7 +16,7 @@ const ProjectContent = ({ webProjects, mobileProjects, otherProjects }) => {
       <Row className="project-content-content-row">
         <Col>
           {/* NAV BAR */}
-          <Nav justify variant="tabs" defaultActiveKey={activeNav}>
+          <Nav fill variant="tabs" defaultActiveKey={activeNav}>
             <Nav.Item>
               {/* WEB PROJECTS */}
               <Nav.Link
