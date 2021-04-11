@@ -32,7 +32,7 @@
   }
 }
 .project-content-content-row {
-  padding: 0vh 5vh;
+  padding: 0vh 15vh;
   min-height: 78vh;
   /* align-items: center; */
   /* justify-content: center; */
@@ -120,7 +120,7 @@
 .btn-8 span,
 .custom-button-disabled {
   font-size: 2.5vh !important;
-  padding-top: 1vh;
+  padding-top: 0.5vh;
 }
 
 @media (max-width: 290px) {
@@ -143,6 +143,9 @@
   }
 }
 @media (max-width: 940px) {
+  .project-content-content-row {
+    padding: 0vh 5vh;
+  }
   .project-back-summary,
   .project-back-features,
   .project-back-bullet {
