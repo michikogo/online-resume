@@ -40,8 +40,22 @@ const ContactContent = () => {
           <Row>
             <Col className="contact-media-padding">
               I am open for work, directly email me at <br />
-              <a href="mailto:michikogo98@gmail.com" className="contact-email">
-                michikogo98@gmail.com
+              <a
+                href="mailto:michikoyounggo@gmail.com"
+                className="contact-email"
+              >
+                michikoyounggo@gmail.com
+              </a>
+            </Col>
+          </Row>
+          <Row>
+            <Col>
+              <a
+                href={require("../../../Assets/michikogo-resume.pdf").default}
+                className="contact-email"
+                download
+              >
+                👉Click me to download my resume👈
               </a>
             </Col>
           </Row>

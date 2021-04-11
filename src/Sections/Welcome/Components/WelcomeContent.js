@@ -25,6 +25,17 @@ const WelcomeContent = () => {
               </p>
             </Col>
           </Row>
+          <Row>
+            <Col className="welcome-paragraph" style={{ paddingTop: "5vh" }}>
+              <a
+                href={require("../../../Assets/michikogo-resume.pdf").default}
+                className="contact-email"
+                download
+              >
+                👉Click me to download my resume👈
+              </a>
+            </Col>
+          </Row>
         </Col>
       </Row>
     </>
