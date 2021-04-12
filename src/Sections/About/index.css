@@ -66,13 +66,13 @@
 }
 /* ToolsImage.js */
 .about-image-left {
-  width: 80%;
-  height: 80%;
+  width: 70%;
+  height: 70%;
 }
 /* LanguageImage.js */
 .about-image-right {
-  width: 70%;
-  height: 70%;
+  width: 80%;
+  height: 80%;
 }
 @media (max-width: 321px) {
   .about-row {
@@ -91,14 +91,21 @@
     left: 0;
   }
 }
-@media (min-width: 632px) {
-  .about-image-left {
+@media (max-width: 800px) {
+  .about-hexagon-background {
+    text-align: -webkit-center;
+    align-self: center;
+  }
+  .about-honeyComb-row {
     width: 70%;
-    height: 70%;
+  }
+  .about-image-left {
+    width: 60%;
+    height: 60%;
   }
   .about-image-right {
-    width: 80%;
-    height: 80%;
+    width: 70%;
+    height: 70%;
   }
 }
 /* @media (min-width: 1445px) {
