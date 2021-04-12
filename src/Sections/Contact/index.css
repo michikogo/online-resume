@@ -3,12 +3,11 @@
   background-color: #f68375;
   min-height: 100vh;
   text-align: center;
-  padding: 15vh 0vh;
+  padding: 80px 0px;
 }
 /* ContactContent.js */
 .contact-title-row {
-  padding: 5vh 0vh;
-  font-size: 10vh;
+  padding: 25px 0px;
 }
 .contact-title {
   cursor: context-menu;
@@ -18,6 +17,7 @@
   -webkit-text-stroke-width: 3px;
   -webkit-text-stroke-color: #6d545d;
   animation: titleShadow 10s infinite ease-in;
+  font-size: 60px;
 }
 @keyframes titleShadow {
   0%,
@@ -32,18 +32,18 @@
   }
 }
 .contact-row {
-  padding: 0px 15vh;
+  padding: 0px 50px;
   min-height: 78vh;
   align-items: center;
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
 }
 .contact-form {
-  padding: 0px 20vh !important;
+  /* padding: 0px 20vh !important; */
   text-align: left;
 }
 .contact-media-padding {
-  padding: 5vh 0vh !important;
+  padding: 20px 0px !important;
 }
 .contact-social-row {
   justify-content: center;
@@ -66,20 +66,20 @@
 }
 .contact-form-label,
 .contact-media-padding {
-  font-size: 2.5vh;
+  font-size: 13px;
 }
 .contact-form-input {
-  font-size: 2.5vh !important;
+  font-size: 13px !important;
   border-radius: 1vh !important;
 }
 .contact-form-button-sent {
-  font-size: 2.5vh;
+  font-size: 13px;
   border-radius: 1vh;
 }
 .contact-form-button {
   align-items: center;
   width: 100%;
-  padding: 0.5vh 5vh;
+  padding: 3px 20px;
   border: none;
   text-transform: uppercase;
   overflow: hidden;
@@ -131,15 +131,12 @@
 }
 @media (max-width: 600px) {
   .contact-row {
-    padding: 0px 5vh;
-  }
-  .contact-form {
-    padding: 0px !important;
+    padding: 0px;
   }
 }
 @media (min-width: 600px) and (max-width: 1020px) {
   .contact-form {
-    padding: 0px 10vh !important;
+    padding: 0px 65px !important;
   }
 }
 /* @media (min-width: 1445px) {
@@ -165,12 +162,21 @@
 } */
 /* Github.js LinkedIn.js */
 .contact-media-image {
-  height: 11vh;
-  width: 11vh;
-  border-radius: 5vh;
+  height: 70%;
+  width: 70%;
 }
 .contact-media-image:hover {
   animation: bounce2 2s ease infinite;
+}
+.contact-content-download {
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+}
+.contact-content-download:hover {
+  color: #dce2c8 !important;
+  font-style: italic;
+  text-decoration: none;
 }
 @keyframes bounce2 {
   0%,

@@ -63,8 +63,9 @@ const ContactContent = () => {
           </Row>
           <Row>
             {!isMobileMode && (
-              <Col style={{ padding: "0px" }}>
+              <Col>
                 <a
+                  className="contact-content-download"
                   href={require("../../../Assets/michikogo-resume.pdf").default}
                   className="contact-email"
                   download
@@ -74,8 +75,9 @@ const ContactContent = () => {
               </Col>
             )}
             {isMobileMode && (
-              <Col style={{ padding: "0px", fontSize: "2vh" }}>
+              <Col>
                 <a
+                  className="contact-content-download"
                   href={require("../../../Assets/michikogo-resume.pdf").default}
                   className="contact-email"
                   download
