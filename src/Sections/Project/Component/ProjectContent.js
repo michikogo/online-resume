@@ -53,21 +53,21 @@ const ProjectContent = ({ webProjects, mobileProjects, otherProjects }) => {
             {/* WEB PROJECTS */}
             {activeNav === "webProjects" &&
               webProjects.map((webProject, index) => (
-                <Col key={index} sm={6}>
+                <Col key={index} sm={12} md={6}>
                   <CardAnimation project={webProject} />
                 </Col>
               ))}
             {/* MOBILE PROJECTS */}
             {activeNav === "mobileProjects" &&
               mobileProjects.map((mobileProject, index) => (
-                <Col key={index} sm={6}>
+                <Col key={index} sm={12} md={6}>
                   <CardAnimation project={mobileProject} />
                 </Col>
               ))}
             {/* OTHER PROJECTS */}
             {activeNav === "otherProjects" &&
               otherProjects.map((otherProject, index) => (
-                <Col key={index} sm={6}>
+                <Col key={index} sm={12} md={6}>
                   <CardAnimation project={otherProject} />
                 </Col>
               ))}
