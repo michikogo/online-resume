@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/resume/static/css/main.e27f66b4.chunk.css",
-    "main.js": "/resume/static/js/main.8e2320f1.chunk.js",
-    "main.js.map": "/resume/static/js/main.8e2320f1.chunk.js.map",
-    "runtime-main.js": "/resume/static/js/runtime-main.1cdf5c21.js",
-    "runtime-main.js.map": "/resume/static/js/runtime-main.1cdf5c21.js.map",
+    "main.css": "/resume/static/css/main.239c1e00.chunk.css",
+    "main.js": "/resume/static/js/main.c91e1a47.chunk.js",
+    "main.js.map": "/resume/static/js/main.c91e1a47.chunk.js.map",
+    "runtime-main.js": "/resume/static/js/runtime-main.330c14fb.js",
+    "runtime-main.js.map": "/resume/static/js/runtime-main.330c14fb.js.map",
     "static/css/2.33946507.chunk.css": "/resume/static/css/2.33946507.chunk.css",
-    "static/js/2.1f65277f.chunk.js": "/resume/static/js/2.1f65277f.chunk.js",
-    "static/js/2.1f65277f.chunk.js.map": "/resume/static/js/2.1f65277f.chunk.js.map",
-    "static/js/3.18549e6e.chunk.js": "/resume/static/js/3.18549e6e.chunk.js",
-    "static/js/3.18549e6e.chunk.js.map": "/resume/static/js/3.18549e6e.chunk.js.map",
+    "static/js/2.665bcc3f.chunk.js": "/resume/static/js/2.665bcc3f.chunk.js",
+    "static/js/2.665bcc3f.chunk.js.map": "/resume/static/js/2.665bcc3f.chunk.js.map",
+    "static/js/3.aae3b6c8.chunk.js": "/resume/static/js/3.aae3b6c8.chunk.js",
+    "static/js/3.aae3b6c8.chunk.js.map": "/resume/static/js/3.aae3b6c8.chunk.js.map",
     "index.html": "/resume/index.html",
     "static/css/2.33946507.chunk.css.map": "/resume/static/css/2.33946507.chunk.css.map",
-    "static/css/main.e27f66b4.chunk.css.map": "/resume/static/css/main.e27f66b4.chunk.css.map",
-    "static/js/2.1f65277f.chunk.js.LICENSE.txt": "/resume/static/js/2.1f65277f.chunk.js.LICENSE.txt",
+    "static/css/main.239c1e00.chunk.css.map": "/resume/static/css/main.239c1e00.chunk.css.map",
+    "static/js/2.665bcc3f.chunk.js.LICENSE.txt": "/resume/static/js/2.665bcc3f.chunk.js.LICENSE.txt",
     "static/media/HUMALIT.PNG": "/resume/static/media/HUMALIT.526024d8.PNG",
     "static/media/android-studio.png": "/resume/static/media/android-studio.69784de8.png",
     "static/media/bakeryMNL.PNG": "/resume/static/media/bakeryMNL.e9ce5c71.PNG",
@@ -43,10 +43,10 @@
     "static/media/whiteDesktop.png": "/resume/static/media/whiteDesktop.3c6465d3.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.1cdf5c21.js",
+    "static/js/runtime-main.330c14fb.js",
     "static/css/2.33946507.chunk.css",
-    "static/js/2.1f65277f.chunk.js",
-    "static/css/main.e27f66b4.chunk.css",
-    "static/js/main.8e2320f1.chunk.js"
+    "static/js/2.665bcc3f.chunk.js",
+    "static/css/main.239c1e00.chunk.css",
+    "static/js/main.c91e1a47.chunk.js"
   ]
 }
