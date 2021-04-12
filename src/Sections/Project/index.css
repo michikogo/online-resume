@@ -17,7 +17,7 @@
   -webkit-text-stroke-width: 3px;
   -webkit-text-stroke-color: #6d545d;
   animation: titleShadow 10s infinite ease-in;
-  font-size: 10vh;
+  font-size: 60px;
 }
 @keyframes titleShadow {
   0%,
@@ -46,7 +46,9 @@
   border-top: none;
 }
 .project-content-nav-link {
-  font-size: 2vh;
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
   border-top-left-radius: 1vh !important;
   border-top-right-radius: 1vh !important;
 }
@@ -58,13 +60,13 @@
 .project-front-name,
 .project-back-name {
   font-family: "Bebas Neue", cursive;
-  font-size: 4vh;
+  font-size: 30px;
   margin-bottom: -10px;
 }
 .project-front-type,
 .project-back-type {
   font-family: "Open Sans", sans-serif;
-  font-size: 2vh;
+  font-size: 15px;
   font-weight: 600;
 }
 /* INSERT project-front-type HERE */
@@ -80,7 +82,7 @@
 .project-back-summary {
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
-  font-size: 2vh;
+  font-size: 15px;
 }
 .project-back-section-title {
   font-family: "Open Sans", sans-serif;
@@ -88,7 +90,7 @@
   margin-bottom: 0px !important;
   font-style: italic;
   font-weight: 600;
-  font-size: 2vh;
+  font-size: 13px;
 }
 .project-back-bullet-image-col {
   padding: 0px 0px 0px 15px !important;
@@ -97,12 +99,12 @@
   font-family: "Open Sans", sans-serif;
   text-align: left;
   padding-left: 0px !important ;
-  font-size: 2vh;
+  font-size: 15px;
   font-weight: 600;
 }
 .badge-primary {
   margin-top: 0.5vh !important;
-  font-size: 2vh !important;
+  font-size: 13px !important;
   border-radius: 1vh !important;
 }
 .project-back-pill-row {
@@ -119,14 +121,12 @@
 }
 .btn-8 span,
 .custom-button-disabled {
-  font-size: 2.5vh !important;
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px !important;
+  font-weight: 600;
 }
 
 @media (max-width: 290px) {
-  .btn-8 span,
-  .custom-button-disabled {
-    font-size: 2vh !important;
-  }
   .custom-btn {
     width: 20vh !important;
     height: 6vh !important;
@@ -136,18 +136,10 @@
   .project-content-content-row {
     padding: 0px;
   }
-  .project-content-nav-link {
-    font-size: 1.8vh;
-  }
 }
 @media (min-width: 600px) and (max-width: 940px) {
   .project-content-content-row {
     padding: 0vh 25px;
-  }
-  .project-back-summary,
-  .project-back-features,
-  .project-back-bullet {
-    font-size: 2vh;
   }
 }
 /* @media (min-width: 1445px) {
