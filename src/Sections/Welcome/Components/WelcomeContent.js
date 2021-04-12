@@ -38,31 +38,33 @@ const WelcomeContent = () => {
                 fullstack web development and sometimes mobile development, on
                 my free time I love exploring what the world is there to offer.
               </p>
+              {!isMobileMode && (
+                <Col className="welcome-download-col">
+                  <a
+                    className="welcome-download"
+                    href={
+                      require("../../../Assets/michikogo-resume.pdf").default
+                    }
+                    download
+                  >
+                    👉Click me to download my resume👈
+                  </a>
+                </Col>
+              )}
+              {isMobileMode && (
+                <Col className="welcome-download-col">
+                  <a
+                    className="welcome-download"
+                    href={
+                      require("../../../Assets/michikogo-resume.pdf").default
+                    }
+                    download
+                  >
+                    👉Download my resume👈
+                  </a>
+                </Col>
+              )}
             </Col>
-          </Row>
-          <Row>
-            {!isMobileMode && (
-              <Col className="welcome-download-col">
-                <a
-                  className="welcome-download"
-                  href={require("../../../Assets/michikogo-resume.pdf").default}
-                  download
-                >
-                  👉Click me to download my resume👈
-                </a>
-              </Col>
-            )}
-            {isMobileMode && (
-              <Col className="welcome-download-col">
-                <a
-                  className="welcome-download"
-                  href={require("../../../Assets/michikogo-resume.pdf").default}
-                  download
-                >
-                  👉Download my resume👈
-                </a>
-              </Col>
-            )}
           </Row>
         </Col>
       </Row>
