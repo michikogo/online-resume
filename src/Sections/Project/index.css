@@ -56,18 +56,20 @@
 .project-front-row {
   height: 100%;
   align-content: center;
+  overflow: hidden;
 }
 .project-front-name,
 .project-back-name {
   font-family: "Bebas Neue", cursive;
-  font-size: 30px;
+  font-size: 20px;
   margin-bottom: -10px;
 }
 .project-front-type,
 .project-back-type {
   font-family: "Open Sans", sans-serif;
-  font-size: 15px;
+  font-size: 13px;
   font-weight: 600;
+  /* margin-bottom: 0px; */
 }
 /* INSERT project-front-type HERE */
 .project-front-image-col {
@@ -82,7 +84,7 @@
 .project-back-summary {
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
-  font-size: 15px;
+  font-size: 13px;
 }
 .project-back-section-title {
   font-family: "Open Sans", sans-serif;
@@ -99,12 +101,12 @@
   font-family: "Open Sans", sans-serif;
   text-align: left;
   padding-left: 0px !important ;
-  font-size: 15px;
+  font-size: 13px;
   font-weight: 600;
 }
 .badge-primary {
-  margin-top: 0.5vh !important;
-  font-size: 13px !important;
+  /* margin-top: 0.5vh !important; */
+  font-size: 10px !important;
   border-radius: 1vh !important;
 }
 .project-back-pill-row {
@@ -115,8 +117,8 @@
   margin: 1vh;
 }
 .custom-btn {
-  width: 25vh !important;
-  height: 6vh !important;
+  width: 130px !important;
+  height: 40px !important;
   border-radius: 1vh !important;
 }
 .btn-8 span,

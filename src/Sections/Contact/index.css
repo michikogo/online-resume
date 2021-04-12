@@ -123,6 +123,7 @@
 }
 .contact-email {
   color: #6d545d !important;
+  font-size: 13px;
 }
 .contact-email:hover {
   color: #dce2c8 !important;

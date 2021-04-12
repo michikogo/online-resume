@@ -25,7 +25,7 @@
   height: 100%;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  padding: 4vh;
+  padding: 15px;
   border-radius: 2vh;
 }
 .flip-card-front {
@@ -39,13 +39,12 @@
   overflow-y: auto;
   -webkit-overflow-scrolling: auto;
 }
-
 div::-webkit-scrollbar-thumb {
   background-color: #a8dcd1;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
 }
-
+/* 
 @media (max-width: 376px) {
   .flip-card {
     background-color: transparent;
@@ -61,3 +60,9 @@ div::-webkit-scrollbar-thumb {
     padding: 2vh 0vh;
   }
 }
+@media (max-width: 400px) {
+  .flip-card-front,
+  .flip-card-back {
+    padding: 2vh 0vh;
+  }
+} */
