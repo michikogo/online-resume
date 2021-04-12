@@ -5,8 +5,8 @@ import RoadMapTimeline from "./RoadMapTimeline";
 const RoadMapContent = ({ details }) => {
   return (
     <>
-      <Row>
-        <Col className="roadmap-title-row">
+      <Row className="roadmap-title-row">
+        <Col>
           <span className="roadmap-title">Road Map</span>
         </Col>
       </Row>
