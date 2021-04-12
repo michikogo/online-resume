@@ -5,7 +5,7 @@
   padding: 15vh 0vh;
 }
 .welcome-row {
-  padding: 0vh 15vh;
+  padding: 0vh 15vh !important;
   min-height: 78vh;
   align-items: center;
 }
@@ -78,39 +78,3 @@
     padding-top: 15px;
   }
 }
-@media (min-width: 1025px) and (max-width: 1440px) {
-  .welcome-image {
-    width: 80%;
-    height: 80%;
-  }
-  .welcome-im {
-    /* font-size: 50px; */
-    top: 5vh;
-  }
-  .welcome-name {
-    /* font-size: 100px; */
-  }
-  .welcome-email {
-    /* font-size: 30px; */
-    bottom: 4vh;
-  }
-  .welcome-paragraph {
-    /* font-size: 30px; */
-  }
-}
-/* @media (min-width: 1445px) {
-  .welcome-im {
-    font-size: 10vh;
-    top: 5vh;
-  }
-  .welcome-name {
-    font-size: 15vh;
-  }
-  .welcome-email {
-    font-size: 10vh;
-    bottom: 4vh;
-  }
-  .welcome-paragraph {
-    font-size: 5vh;
-  }
-} */

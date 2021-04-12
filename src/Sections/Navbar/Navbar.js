@@ -1,4 +1,4 @@
-import "./index.css";
+// import "./index.css";
 import { useEffect } from "react";
 import { Row, Col } from "react-bootstrap";
 import { Link } from "react-scroll";

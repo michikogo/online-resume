@@ -1,4 +1,4 @@
-import "./index.css";
+// import "./index.css";
 import { Container } from "react-bootstrap";
 
 import ContactContent from "./Components/ContactContent";

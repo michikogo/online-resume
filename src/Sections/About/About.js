@@ -1,4 +1,4 @@
-import "./index.css";
+// import "./index.css";
 import { Container } from "react-bootstrap";
 import AboutContent from "./Components/AboutContent";
 
