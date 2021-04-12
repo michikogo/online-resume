@@ -102,6 +102,12 @@
     padding: 0px;
   }
 }
+@media (min-height: 1200px) {
+  .roadmap-background,
+  .roadmap-row {
+    min-height: 0px;
+  }
+}
 /* @media (min-width: 1445px) {
   .roadmap-title {
     font-size: 15vh;

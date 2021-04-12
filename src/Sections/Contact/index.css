@@ -193,3 +193,10 @@
     transform: translateY(-15px);
   }
 }
+
+@media (min-height: 1200px) {
+  .contact-background,
+  .contact-row {
+    min-height: 0px;
+  }
+}

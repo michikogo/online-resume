@@ -218,3 +218,10 @@
 .articles__description {
   font-size: 14px;
 }
+
+@media (min-height: 1200px) {
+  .about-background,
+  .about-row {
+    min-height: 0px;
+  }
+}
