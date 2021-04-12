@@ -42,10 +42,10 @@ const WelcomeContent = () => {
           </Row>
           <Row>
             {!isMobileMode && (
-              <Col className="welcome-paragraph" style={{ padding: "2vh" }}>
+              <Col className="welcome-download-col">
                 <a
+                  className="welcome-download"
                   href={require("../../../Assets/michikogo-resume.pdf").default}
-                  className="contact-email"
                   download
                 >
                   👉Click me to download my resume👈
@@ -53,13 +53,10 @@ const WelcomeContent = () => {
               </Col>
             )}
             {isMobileMode && (
-              <Col
-                className="welcome-paragraph"
-                style={{ paddingTop: "2vhpx", fontSize: "2vh" }}
-              >
+              <Col className="welcome-download-col">
                 <a
+                  className="welcome-download"
                   href={require("../../../Assets/michikogo-resume.pdf").default}
-                  className="contact-email"
                   download
                 >
                   👉Download my resume👈
