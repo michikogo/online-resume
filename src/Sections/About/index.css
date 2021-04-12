@@ -2,13 +2,12 @@
 .about-background {
   min-height: 100vh;
   text-align: center;
-  padding: 15vh 0vh;
+  padding: 80px 0px;
 }
 
 /* AboutContent.js */
 .about-title-row {
-  padding: 5vh 0vh;
-  font-size: 10vh;
+  padding: 25px 0px;
 }
 .about-title {
   font-family: "Bebas Neue", cursive;
@@ -17,6 +16,7 @@
   -webkit-text-stroke-width: 3px;
   -webkit-text-stroke-color: #6d545d;
   animation: titleShadow 10s infinite ease-in;
+  font-size: 60px;
 }
 @keyframes titleShadow {
   0%,
@@ -31,7 +31,7 @@
   }
 }
 .about-row {
-  padding: 0vh 15vh;
+  padding: 0px 50px;
   min-height: 78vh;
   align-items: center;
   display: flex;
@@ -56,7 +56,7 @@
   font-family: "Open Sans", sans-serif;
   margin-bottom: 0px;
   font-weight: 600;
-  font-size: 2.5vh;
+  font-size: 15px;
 }
 .about-image-col {
   /* background: wheat; */
@@ -81,7 +81,7 @@
 }
 @media (min-width: 322px) and (max-width: 600px) {
   .about-row {
-    padding: 0px 5vh;
+    padding: 0px;
   }
 }
 @media (max-width: 576px) {
@@ -121,7 +121,7 @@
   display: block;
 }
 .about-honeyComb-col {
-  padding: 0px 1vh !important;
+  padding: 0px 3px !important;
 }
 .about-honeyComb-row {
   margin-top: -10px !important;
