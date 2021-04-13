@@ -25,7 +25,7 @@
   height: 100%;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  padding: 15px;
+  padding: 30px;
   border-radius: 2vh;
 }
 .flip-card-front {
@@ -43,6 +43,12 @@ div::-webkit-scrollbar-thumb {
   background-color: #a8dcd1;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
+}
+@media (max-width: 400px) {
+  .flip-card-front,
+  .flip-card-back {
+    padding: 15px;
+  }
 }
 /* 
 @media (max-width: 376px) {
